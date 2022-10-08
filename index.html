@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="container">
+      <header id="header_wrap">
+        <div class="header__top">
+            <div class="logo"><img src="image/제이에스티나_-_뉴_심볼.png" alt="LOGO"></div>
+            <div class="header__search">
+                <form id="searchForm" class="header__search-form" action="/products/result" method="get"> 
+                    <fieldset> 
+                        <input type="text" id="query" name="query" class="header__search-input" autocomplete="off" placeholder="검색어를 입력해주세요"> 
+                        <button type="button" class="header__search-btn btn-search">  
+                        </button> 
+                    </fieldset> 
+                    <textarea rows="20" style="display:none" id="decode"></textarea> 
+                </form>
+            </div>
+            <div class="header__nav">
+                <ul>
+                    <li><a>회원가입</a></li>
+                    <li><a>로그인</a></li>
+                    <li><a>고객센터</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="header__bottom">
+          <div class="header__bottom-inner">
+            <ul class="header__category">
+              <li class="header__category-item">
+                <a class="header__category-title" id="JEWELRY">JEWELRY</a>
+                <div class="header-gnb" style="display: none">
+                  <div class="header-gnb__inner">
+                    <ul class="header-gnb__list">
+                      <li class="header-gnb__item">
+                        <a class="header-gnb__item-title">아이템</a>
+                        <ul class="header-gnb__sub" style="width: 101px">
+                          <li class="header-gnb__sub-item">
+                            <a class="header-gnb__sub-title">귀걸이</a>
+                          </li>
+                          <li class="header-gnb__sub-item">
+                            <a class="header-gnb__sub-title">목걸이</a>
+                          </li>
+                          <li class="header-gnb__sub-item">
+                            <a class="header-gnb__sub-title">팔찌</a>
+                          </li>
+                          <li class="header-gnb__sub-item">
+                            <a class="header-gnb__sub-title">반지</a>
+                          </li>
+                          <li class="header-gnb__sub-item">
+                            <a class="header-gnb__sub-title">참</a>
+                          </li>
+                          <li class="header-gnb__sub-item">
+                            <a class="header-gnb__sub-title">커플링</a>
+                          </li>
+                          <li class="header-gnb__sub-item">
+                            <a class="header-gnb__sub-title">발찌</a>
+                          </li>
+                          <li class="header-gnb__sub-item">
+                            <a class="header-gnb__sub-title">펜던트</a>
+                          </li>
+                          <li class="header-gnb__sub-item">
+                            <a class="header-gnb__sub-title">피어싱</a>
+                          </li>
+                          <li class="header-gnb__sub-item">
+                            <a class="header-gnb__sub-title">기타</a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="header-gnb__item">
+                        <a class="header-gnb__item-title">컬렉션</a>
+                        <ul class="header-gnb__sub" style="width: 101px">
+                          <li class="header-gnb__sub-item">
+                            <a class="header-gnb__sub-title">J è te</a>
+                          </li>
+                          <li class="header-gnb__sub-item">
+                            <a class="header-gnb__sub-title">J.RIBBON</a>
+                          </li>
+                          <li class="header-gnb__sub-item">
+                            <a class="header-gnb__sub-title">LA POEME</a>
+                          </li>
+                          <li class="header-gnb__sub-item">
+                            <a class="header-gnb__sub-title">MARIEBEL</a>
+                          </li>
+                          <li class="header-gnb__sub-item">
+                            <a class="header-gnb__sub-title">Mioello</a>
+                          </li>
+                          <li class="header-gnb__sub-item">
+                            <a class="header-gnb__sub-title">PERLINA</a>
+                          </li>
+                          <li class="header-gnb__sub-item">
+                            <a class="header-gnb__sub-title">TIARA</a>
+                          </li>
+                          <li class="header-gnb__sub-item">
+                            <a class="header-gnb__sub-title">SIGNATURE J</a>
+                          </li>
+                          <li class="header-gnb__sub-item">
+                            <a class="header-gnb__sub-title">ETC</a>
+                          </li>
+                        </ul>
+                      </li>
+                      <!-- <li class="header-gnb__item">
+                        <a class="header-gnb__item-title">소재</a>
+                        <ul class="header-gnb__sub" style="width: 101px">
+                          <li class="header-gnb__sub-item">
+                            <a class="header-gnb__sub-title">골드</a>
+                          </li>
+                          <li class="header-gnb__sub-item">
+                            <a class="header-gnb__sub-title">실버</a>
+                          </li>
+                          <li class="header-gnb__sub-item">
+                            <a class="header-gnb__sub-title">브라스</a>
+                          </li>
+                        </ul>
+                      </li> -->
+                      <li class="header-gnb__item">
+                        <a class="header-gnb__item-title">키즈</a>
+                        <ul class="header-gnb__sub" style="width: 101px">
+                          <li class="header-gnb__sub-item">
+                            <a class="header-gnb__sub-title">목걸이</a>
+                          </li>
+                          <li class="header-gnb__sub-item">
+                            <a class="header-gnb__sub-title">팔찌</a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="header-gnb__item">
+                        <a class="header-gnb__item-title">SET</a>
+                        <ul class="header-gnb__sub"></ul>
+                      </li>
+                    </ul>
+                    <div class="header-gnb__recommend-product">
+                      <div class="header-gnb__recommend-product-item">
+                        <a class="header-gnb__recommend-product-link">
+                          <div class="header-gnb__recommend-product-img-wrap">
+                            <!-- <img /> -->
+                          </div>
+                        </a>
+                      </div>
+                      <div class="header-gnb__recommend-product-item">
+                        <a class="header-gnb__recommend-product-link">
+                          <div class="header-gnb__recommend-product-img-wrap">
+                            <!-- <img /> -->
+                          </div>
+                        </a>
+                      </div>
+                      <div class="header-gnb__recommend-product-item">
+                        <a class="header-gnb__recommend-product-link">
+                          <div class="header-gnb__recommend-product-img-wrap">
+                            <!-- <img /> -->
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="header__category-item">
+                <a class="header__category-title" id="BAG">BAG</a>
+                <div class="header-gnb" style="display: none">
+                  <div class="header-gnb__inner">
+                    <ul class="header-gnb__list">
+                      <li class="header-gnb__item">
+                        <a class="header-gnb__item-title">아이템</a>
+                        <ul class="header-gnb__sub" style="width: 101px">
+                          <li class="header-gnb__sub-item">
+                            <a class="header-gnb__sub-title">토트백</a>
+                          </li>
+                          <li class="header-gnb__sub-item">
+                            <a class="header-gnb__sub-title">백팩</a>
+                          </li>
+                          <li class="header-gnb__sub-item">
+                            <a class="header-gnb__sub-title">숄더백</a>
+                          </li>
+                          <li class="header-gnb__sub-item">
+                            <a class="header-gnb__sub-title">크로스백</a>
+                          </li>
+                          <li class="header-gnb__sub-item">
+                            <a class="header-gnb__sub-title">클러치백</a>
+                          </li>
+                          <li class="header-gnb__sub-item">
+                            <a class="header-gnb__sub-title">쇼퍼백</a>
+                          </li>
+                          <li class="header-gnb__sub-item">
+                            <a class="header-gnb__sub-title">지갑</a>
+                          </li>
+                          <li class="header-gnb__sub-item">
+                            <a class="header-gnb__sub-title">ACC</a>
+                          </li>
+                          <li class="header-gnb__sub-item">
+                            <a class="header-gnb__sub-title">기타</a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="header-gnb__item">
+                        <a class="header-gnb__item-title">컬렉션</a>
+                        <ul class="header-gnb__sub" style="width: 101px">
+                          <li class="header-gnb__sub-item">
+                            <a class="header-gnb__sub-title">JOELLE</a>
+                          </li>
+                          <li class="header-gnb__sub-item">
+                            <a class="header-gnb__sub-title">J LETTER</a>
+                          </li>
+                          <li class="header-gnb__sub-item">
+                            <a class="header-gnb__sub-title">TIARA</a>
+                          </li>
+                          <li class="header-gnb__sub-item">
+                            <a class="header-gnb__sub-title">MAVE</a>
+                          </li>
+                        </ul>
+                      </li>
+                      <!-- <li class="header-gnb__item">
+                        <a class="header-gnb__item-title">소재</a>
+                        <ul class="header-gnb__sub" style="width: 101px">
+                          <li class="header-gnb__sub-item">
+                            <a class="header-gnb__sub-title">천연가죽</a>
+                          </li>
+                          <li class="header-gnb__sub-item">
+                            <a class="header-gnb__sub-title">합성가죽</a>
+                          </li>
+                          <li class="header-gnb__sub-item">
+                            <a class="header-gnb__sub-title">패브릭</a>
+                          </li>
+                          <li class="header-gnb__sub-item">
+                            <a class="header-gnb__sub-title">기타</a>
+                          </li>
+                        </ul>
+                      </li> -->
+                    </ul>
+                    <div class="header-gnb__recommend-product">
+                      <div class="header-gnb__recommend-product-item">
+                        <a class="header-gnb__recommend-product-link">
+                          <div class="header-gnb__recommend-product-img-wrap">
+                            <!-- <img /> -->
+                          </div>
+                        </a>
+                      </div>
+                      <div class="header-gnb__recommend-product-item">
+                        <a class="header-gnb__recommend-product-link">
+                          <div class="header-gnb__recommend-product-img-wrap">
+                            <!-- <img /> -->
+                          </div>
+                        </a>
+                      </div>
+                      <div class="header-gnb__recommend-product-item">
+                        <a class="header-gnb__recommend-product-link">
+                          <div class="header-gnb__recommend-product-img-wrap">
+                            <!-- <img /> -->
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="header__category-item">
+                <a class="header__category-title" id="WATCH">WATCH</a>
+                <div class="header-gnb" style="display: none">
+                  <div class="header-gnb__inner">
+                    <ul class="header-gnb__list">
+                      <li class="header-gnb__item">
+                        <a class="header-gnb__item-title">제이에스티나</a>
+                        <ul class="header-gnb__sub" style="width: 101px">
+                          <li class="header-gnb__sub-item">
+                            <a class="header-gnb__sub-title">가죽</a>
+                          </li>
+                          <li class="header-gnb__sub-item">
+                            <a class="header-gnb__sub-title">메탈</a>
+                          </li>
+                          <li class="header-gnb__sub-item">
+                            <a class="header-gnb__sub-title">워치스트랩</a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="header-gnb__item">
+                        <a class="header-gnb__item-title">제이컬렉션</a>
+                        <ul class="header-gnb__sub" style="width: 101px">
+                          <li class="header-gnb__sub-item">
+                            <a class="header-gnb__sub-title">NUOVO TEMPO</a>
+                          </li>
+                          <li class="header-gnb__sub-item">
+                            <a class="header-gnb__sub-title">TIARA</a>
+                          </li>
+                          <li class="header-gnb__sub-item">
+                            <a class="header-gnb__sub-title">AMICO</a>
+                          </li>
+                          <li class="header-gnb__sub-item">
+                            <a class="header-gnb__sub-title">JE</a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="header-gnb__item">
+                        <a class="header-gnb__item-title">로만손</a>
+                        <ul class="header-gnb__sub" style="width: 101px">
+                          <li class="header-gnb__sub-item">
+                            <a class="header-gnb__sub-title">가죽</a>
+                          </li>
+                          <li class="header-gnb__sub-item">
+                            <a class="header-gnb__sub-title">메탈</a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="header-gnb__item">
+                        <a class="header-gnb__item-title">로만손컬렉션</a>
+                        <ul class="header-gnb__sub" style="width: 101px">
+                          <li class="header-gnb__sub-item">
+                            <a class="header-gnb__sub-title">ACTIVE</a>
+                          </li>
+                          <li class="header-gnb__sub-item">
+                            <a class="header-gnb__sub-title">BASIC</a>
+                          </li>
+                          <li class="header-gnb__sub-item">
+                            <a class="header-gnb__sub-title">CLASSIC</a>
+                          </li>
+                          <li class="header-gnb__sub-item">
+                            <a class="header-gnb__sub-title">R</a>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                    <div class="header-gnb__recommend-product">
+                      <div class="header-gnb__recommend-product-item">
+                        <a class="header-gnb__recommend-product-link">
+                          <div class="header-gnb__recommend-product-img-wrap">
+                            <!-- <img /> -->
+                          </div>
+                        </a>
+                      </div>
+                      <div class="header-gnb__recommend-product-item">
+                        <a class="header-gnb__recommend-product-link">
+                          <div class="header-gnb__recommend-product-img-wrap">
+                            <!-- <img /> -->
+                          </div>
+                        </a>
+                      </div>
+                      <div class="header-gnb__recommend-product-item">
+                        <a class="header-gnb__recommend-product-link">
+                          <div class="header-gnb__recommend-product-img-wrap">
+                            <!-- <img /> -->
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="header__category-item">
+                <a class="header__category-title" id="HAIR ACC">HAIR ACC</a>
+                <div class="header-gnb" style="display: none">
+                  <div class="header-gnb__inner">
+                    <ul class="header-gnb__list">
+                      <li class="header-gnb__item">
+                        <a class="header-gnb__item-title">아이템</a>
+                        <ul class="header-gnb__sub" style="width: 101px">
+                          <li class="header-gnb__sub-item">
+                            <a class="header-gnb__sub-title">헤어슈슈</a>
+                          </li>
+                          <li class="header-gnb__sub-item">
+                            <a class="header-gnb__sub-title">헤어핀</a>
+                          </li>
+                          <li class="header-gnb__sub-item">
+                            <a class="header-gnb__sub-title">헤어집게</a>
+                          </li>
+                          <li class="header-gnb__sub-item">
+                            <a class="header-gnb__sub-title">헤어밴드</a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="header-gnb__item">
+                        <a class="header-gnb__item-title">컬렉션</a>
+                        <ul class="header-gnb__sub" style="width: 101px">
+                          <li class="header-gnb__sub-item">
+                            <a class="header-gnb__sub-title">TIARA</a>
+                          </li>
+                          <li class="header-gnb__sub-item">
+                            <a class="header-gnb__sub-title">LA POEME</a>
+                          </li>
+                          <li class="header-gnb__sub-item">
+                            <a class="header-gnb__sub-title">PERLINA</a>
+                          </li>
+                          <li class="header-gnb__sub-item">
+                            <a class="header-gnb__sub-title">ETC</a>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                    <div class="header-gnb__recommend-product">
+                      <div class="header-gnb__recommend-product-item">
+                        <a class="header-gnb__recommend-product-link">
+                          <div class="header-gnb__recommend-product-img-wrap">
+                            <!-- <img /> -->
+                          </div>
+                        </a>
+                      </div>
+                      <div class="header-gnb__recommend-product-item">
+                        <a class="header-gnb__recommend-product-link">
+                          <div class="header-gnb__recommend-product-img-wrap">
+                            <!-- <img /> -->
+                          </div>
+                        </a>
+                      </div>
+                      <div class="header-gnb__recommend-product-item">
+                        <a class="header-gnb__recommend-product-link">
+                          <div class="header-gnb__recommend-product-img-wrap">
+                            <!-- <img /> -->
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="header__category-item">
+                <a class="header__category-title"id="EXCLUSIVE">EXCLUSIVE</a>
+                <div class="header-gnb" style="display: none">
+                  <div class="header-gnb__inner">
+                    <ul class="header-gnb__list">
+                      <li class="header-gnb__item">
+                        <a class="header-gnb__item-title">아이템</a>
+                        <ul class="header-gnb__sub" style="width: 101px">
+                          <li class="header-gnb__sub-item">
+                            <a class="header-gnb__sub-title">목걸이</a>
+                          </li>
+                          <li class="header-gnb__sub-item">
+                            <a class="header-gnb__sub-title">귀걸이</a>
+                          </li>
+                          <li class="header-gnb__sub-item">
+                            <a class="header-gnb__sub-title">팔찌</a>
+                          </li>
+                          <li class="header-gnb__sub-item">
+                            <a class="header-gnb__sub-title">발찌</a>
+                          </li>
+                          <li class="header-gnb__sub-item">
+                            <a class="header-gnb__sub-title">헤어</a>
+                          </li>
+                          <li class="header-gnb__sub-item">
+                            <a class="header-gnb__sub-title">기타</a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="header-gnb__item">
+                        <a class="header-gnb__item-title">SET</a>
+                        <ul class="header-gnb__sub"></ul>
+                      </li>
+                    </ul>
+                    <div class="header-gnb__recommend-product">
+                      <div class="header-gnb__recommend-product-item">
+                        <a class="header-gnb__recommend-product-link">
+                          <div class="header-gnb__recommend-product-img-wrap">
+                            <!-- <img /> -->
+                          </div>
+                        </a>
+                      </div>
+                      <div class="header-gnb__recommend-product-item">
+                        <a class="header-gnb__recommend-product-link">
+                          <div class="header-gnb__recommend-product-img-wrap">
+                            <!-- <img /> -->
+                          </div>
+                        </a>
+                      </div>
+                      <div class="header-gnb__recommend-product-item">
+                        <a class="header-gnb__recommend-product-link">
+                          <div class="header-gnb__recommend-product-img-wrap">
+                            <!-- <img /> -->
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="header__category-item">
+                <a class="header__category-title" id="OUTLET">OUTLET</a>
+                <div class="header-gnb" style="display: none">
+                  <div class="header-gnb__inner">
+                    <ul class="header-gnb__list">
+                      <li class="header-gnb__item">
+                        <a class="header-gnb__item-title">JEWELRY</a>
+                        <ul class="header-gnb__sub" style="width: 101px">
+                          <li class="header-gnb__sub-item">
+                            <a class="header-gnb__sub-title">귀걸이</a>
+                          </li>
+                          <li class="header-gnb__sub-item">
+                            <a class="header-gnb__sub-title">목걸이</a>
+                          </li>
+                          <li class="header-gnb__sub-item">
+                            <a class="header-gnb__sub-title">발찌</a>
+                          </li>
+                          <li class="header-gnb__sub-item">
+                            <a class="header-gnb__sub-title">팔찌</a>
+                          </li>
+                          <li class="header-gnb__sub-item">
+                            <a class="header-gnb__sub-title">펜던트</a>
+                          </li>
+                          <li class="header-gnb__sub-item">
+                            <a class="header-gnb__sub-title">반지</a>
+                          </li>
+                          <li class="header-gnb__sub-item">
+                            <a class="header-gnb__sub-title">헤어</a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="header-gnb__item">
+                        <a class="header-gnb__item-title">BAG</a>
+                        <ul class="header-gnb__sub" style="width: 101px">
+                          <li class="header-gnb__sub-item">
+                            <a class="header-gnb__sub-title">토트백</a>
+                          </li>
+                          <li class="header-gnb__sub-item">
+                            <a class="header-gnb__sub-title">숄더백</a>
+                          </li>
+                          <li class="header-gnb__sub-item">
+                            <a class="header-gnb__sub-title">크로스백</a>
+                          </li>
+                          <li class="header-gnb__sub-item">
+                            <a class="header-gnb__sub-title">클러치백</a>
+                          </li>
+                          <li class="header-gnb__sub-item">
+                            <a class="header-gnb__sub-title">쇼퍼백</a>
+                          </li>
+                          <li class="header-gnb__sub-item">
+                            <a class="header-gnb__sub-title">백팩</a>
+                          </li>
+                          <li class="header-gnb__sub-item">
+                            <a class="header-gnb__sub-title">지갑</a>
+                          </li>
+                          <li class="header-gnb__sub-item">
+                            <a class="header-gnb__sub-title">ACC</a>
+                          </li>
+                          <li class="header-gnb__sub-item">
+                            <a class="header-gnb__sub-title">기타</a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="header-gnb__item">
+                        <a class="header-gnb__item-title">WATCH</a>
+                        <ul class="header-gnb__sub" style="width: 101px">
+                          <li class="header-gnb__sub-item">
+                            <a class="header-gnb__sub-title">제이에스티나</a>
+                          </li>
+                          <li class="header-gnb__sub-item">
+                            <a class="header-gnb__sub-title">로만손</a>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                    <div class="header-gnb__recommend-product">
+                      <div class="header-gnb__recommend-product-item">
+                        <a class="header-gnb__recommend-product-link">
+                          <div class="header-gnb__recommend-product-img-wrap">
+                            <!-- <img /> -->
+                          </div>
+                        </a>
+                      </div>
+                      <div class="header-gnb__recommend-product-item">
+                        <a class="header-gnb__recommend-product-link">
+                          <div class="header-gnb__recommend-product-img-wrap">
+                            <!-- <img /> -->
+                          </div>
+                        </a>
+                      </div>
+                      <div class="header-gnb__recommend-product-item">
+                        <a class="header-gnb__recommend-product-link">
+                          <div class="header-gnb__recommend-product-img-wrap">
+                            <!-- <img /> -->
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <section id="section1">
+        <div class="section1_wrap">
+            <div id="main__slide"></div>
+        </div>
+      </section>
+      <section id="section2">
+        <div class="contents__MD">
+            <div class="product__img"></div>
+            <div class="procduct__detail"></div>
+        </div>
+      </section>
+      <section id="section3">
+        <div class="section3_wrap">
+            <div id="main__tab">
+                <div class="tab__menu"></div>
+            </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
