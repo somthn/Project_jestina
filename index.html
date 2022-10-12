@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&family=Oswald:wght@200&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css"> 
     <script src="https://kit.fontawesome.com/2e5f69190c.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
   </head>
   <body>
     <div class="container">
@@ -19,7 +20,7 @@
             <div class="header__top-box">
               <div class="header__search">
                 <form id="searchForm" class="header__search-form" action="/products/result" method="get"> 
-                    <fieldset> <!-- 파비콘 클릭 시 input 박스 나타나게 하기 -->
+                    <fieldset>
                         <input type="text" id="query" name="query" class="header__search-input" autocomplete="off"> 
                         <button type="button" class="header__search-btn btn-search">
                           <img src="image/magnifying-glass-solid.svg" alt="search_button" class="header__search-btn-img">
@@ -112,20 +113,6 @@
                           </li>
                         </ul>
                       </li>
-                      <!-- <li class="header-gnb__item">
-                        <a class="header-gnb__item-title">소재</a>
-                        <ul class="header-gnb__sub" >
-                          <li class="header-gnb__sub-item">
-                            <a class="header-gnb__sub-title">골드</a>
-                          </li>
-                          <li class="header-gnb__sub-item">
-                            <a class="header-gnb__sub-title">실버</a>
-                          </li>
-                          <li class="header-gnb__sub-item">
-                            <a class="header-gnb__sub-title">브라스</a>
-                          </li>
-                        </ul>
-                      </li> -->
                       <li class="header-gnb__item">
                         <a class="header-gnb__item-title">키즈</a>
                         <ul class="header-gnb__sub">
@@ -627,7 +614,7 @@
                 </li>
                 <li>
                   <a href="https://vo.la/V6dBfp" class="main-slide__item-link"> 
-                    <img src="" alt="" class="main-slide__item-img"> 
+                    <img src="image/Slice 4.png" alt="" class="main-slide__item-img"> 
                   </a>
                 </li>
               </ul>
@@ -648,5 +635,7 @@
         </div>
       </section>
     </div>
+    <script src="main.js"></script>
+    <script src="header.js"></script>
   </body>
 </html>
