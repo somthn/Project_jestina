@@ -15,8 +15,16 @@ html
 
 body
 {
-    font-size: 1rem;
+    font-size: calc(0.35em + 0.7vw);
 }
+
+/* @media only screen and (max-width:1200px)
+{
+    body
+    {
+        font-size: 0.8rem;
+    }
+} */
 
 .container
 {
@@ -25,7 +33,7 @@ body
     min-height: 100vh;
 }
 
-img, fieldset, button 
+img, button 
 {
     vertical-align: middle;
     border: none;
@@ -35,9 +43,11 @@ img, fieldset, button
 
 #header_wrap
 {
-    margin: 20px auto 10px auto;
-    max-width: 150vh;
+    margin: 20px 20px 20px 20px;
+    max-width: auto;
+    justify-content: space-between;
     z-index: 1000;
+    position: sticky;
 }
 
 .header__top
@@ -77,14 +87,30 @@ img, fieldset, button
 
 .header__search
 {
-    width: 260px;
     position: relative;
     border: 0;
+    z-index: 1000;
+}
+
+form
+{
+    display: none;
+    top: 200px;
+    position: absolute;
+    width: 120%;
+    top: 53px;
+    left: -200px;
+}
+
+fieldset
+{
+    vertical-align: middle;
+    border: none;
 }
 
 .header__search-input 
 {
-    width: 100%;
+    width: auto;
     height: 25px;
     border-radius: 10px;
     font-size: 12px;
@@ -92,15 +118,11 @@ img, fieldset, button
     border: 0;
     outline: none;
     vertical-align: middle;
+    padding: 15px 40px 15px 10px;
+    background-color: aliceblue;
 }
 
-.header__search-form
-{
-    position: relative;
-    width: 100%;
-}
-
-.header__search-btn 
+.header__search-btn
 {
     position: absolute;
     right: 13px;
@@ -113,6 +135,21 @@ img, fieldset, button
     border: none;
     background: white;
     cursor: pointer;
+}
+
+.btn-search
+{
+    position: absolute;
+    left: 160px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    height: 22px;
+    border: none;
+    background: white;
+    color: #999;
+    cursor: pointer;
+    background-color: aliceblue;
 }
 
 .header__search-btn-img
@@ -176,7 +213,7 @@ img, fieldset, button
     height: auto;
     background: whitesmoke;
     position: absolute;
-    /* z-index: 2000; */
+    z-index: 1000;
     padding: 2%;
     border-radius: 10px;
     font-size: 0.9rem;
@@ -232,6 +269,11 @@ img, fieldset, button
     padding-left: 10px;
 }
 
+.header__right
+{
+    display: flex;
+}
+
 .fa-solid
 {
     width: 20px;
@@ -241,11 +283,60 @@ img, fieldset, button
 }
 
 
-
 /* section 1 */
 
 .main-slide__item-img
 {
     max-width: 100%;
+    height: auto;
 }
 
+/** || Carousel Styles */
+
+#carousel 
+{
+    padding: 0;
+    margin: 0;
+    position: relative;
+    width: 300px;
+    height: auto;
+  }
+
+  #carousel li 
+  {
+    opacity: 0;
+    list-style: outside none none;
+    width: 300px;
+    position: absolute;
+    background: transparent;
+    transition: opacity 1s;
+  }
+
+img 
+{
+    width: 100%;
+    max-height: 850px;
+}
+  
+  @media (min-width: 300px) 
+  {
+    #carousel, #carousel li, img 
+    {
+      width: 100%;
+      max-height: 850px;
+    }
+  }
+
+/* section 2 */
+#section2
+{
+    margin-top: 52%;
+}
+
+.contents__MD
+{
+    width: 80%;
+    height:1000px;
+    background: #999;
+    margin: 0 auto;
+}

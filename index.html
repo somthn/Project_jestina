@@ -5,40 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&family=Oswald:wght@200&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css"> 
-    <script src="https://kit.fontawesome.com/2e5f69190c.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&family=Oswald:wght@200&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/2e5f69190c.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
   </head>
   <body>
     <div class="container">
       <header id="header_wrap">
-        <div class="header__top">
-            <div class="logo"><img src="image/logo.png" alt="LOGO"></div>
-            <div class="header__top-box">
-              <div class="header__search">
-                <form id="searchForm" class="header__search-form" action="/products/result" method="get"> 
-                    <fieldset>
-                        <input type="text" id="query" name="query" class="header__search-input" autocomplete="off"> 
-                        <button type="button" class="header__search-btn btn-search">
-                          <img src="image/magnifying-glass-solid.svg" alt="search_button" class="header__search-btn-img">
-                        </button> 
-                    </fieldset> 
-                    <textarea rows="20" style="display:none" id="decode"></textarea> 
-                </form>
-              </div>
-              <div class="header__nav">
-                  <ul>
-                      <li><a>회원가입</a></li>
-                      <li><a>로그인</a></li>
-                      <li><a>고객센터</a></li>
-                  </ul>
-              </div>
-            </div>
-        </div>
+        <!-- <div class="header__top">
+        </div> -->
         <div class="header__bottom">
+          <div class="logo"><img src="image/logo.png" alt="LOGO" /></div>
           <div class="header__bottom-inner">
             <ul class="header__category">
               <li class="header__category-item">
@@ -162,7 +148,7 @@
                     <ul class="header-gnb__list">
                       <li class="header-gnb__item">
                         <a class="header-gnb__item-title">아이템</a>
-                        <ul class="header-gnb__sub" >
+                        <ul class="header-gnb__sub">
                           <li class="header-gnb__sub-item">
                             <a class="header-gnb__sub-title">토트백</a>
                           </li>
@@ -194,7 +180,7 @@
                       </li>
                       <li class="header-gnb__item">
                         <a class="header-gnb__item-title">컬렉션</a>
-                        <ul class="header-gnb__sub" >
+                        <ul class="header-gnb__sub">
                           <li class="header-gnb__sub-item">
                             <a class="header-gnb__sub-title">JOELLE</a>
                           </li>
@@ -260,7 +246,7 @@
                     <ul class="header-gnb__list">
                       <li class="header-gnb__item">
                         <a class="header-gnb__item-title">제이에스티나</a>
-                        <ul class="header-gnb__sub" >
+                        <ul class="header-gnb__sub">
                           <li class="header-gnb__sub-item">
                             <a class="header-gnb__sub-title">가죽</a>
                           </li>
@@ -274,7 +260,7 @@
                       </li>
                       <li class="header-gnb__item">
                         <a class="header-gnb__item-title">제이컬렉션</a>
-                        <ul class="header-gnb__sub" >
+                        <ul class="header-gnb__sub">
                           <li class="header-gnb__sub-item">
                             <a class="header-gnb__sub-title">NUOVO TEMPO</a>
                           </li>
@@ -291,7 +277,7 @@
                       </li>
                       <li class="header-gnb__item">
                         <a class="header-gnb__item-title">로만손</a>
-                        <ul class="header-gnb__sub" >
+                        <ul class="header-gnb__sub">
                           <li class="header-gnb__sub-item">
                             <a class="header-gnb__sub-title">가죽</a>
                           </li>
@@ -302,7 +288,7 @@
                       </li>
                       <li class="header-gnb__item">
                         <a class="header-gnb__item-title">로만손컬렉션</a>
-                        <ul class="header-gnb__sub" >
+                        <ul class="header-gnb__sub">
                           <li class="header-gnb__sub-item">
                             <a class="header-gnb__sub-title">ACTIVE</a>
                           </li>
@@ -351,7 +337,7 @@
                     <ul class="header-gnb__list">
                       <li class="header-gnb__item">
                         <a class="header-gnb__item-title">아이템</a>
-                        <ul class="header-gnb__sub" >
+                        <ul class="header-gnb__sub">
                           <li class="header-gnb__sub-item">
                             <a class="header-gnb__sub-title">헤어슈슈</a>
                           </li>
@@ -368,7 +354,7 @@
                       </li>
                       <li class="header-gnb__item">
                         <a class="header-gnb__item-title">컬렉션</a>
-                        <ul class="header-gnb__sub" >
+                        <ul class="header-gnb__sub">
                           <li class="header-gnb__sub-item">
                             <a class="header-gnb__sub-title">TIARA</a>
                           </li>
@@ -411,13 +397,13 @@
                 </div>
               </li>
               <li class="header__category-item">
-                <a class="header__category-title"id="EXCLUSIVE">EXCLUSIVE</a>
+                <a class="header__category-title" id="EXCLUSIVE">EXCLUSIVE</a>
                 <div class="header-gnb" style="display: none">
                   <div class="header-gnb__inner">
                     <ul class="header-gnb__list">
                       <li class="header-gnb__item">
                         <a class="header-gnb__item-title">아이템</a>
-                        <ul class="header-gnb__sub" >
+                        <ul class="header-gnb__sub">
                           <li class="header-gnb__sub-item">
                             <a class="header-gnb__sub-title">목걸이</a>
                           </li>
@@ -476,7 +462,7 @@
                     <ul class="header-gnb__list">
                       <li class="header-gnb__item">
                         <a class="header-gnb__item-title">JEWELRY</a>
-                        <ul class="header-gnb__sub" >
+                        <ul class="header-gnb__sub">
                           <li class="header-gnb__sub-item">
                             <a class="header-gnb__sub-title">귀걸이</a>
                           </li>
@@ -502,7 +488,7 @@
                       </li>
                       <li class="header-gnb__item">
                         <a class="header-gnb__item-title">BAG</a>
-                        <ul class="header-gnb__sub" >
+                        <ul class="header-gnb__sub">
                           <li class="header-gnb__sub-item">
                             <a class="header-gnb__sub-title">토트백</a>
                           </li>
@@ -534,7 +520,7 @@
                       </li>
                       <li class="header-gnb__item">
                         <a class="header-gnb__item-title">WATCH</a>
-                        <ul class="header-gnb__sub" >
+                        <ul class="header-gnb__sub">
                           <li class="header-gnb__sub-item">
                             <a class="header-gnb__sub-title">제이에스티나</a>
                           </li>
@@ -590,48 +576,105 @@
             </ul>
           </div>
           <div class="header__right">
+            <div class="header__search">
+              <form
+                id="searchForm"
+                class="header__search-form"
+                action="/products/result"
+                method="get"
+              >
+                <fieldset>
+                  <input
+                    type="text"
+                    id="query"
+                    name="query"
+                    class="header__search-input"
+                    autocomplete="off"
+                    placeholder="검색어를 입력해주세요"
+                  />
+                  <button type="button" class="btn-search">
+                    검색
+                  </button>
+                </fieldset>
+                <textarea
+                  rows="20"
+                  style="display: none"
+                  id="decode"
+                ></textarea>
+              </form>
+              <button type="button" class="header__search-btn" id="search_button">
+                <img
+                  src="image/magnifying-glass-solid.svg"
+                  alt="search_button"
+                  class="header__search-btn-img"
+                />
+              </button>
+            </div>
             <div class="header__btn-wrap">
-              <a class="header__btn header__btn--mypage"><i class="fa-solid fa-user"></i></a>
-              <a class="header__btn header__btn--zzim"><i class="fa-solid fa-heart"></i></a>
-              <a class="header__btn header__btn--cart"><span id="header_cart_quantity"></span><i class="fa-solid fa-bag-shopping"></i></a>
+              <a class="header__btn header__btn--login"
+                ><i class="fa-solid fa-right-to-bracket"></i>
+              </a>
+              <a class="header__btn header__btn--mypage"
+                ><i class="fa-solid fa-user"></i
+              ></a>
+              <a class="header__btn header__btn--zzim"
+                ><i class="fa-solid fa-heart"></i
+              ></a>
+              <a class="header__btn header__btn--cart"
+                ><span id="header_cart_quantity"></span
+                ><i class="fa-solid fa-bag-shopping"></i
+              ></a>
             </div>
           </div>
         </div>
       </header>
       <section id="section1">
         <div class="main__slide_wrap">
-            <div id="main__slide">
-              <ul>
-                <li>
-                  <a href="https://vo.la/V6dBfp" class="main-slide__item-link"> 
-                    <img src="image/TIARA_FUNK.png" alt="" class="main-slide__item-img"> 
-                  </a>
-                </li>
-                <li>
-                  <a href="https://vo.la/V6dBfp" class="main-slide__item-link"> 
-                    <img src="image/Component 3.png" alt="" class="main-slide__item-img"> 
-                  </a>
-                </li>
-                <li>
-                  <a href="https://vo.la/V6dBfp" class="main-slide__item-link"> 
-                    <img src="image/Slice 4.png" alt="" class="main-slide__item-img"> 
-                  </a>
-                </li>
-              </ul>
-            </div>
+          <div id="main__slide">
+            <ul id="carousel">
+              <li style="opacity:1;">
+                <a href="#" class="main-slide__item-link">
+                  <img
+                    src="image/TIARA_FUNK.png"
+                    alt=""
+                    class="main-slide__item-img"
+                  />
+                </a>
+              </li>
+              <li>
+                <a href="#" class="main-slide__item-link">
+                  <img
+                    src="image/Component 3.png"
+                    alt=""
+                    class="main-slide__item-img"
+                  />
+                </a>
+              </li>
+              <li>
+                <a href="#" class="main-slide__item-link">
+                  <img
+                    src="image/Slice 4.png"
+                    alt=""
+                    class="main-slide__item-img"
+                  />
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
       <section id="section2">
         <div class="contents__MD">
-            <div class="product__img"></div>
-            <div class="procduct__detail"></div>
+          <h1>MD's PICK</h1>
+          <div class="product__img"></div>
+          <div class="procduct__detail"></div>
         </div>
       </section>
       <section id="section3">
         <div class="section3_wrap">
-            <div id="main__tab">
-                <div class="tab__menu"></div>
-            </div>
+          <div id="main__tab">
+            <div class="tab__menu"></div>
+          </div>
         </div>
       </section>
     </div>
