@@ -1,7 +1,9 @@
+jQuery.noConflict();
+var $j341 = jQuery.noConflict();
 /* header 검색 버튼 */
 $(document).ready(function(){
   $(".header__right>.header__search>.header__search-btn").click(function(){
-      $("#searchForm").stop().toggle(100);
+      $("#searchForm").stop().toggle(0);
   });
 });
 
@@ -18,12 +20,3 @@ setInterval(function () {
   counter = (counter + 1) % slides.length; // Increment counter
   slides[counter].style.opacity = 1; // Show the next image
 }, 5000); // setInterval
-
-
-/* section2 MD's PICK 슬라이드 */
-// Carousel Auto-Cycle
-$(document).ready(function() {
-  $('.carousel').carousel({
-    interval: 6000
-  })
-});

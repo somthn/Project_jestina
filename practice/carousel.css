@@ -1,35 +1,22 @@
-.carousel
+.carousel 
 {
-    width: 80%;
-    margin: 0 auto;
-}
-
-.carousel-inner
-{
-    width: 100%;
-    max-width: 1800px;
-    margin: 0 auto !important;
-}
-
-.carousel-item
-{   
-    width: 100%;
-    margin: 0 auto !important;
+  width: 80%;
+  margin: 0 auto;
 }
 
 .img-box 
-{   
-    width: 80%;
-    display: flex;
-    margin: 0 auto;
-    justify-content: space-between;
+{
+  max-width: 100%;
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-between;
 }
 
-.img-box > img
+.img-box > img 
 {
-    max-width: 600px !important;
-    width: 100% !important;
-} 
+  max-width: 700px !important;
+  width: 100% !important;
+}
 
 /* .carousel-inner > .carousel-item > img
 {   
@@ -39,29 +26,107 @@
 
 .img-box_right 
 {
-    width: 100%;
-    margin-left: 5%;
+  width: 100%;
+  margin-left: 5%;
+  margin-top: 30px;
 }
 
-.md-pick__goods
+.main-md-pick_textbox 
 {
-    margin-top: 10%;
+  padding-bottom: 40px;
+  border-bottom: 1px solid #d8d8d8;
 }
 
-.main-md-pick__goods-img, .product-search__recommend-img
+.main-md-pick__title 
 {
-    width: 100%;
+  font-size: 16px;
+  color: #999;
+  line-height: 1;
 }
 
-.md-pick__goods > a
+.main-md-pick__text 
 {
-    display: flex;
+  margin-top: 7px;
+  font-size: 22px;
+  font-weight: bold;
+  line-height: 1;
+  color: #222;
+}
+
+.md-pick__goods-wrapper 
+{
+  display: flex;
+  width: 100%;
+}
+
+.md-pick__goods-contents 
+{
+  margin: 10% 10px;
+}
+
+/* .md-pick__goods 
+{
+  max-width: 270px;
+  max-height: 331px;
+} */
+
+.main-md-pick__goods-img,
+.product-search__recommend-img 
+{
+  width: 100%;
+}
+
+.md-pick__goods > a 
+{
+  display: flex;
 }
 
 .main-md-pick__info 
 {
-    text-align: center;
+  text-align: center;
 }
+
+.img-box_right-text 
+{
+  margin-top: 30px;
+}
+
+.main-md-pick__goods-name {
+    margin-top: 14px;
+    font-size: 14px;
+    line-height: 1.2857142857;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    max-height: 2.5714285714em;
+    word-break: break-word;
+    color: #222;
+}
+
+.main-md-pick__goods-price-wrapper {
+    margin-top: 8px;
+}
+
+.main-md-pick__goods-price {
+    font-size: 16px;
+    font-weight: bold;
+    color: #222;
+    line-height: 1;
+}
+
+.main-md-pick__goods-price--origin {
+    font-weight: 400;
+    height: 18px;
+    color: #999;
+    font-size: 14px;
+}
+
+.main-md-pick__goods-price--origin + .main-md-pick__goods-price-sale-wrapper {
+    margin-top: 10px;
+}
+
 
 /* .d-block + .w-100
 {

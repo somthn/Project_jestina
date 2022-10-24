@@ -1,3 +1,5 @@
+jQuery.noConflict();
+var $j341 = jQuery.noConflict();
 let gnb_menu = $('.header-gnb');
   $('.header__category-item').mouseenter(function () {
     let tab_idx = $(this).index();
@@ -36,3 +38,4 @@ let gnb_menu = $('.header-gnb');
     gnb_menu.eq(tab_idx).hide(200);
     $(this).find('.header__category-title').removeClass('header__category-title--active');
   });
+  
