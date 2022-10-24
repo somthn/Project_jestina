@@ -2,6 +2,7 @@
 {
   width: 80%;
   margin: 0 auto;
+  padding-top: 50px;
 }
 
 .img-box 
@@ -56,6 +57,7 @@
 .md-pick__goods-wrapper 
 {
   display: flex;
+  justify-content: space-between;
   width: 100%;
 }
 
@@ -91,7 +93,8 @@
   margin-top: 30px;
 }
 
-.main-md-pick__goods-name {
+.main-md-pick__goods-name 
+{
     margin-top: 14px;
     font-size: 14px;
     line-height: 1.2857142857;
@@ -105,31 +108,39 @@
     color: #222;
 }
 
-.main-md-pick__goods-price-wrapper {
+.main-md-pick__goods-price-wrapper 
+{
     margin-top: 8px;
 }
 
-.main-md-pick__goods-price {
+.main-md-pick__goods-price 
+{
     font-size: 16px;
     font-weight: bold;
     color: #222;
     line-height: 1;
 }
 
-.main-md-pick__goods-price--origin {
+.main-md-pick__goods-price--origin 
+{
     font-weight: 400;
     height: 18px;
     color: #999;
     font-size: 14px;
 }
 
-.main-md-pick__goods-price--origin + .main-md-pick__goods-price-sale-wrapper {
+.main-md-pick__goods-price--origin + .main-md-pick__goods-price-sale-wrapper 
+{
     margin-top: 10px;
 }
 
-
-/* .d-block + .w-100
+.carousel-control-next 
 {
-    width: 960px !important; 
-    height: 960px !important;
-} */
+  right: -140px;
+  color: black !important;
+}
+
+.carousel-control-prev 
+{
+  left: -140px;
+}

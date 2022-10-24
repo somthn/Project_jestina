@@ -52,11 +52,13 @@ ul
 
 #header_wrap
 {
-    margin: 10px 20px 10px 20px;
+    padding: 10px 20px 10px 20px;
     max-width: auto;
     justify-content: space-between;
     z-index: 1000;
     position: sticky;
+    background-color: #f3f1ed;
+    /* background: url("/sunny/images/bg_common.jpg") repeat 0 0; */
 }
 
 .header__top
@@ -127,28 +129,29 @@ fieldset
     outline: none;
     vertical-align: middle;
     padding: 15px 40px 15px 10px;
-    background-color: aliceblue;
+    background-color: white;
 }
 
 .header__search-btn
 {
     position: absolute;
-    right: 13px;
-    top: 48%;
+    right: 1px;
+    top: 55%;
     -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
-    width: 22px;
-    height: 22px;
+    width: 20px;
+    height: 20px;
     font-size: 0;
     border: none;
-    background: white;
     cursor: pointer;
+    display: flex;
+    align-items: center;
 }
 
 .btn-search
 {
     position: absolute;
-    left: 160px;
+    left: 175px;
     top: 50%;
     -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
@@ -157,14 +160,14 @@ fieldset
     background: white;
     color: #999;
     cursor: pointer;
-    background-color: aliceblue;
+    background-color: white;
     font-size: 13px;
 }
 
 .header__search-btn-img
 {
-    width: 90%;
-    height: 90%;
+    width: 80%;
+    height: 80%;
     filter: invert(79%) sepia(0%) saturate(4454%) hue-rotate(174deg) brightness(79%) contrast(73%);
 }
 
@@ -207,7 +210,7 @@ fieldset
     font-weight: 500;
     cursor: pointer;
     position: relative;
-    font-size: 1rem;
+    font-size: 0.9rem;
 }
 
 .header__category-title:hover
@@ -230,8 +233,10 @@ fieldset
 
 .header__gnb
 {
-    font-size: 1rem;
+    font-size: 0.9rem;
     /* vertical-align: middle; */
+    display: flex;
+    align-items: center;
 }
 
 .header-gnb__list
@@ -296,8 +301,7 @@ fieldset
 
 .fa-solid
 {
-    width: 20px;
-    height: 20px;
+    font-size: 1rem;
     color: rgb(121, 121, 121);
     cursor: pointer;
 }
@@ -307,7 +311,8 @@ fieldset
 
 section#section1 
 {
-    height: 900px;
+    height: 840px;
+    max-height: 850px;
 }
 
 .main-slide__item-img
@@ -361,9 +366,9 @@ section#section1
 /* section 2 */
 #section2 
 {
-    background: rgb(226, 226, 226);
+    background-color: #f3f1ed;
     padding: 1px;
-    height: 900px;
+    max-height: 900px;
 }
 
 .section2-container
