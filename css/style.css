@@ -1,0 +1,425 @@
+/* 공통 */
+
+*
+{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+html
+{
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+body
+{
+    font-size: calc(0.35em + 0.7vw);
+    font-family: 'Noto Sans KR', sans-serif;
+    height: 100vh;
+}
+
+/* @media only screen and (max-width:1200px)
+{
+    body
+    {
+        font-size: 0.8rem;
+    }
+} */
+
+.container
+{
+    margin: 0 auto !important;
+    padding-right: 0!important;
+    padding-left: 0!important;
+    max-width: 200vh;
+    min-height: 100vh;
+}
+
+img, button 
+{
+    vertical-align: middle;
+    border: none;
+}
+
+ul
+{
+    margin-bottom: 0;
+}
+
+
+/* header */
+
+#header_wrap
+{
+    padding: 10px 20px 10px 20px;
+    max-width: auto;
+    justify-content: space-between;
+    z-index: 1000;
+    position: sticky;
+    background-color: #f3f1ed;
+    /* background: url("/sunny/images/bg_common.jpg") repeat 0 0; */
+}
+
+.header__top
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__top-box
+{
+    display: flex;
+}
+
+.logo img
+{
+    max-width: 15vh;
+    max-height: 3vh;
+    cursor: pointer;
+}
+
+.header__nav > ul
+{
+    display: flex;
+    justify-content: space-around;
+}
+
+.header__nav > ul > li
+{
+    margin-left: 15px;
+    color: #999;
+    cursor: pointer;
+}
+
+
+
+/* header-top search-form */
+
+.header__search
+{
+    position: relative;
+    border: 0;
+    z-index: 1000;
+}
+
+form
+{
+    display: none;
+    top: 200px;
+    position: absolute;
+    width: 120%;
+    top: 0px;
+    left: -240px;
+}
+
+fieldset
+{
+    vertical-align: middle;
+    border: none;
+}
+
+.header__search-input 
+{
+    width: auto;
+    height: 30px;
+    font-size: 12px;
+    color: #999;
+    border: 0;
+    outline: none;
+    vertical-align: middle;
+    padding: 15px 40px 15px 10px;
+    background-color: white;
+}
+
+.header__search-btn
+{
+    position: absolute;
+    right: 1px;
+    top: 55%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    font-size: 0;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.btn-search
+{
+    position: absolute;
+    left: 175px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    height: 22px;
+    border: none;
+    background: white;
+    color: #999;
+    cursor: pointer;
+    background-color: white;
+    font-size: 13px;
+}
+
+.header__search-btn-img
+{
+    width: 80%;
+    height: 80%;
+    filter: invert(79%) sepia(0%) saturate(4454%) hue-rotate(174deg) brightness(79%) contrast(73%);
+}
+
+/* header bottom */
+
+.header__bottom
+{
+    display: flex;
+    padding: 10px 0 10px 0;
+    white-space: nowrap;
+    justify-content: space-between;
+
+}
+
+.header__bottom-inner
+{
+    display: flex;
+    justify-content: left;
+    margin-right: 20px;
+}
+
+
+.header__category
+{
+    display: flex;
+    /* max-width: 800px; */
+    justify-content: space-between;
+    margin-right: 10px;
+    
+}
+
+.header__category-item
+{
+    margin: 0 10px 0 10px;
+    white-space: nowrap;
+}
+
+.header__category-title
+{
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+    font-size: 0.9rem;
+}
+
+.header__category-title:hover
+{
+    color: rgb(129, 129, 129);
+}
+
+    /* header bottom _ sub_category */
+.header-gnb
+{
+    width: auto;
+    height: auto;
+    background: whitesmoke;
+    position: absolute;
+    z-index: 1000;
+    padding: 2%;
+    border-radius: 10px;
+    font-size: 0.9rem;
+}
+
+.header__gnb
+{
+    font-size: 0.9rem;
+    /* vertical-align: middle; */
+    display: flex;
+    align-items: center;
+}
+
+.header-gnb__list
+{
+    display: flex;    
+}
+
+.header__gnb-item
+{
+    display: inline-block;
+    
+}
+
+.header-gnb__item
+{
+    padding-right: 30px;
+}
+
+.header-gnb__item-title
+{
+    display: inline-block;
+    padding: 5px 0 15px 0;
+    cursor: pointer;
+    font-weight: 500;    
+}
+
+.header-gnb__item-title:hover, .header-gnb__sub-title:hover
+{
+    color: rgb(129, 129, 129);
+}
+
+.header-gnb__sub-item
+{
+    padding: 5px 0 5px 0;
+}
+
+.header-gnb__sub-title, .header__gnb-title
+{
+    cursor: pointer;
+}
+
+.header__gnb > .header__gnb-item > .iu_link
+{
+    color: rgb(233, 160, 190);
+}
+
+.header__gnb > .header__gnb-item > .iu_link:hover
+{
+    color: rgb(233, 160, 190);
+}
+
+.header__gnb > .header__gnb-item > .header__gnb-title,
+.header__right > .header__btn-wrap > a
+{
+    padding-left: 10px;
+}
+
+.header__right
+{
+    display: flex;
+}
+
+.fa-solid
+{
+    font-size: 1rem;
+    color: rgb(121, 121, 121);
+    cursor: pointer;
+}
+
+
+/* section 1 */
+
+section#section1 
+{
+    /* height: 840px; */
+    max-height: 850px;
+    margin-bottom: 43%;
+    
+}
+
+.main-slide__item-img
+{
+    max-width: 100%;
+    height: auto;
+}
+
+.main__slide_wrap {
+    width: 100%;
+    height: 100%;
+}
+
+/** || Carousel Styles */
+
+#carousel 
+{
+    padding: 0;
+    margin: 0;
+    position: relative;
+    width: 300px;
+    height: auto;
+  }
+
+  #carousel li 
+  {
+    opacity: 0;
+    list-style: outside none none;
+    width: 300px;
+    position: absolute;
+    background: transparent;
+    transition: opacity 1s;
+  }
+
+.main-slide__item-img 
+{
+    width: 100%;
+    max-height: 900px;
+    width: 900px;
+}
+  
+  @media (min-width: 300px) 
+  {
+    #carousel, #carousel li, .main-slide__item-img 
+    {
+      width: 100%;
+      max-width: 100%;
+      max-height: 850px;
+    }
+  }
+
+/* section 2 */
+#section2 
+{
+    background-color: #f3f1ed;
+    padding: 1px;
+    max-height: 1000px;
+}
+
+.section2-container
+{
+    margin: 50px auto 0 auto;
+    width: 90%;
+    padding-bottom: 10%;
+}
+
+.main__title 
+{
+    width: 100%;
+    margin: 0 auto 28px auto;
+}
+
+.main__title-text 
+{
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 1;
+    color: #222;
+}
+
+/* section 3 */
+.section3_wrap
+{
+    width: 90%;
+    margin: 10% auto;
+}
+
+p.main__title-text.section3_title-text 
+{
+    width: 80%;
+}
+
+/* section 4 */
+#section4
+{
+    font-size: 1rem;
+    text-decoration: none;
+    color: inherit;
+}
+
+.section4-wrap
+{
+    width: 90%;
+    margin: 0 auto;
+}

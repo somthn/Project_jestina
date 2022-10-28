@@ -1,0 +1,168 @@
+.carousel 
+{
+  /* width: 80%; */
+  margin: 0 auto;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.img-box 
+{
+  max-width: 90%;
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+
+.img-box > img 
+{
+  max-width: 700px !important;
+  width: 50% !important;
+  margin: auto;
+}
+
+/* .carousel-inner > .carousel-item > img
+{   
+    width: 60% !important; 
+    height: 60% !important;
+} */
+
+.main-md-pick_textbox 
+{
+  padding-bottom: 5%;
+  border-bottom: 1px solid #d8d8d8;
+}
+
+.main-md-pick__title 
+{
+  font-size: 0.9rem;
+  color: #999;
+  line-height: 1;
+}
+
+.main-md-pick__text 
+{
+  margin-top: 7px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #222;
+}
+
+.md-pick__goods-wrapper 
+{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.md-pick__goods-contents 
+{
+  margin: 10% 10px;
+}
+
+/* .md-pick__goods 
+{
+  max-width: 270px;
+  max-height: 331px;
+} */
+
+.main-md-pick__goods-img,
+.product-search__recommend-img 
+{
+  width: 100%;
+}
+
+.md-pick__goods > a 
+{
+  display: flex;
+}
+
+.main-md-pick__info 
+{
+  text-align: center;
+}
+
+.img-box_right {
+  width: 100%;
+  margin-left: 5%;
+  /* margin-top: 5%; */
+  /* margin: 5%; */
+}
+
+.img-box_right-text 
+{
+  margin-top: 15%;
+}
+
+
+.main-md-pick__goods-img
+{
+  width: 100%;
+}
+
+.main-md-pick__goods-name 
+{
+    margin-top: 2%;
+    font-size: 0.9rem;
+    line-height: 1.2857142857;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    max-height: 2.5714285714em;
+    word-break: break-word;
+    color: #222;
+}
+
+.main-md-pick__goods-price-wrapper 
+{
+    margin-top: 8px;
+}
+
+.main-md-pick__goods-price 
+{
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: #222;
+    line-height: 1;
+}
+
+.main-md-pick__goods-price--origin 
+{
+    font-weight: 400;
+    height: 18px;
+    color: #999;
+    font-size: 0.8rem;
+}
+
+.main-md-pick__goods-price--origin + .main-md-pick__goods-price-sale-wrapper 
+{
+    margin-top: 10px;
+}
+
+.carousel-control-next 
+{
+  /* right: -140px; */
+  opacity: 1;
+  left: 100%;
+  width: 10%;
+}
+
+.carousel-control-prev 
+{
+  left: -130px;
+  opacity: 1;
+  right: 100%;
+  width: 10%;
+}
+
+span.carousel-control-prev-icon 
+{
+  filter: invert(68%) sepia(38%) saturate(218%) hue-rotate(283deg) brightness(81%) contrast(93%);
+}
+
+span.carousel-control-next-icon 
+{
+  filter: invert(68%) sepia(38%) saturate(218%) hue-rotate(283deg) brightness(81%) contrast(93%);
+}

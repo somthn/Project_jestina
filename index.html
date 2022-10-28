@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>J.ESTINA</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -17,13 +17,23 @@
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="/practice/carousel.css" />
-    <link rel="stylesheet" href="style.css" />
+    <!-- Slick css -->
+    <link rel="stylesheet" type="text/css" href="./css/slick.css" />
+    <link rel="stylesheet" href="./css/tabmenu.css" />
+    <link rel="stylesheet" href="./css/slider.css" />
+    <link rel="stylesheet" href="./css/carousel.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/section4.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <script
       src="https://kit.fontawesome.com/2e5f69190c.js"
       crossorigin="anonymous"
     ></script>
+    <!-- jQuery CDN-->
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <!-- Slick CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
   </head>
   <body>
     <div class="container">
@@ -675,11 +685,6 @@
       <section id="section2">
         <div class="section2-container">
           <script
-            src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-            crossorigin="anonymous"
-          ></script>
-          <script
             src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
             integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
             crossorigin="anonymous"
@@ -1021,13 +1026,2297 @@
             </a>
             <!-- / 화살표 버튼 끝 -->
             <!-- / 슬라이드 쇼 끝 -->
-
-            
           </div>
         </div>
       </section>
+      <section id="section3">
+        <div class="section3_wrap">
+          <!-- contents -->
+          <div class="container">
+            <div class="tabonoff content-wrap">
+              <div class="main__title section3_title">
+                <p class="main__title-text section3_title-text">PRODUCTS</p>
+              </div>
+              <!-- 탭메뉴 -->
+              <ul id="tabMenu" class="jq_tab tab-menu">
+                <li>
+                  <a href="javascript:void(0);" class="tit"><span>NEW</span></a>
+                </li>
+                <li>
+                  <a href="javascript:void(0);" class="tit"
+                    ><span>BEST</span></a
+                  >
+                </li>
+                <li>
+                  <a href="javascript:void(0);" class="tit"><span>NOW</span></a>
+                </li>
+              </ul>
+              <!-- //탭메뉴 -->
+              <div class="cont-wrap">
+                <!-- 탭1 -->
+                <div class="tab-cont">
+                  <div class="tabonoff sub-tabs">
+                    <!-- dots_indicator -->
+                    <div class="dots">
+                      <a href="javascript:void(0);" class="on"></a>
+                      <a href="javascript:void(0);"></a>
+                      <a href="javascript:void(0);"></a>
+                    </div>
+                    <!-- //dots_indicator -->
+
+                    <!-- 서브_탭메뉴 -->
+                    <ul class="jq_tab jq_stabMenu stab-menu">
+                      <li class="active">
+                        <a href="javascript:void(0);" class="tit">ALL</a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0);" class="tit">JEWELRY</a>
+                      </li>
+                      <li><a href="javascript:void(0);" class="tit">BAG</a></li>
+                      <li>
+                        <a href="javascript:void(0);" class="tit">WATCH</a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0);" class="tit">HAIR ACC</a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0);" class="tit">EXCLUSIVE</a>
+                      </li>
+                    </ul>
+                    <!-- //서브_탭메뉴 -->
+                    <div class="cont-wrap cont-box">
+                      <!-- 탭1_1-->
+                      <div class="tab-cont">
+                        <div class="tab-cont-wrap">
+                          <!-- 탭1 내부 슬라이드 -->
+                          <svg
+                            aria-hidden="true"
+                            style="
+                              position: absolute;
+                              width: 0;
+                              height: 0;
+                              overflow: hidden;
+                            "
+                            version="1.1"
+                            xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                          >
+                            <defs>
+                              <symbol id="icon-cross" viewBox="0 0 32 32">
+                                <title>close</title>
+                                <path
+                                  d="M31.7 25.7L22 16l9.7-9.7a1 1 0 0 0 0-1.4L27.1.3a1 1 0 0 0-1.4 0L16 10 6.3.3a1 1 0 0 0-1.4 0L.3 4.9a1 1 0 0 0 0 1.4L10 16 .3 25.7a1 1 0 0 0 0 1.4l4.6 4.6a1 1 0 0 0 1.4 0L16 22l9.7 9.7a1 1 0 0 0 1.4 0l4.6-4.6a1 1 0 0 0 0-1.4z"
+                                />
+                              </symbol>
+                            </defs>
+                          </svg>
+                          <div class="card-slider">
+                            <div class="card-wrapper">
+                              <article class="card">
+                                <picture class="card__background">
+                                  <img
+                                    src="../image/main_section3/new-product/hair_1-1.jpg"
+                                    alt="[아이유 PICK] LALA J 헤어 스크런치 - 뮤티드 핑크(JALJHS2BF832FA000)"
+                                  />
+                                </picture>
+                                <div class="card__text">
+                                  <h3 class="card__title">
+                                    [아이유 PICK] LALA J 헤어 스크런치 - 뮤티드
+                                    핑크(JALJHS2BF832FA000)
+                                  </h3>
+                                  <div class="card__duration">31,200원</div>
+                                </div>
+                              </article>
+                            </div>
+                            <div class="card-wrapper">
+                              <article class="card">
+                                <picture class="card__background">
+                                  <img
+                                    src="../image/main_section3/new-product/JEWELRY_1.png"
+                                    alt="BASIC PERLINA 목걸이 (JJP1NI2BF212SW420)"
+                                  />
+                                </picture>
+                                <div class="card__text">
+                                  <h3 class="card__title">
+                                    BASIC PERLINA 목걸이 (JJP1NI2BF212SW420)
+                                  </h3>
+                                  <div class="card__duration">100,000원</div>
+                                </div>
+                              </article>
+                            </div>
+                            <div class="card-wrapper">
+                              <article class="card">
+                                <picture class="card__background">
+                                  <img
+                                    src="../image/main_section3/new-product/bag_1.png"
+                                    alt="PIPE MD 호보 IV (JHNLHA2BF530IV010)"
+                                  />
+                                </picture>
+                                <div class="card__text">
+                                  <h3 class="card__title">
+                                    PIPE MD 호보 IV (JHNLHA2BF530IV010)
+                                  </h3>
+                                  <div class="card__duration">250,200원</div>
+                                </div>
+                              </article>
+                            </div>
+                            <div class="card-wrapper">
+                              <article class="card">
+                                <picture class="card__background">
+                                  <img
+                                    src="../image/main_section3/new-product/watch_1-1.jpg"
+                                    alt="[로만손] 클래식 슬림 남성 가죽시계 (RWTLMM2B2003RGBR0)"
+                                  />
+                                </picture>
+                                <div class="card__text">
+                                  <h3 class="card__title">
+                                    [로만손] 클래식 슬림 남성 가죽시계
+                                  </h3>
+                                  <div class="card__duration">179,100원</div>
+                                </div>
+                              </article>
+                            </div>
+                            <div class="card-wrapper">
+                              <article class="card">
+                                <picture class="card__background">
+                                  <img
+                                    src="../image/main_section3/new-product/JEWELRY_2.png"
+                                    alt="THE J 14K 팔찌 (JJSJBQ2BF419R47S0)"
+                                  />
+                                </picture>
+                                <div class="card__text">
+                                  <h3 class="card__title">
+                                    THE J 14K 팔찌 (JJSJBQ2BF419R47S0)
+                                  </h3>
+                                  <div class="card__duration">730,000원</div>
+                                </div>
+                              </article>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- //탭1_1 -->
+                      <!-- 탭1_2 -->
+                      <div class="tab-cont">
+                        <div class="tab-cont-wrap">
+                          <!-- 탭1 내부 슬라이드 -->
+                          <svg
+                            aria-hidden="true"
+                            style="
+                              position: absolute;
+                              width: 0;
+                              height: 0;
+                              overflow: hidden;
+                            "
+                            version="1.1"
+                            xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                          >
+                            <defs>
+                              <symbol id="icon-cross" viewBox="0 0 32 32">
+                                <title>close</title>
+                                <path
+                                  d="M31.7 25.7L22 16l9.7-9.7a1 1 0 0 0 0-1.4L27.1.3a1 1 0 0 0-1.4 0L16 10 6.3.3a1 1 0 0 0-1.4 0L.3 4.9a1 1 0 0 0 0 1.4L10 16 .3 25.7a1 1 0 0 0 0 1.4l4.6 4.6a1 1 0 0 0 1.4 0L16 22l9.7 9.7a1 1 0 0 0 1.4 0l4.6-4.6a1 1 0 0 0 0-1.4z"
+                                />
+                              </symbol>
+                            </defs>
+                          </svg>
+                          <div class="card-slider">
+                            <div class="card-wrapper">
+                              <article class="card">
+                                <picture class="card__background">
+                                  <img
+                                    src="./image/main_section3/new-product/JEWELRY_3.png"
+                                    alt=""
+                                  />
+                                </picture>
+                                <div class="card__text">
+                                  <h3 class="card__title">
+                                    WHITEMOND 목걸이+귀걸이 세트 (SET-J0-1027)
+                                  </h3>
+                                  <div class="card__duration">240,000원</div>
+                                </div>
+                              </article>
+                            </div>
+                            <div class="card-wrapper">
+                              <article class="card">
+                                <picture class="card__background">
+                                  <img
+                                    src="../image/main_section3/new-product/JEWELRY_4.png"
+                                    alt=""
+                                  />
+                                </picture>
+                                <div class="card__text">
+                                  <h3 class="card__title">
+                                    MARIEBEL 14K 목걸이+귀걸이 세트
+                                    (SET-J0-1032)
+                                  </h3>
+                                  <div class="card__duration">930,000원</div>
+                                </div>
+                              </article>
+                            </div>
+                            <div class="card-wrapper">
+                              <article class="card">
+                                <picture class="card__background">
+                                  <img
+                                    src="../image/main_section3/new-product/JEWELRY_5.png"
+                                    alt=""
+                                  />
+                                </picture>
+                                <div class="card__text">
+                                  <h3 class="card__title">
+                                    WHITEMOND 귀걸이 (JJMBEQ2BF550SW000)
+                                  </h3>
+                                  <div class="card__duration">130,000원</div>
+                                </div>
+                              </article>
+                            </div>
+                            <div class="card-wrapper">
+                              <article class="card">
+                                <picture class="card__background">
+                                  <img
+                                    src="../image/main_section3/new-product/JEWELRY_6.png"
+                                    alt=""
+                                  />
+                                </picture>
+                                <div class="card__text">
+                                  <h3 class="card__title">
+                                    WHITEMOND 목걸이 (JJMBNQ2BF549SW420)
+                                  </h3>
+                                  <div class="card__duration">120,000원</div>
+                                </div>
+                              </article>
+                            </div>
+                            <div class="card-wrapper">
+                              <article class="card">
+                                <picture class="card__background">
+                                  <img
+                                    src="../image/main_section3/new-product/JEWELRY_2.png"
+                                    alt="THE J 14K 팔찌 (JJSJBQ2BF419R47S0)"
+                                  />
+                                </picture>
+                                <div class="card__text">
+                                  <h3 class="card__title">
+                                    THE J 14K 팔찌 (JJSJBQ2BF419R47S0)
+                                  </h3>
+                                  <div class="card__duration">730,000원</div>
+                                </div>
+                              </article>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- //탭1_2 -->
+                      <!-- 탭1_3 -->
+                      <div class="tab-cont">
+                        <div class="tab-cont-wrap">
+                          <!-- 탭1 내부 슬라이드 -->
+                          <svg
+                            aria-hidden="true"
+                            style="
+                              position: absolute;
+                              width: 0;
+                              height: 0;
+                              overflow: hidden;
+                            "
+                            version="1.1"
+                            xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                          >
+                            <defs>
+                              <symbol id="icon-cross" viewBox="0 0 32 32">
+                                <title>close</title>
+                                <path
+                                  d="M31.7 25.7L22 16l9.7-9.7a1 1 0 0 0 0-1.4L27.1.3a1 1 0 0 0-1.4 0L16 10 6.3.3a1 1 0 0 0-1.4 0L.3 4.9a1 1 0 0 0 0 1.4L10 16 .3 25.7a1 1 0 0 0 0 1.4l4.6 4.6a1 1 0 0 0 1.4 0L16 22l9.7 9.7a1 1 0 0 0 1.4 0l4.6-4.6a1 1 0 0 0 0-1.4z"
+                                />
+                              </symbol>
+                            </defs>
+                          </svg>
+                          <div class="card-slider">
+                            <div class="card-wrapper">
+                              <article class="card">
+                                <picture class="card__background">
+                                  <img
+                                    src="./image/main_section3/new-product/bag_1.png"
+                                    alt="PIPE MD 호보 IV (JHNLHA2BF530IV010)"
+                                  />
+                                </picture>
+                                <div class="card__text">
+                                  <h3 class="card__title">
+                                    PIPE MD 호보 IV (JHNLHA2BF530IV010)
+                                  </h3>
+                                  <div class="card__duration">250,200원</div>
+                                </div>
+                              </article>
+                            </div>
+                            <div class="card-wrapper">
+                              <article class="card">
+                                <picture class="card__background">
+                                  <img
+                                    src="./image/main_section3/new-product/bag_2.png"
+                                    alt="BASIC PERLINA 목걸이 (JJP1NI2BF212SW420)"
+                                  />
+                                </picture>
+                                <div class="card__text">
+                                  <h3 class="card__title">
+                                    LOVE MINI 크로스 BK (JHNCHE2BF999BK980)
+                                  </h3>
+                                  <div class="card__duration">151,200원</div>
+                                </div>
+                              </article>
+                            </div>
+                            <div class="card-wrapper">
+                              <article class="card">
+                                <picture class="card__background">
+                                  <img
+                                    src="../image/main_section3/new-product/bag_3.png"
+                                    alt="PIPE MD 호보 BK (JHNLHA2BF530BK010)"
+                                  />
+                                </picture>
+                                <div class="card__text">
+                                  <h3 class="card__title">
+                                    PIPE MD 호보 BK (JHNLHA2BF530BK010)
+                                  </h3>
+                                  <div class="card__duration">250,200원</div>
+                                </div>
+                              </article>
+                            </div>
+                            <div class="card-wrapper">
+                              <article class="card">
+                                <picture class="card__background">
+                                  <img
+                                    src="../image/main_section3/new-product/bag_4.png"
+                                    alt="MAGIA MD 호보 BK (JHNLHA2BF885BK010)"
+                                  />
+                                </picture>
+                                <div class="card__text">
+                                  <h3 class="card__title">
+                                    MAGIA MD 호보 BK (JHNLHA2BF885BK010)
+                                  </h3>
+                                  <div class="card__duration">331,200원</div>
+                                </div>
+                              </article>
+                            </div>
+                            <div class="card-wrapper">
+                              <article class="card">
+                                <picture class="card__background">
+                                  <img
+                                    src="../image/main_section3/new-product/bag_5.png"
+                                    alt="[PRE-ORDER] FICO MINI 토트 BK (JHNCHD2BF878BK010)"
+                                  />
+                                </picture>
+                                <div class="card__text">
+                                  <h3 class="card__title">
+                                    [PRE-ORDER] FICO MINI 토트 BK
+                                    (JHNCHD2BF878BK010)
+                                  </h3>
+                                  <div class="card__duration">222,400원</div>
+                                </div>
+                              </article>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- //탭1_3 -->
+                      <!-- 탭1_4 -->
+                      <div class="tab-cont">
+                        <div class="tab-cont-wrap">
+                          <!-- 탭1 내부 슬라이드 -->
+                          <svg
+                            aria-hidden="true"
+                            style="
+                              position: absolute;
+                              width: 0;
+                              height: 0;
+                              overflow: hidden;
+                            "
+                            version="1.1"
+                            xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                          >
+                            <defs>
+                              <symbol id="icon-cross" viewBox="0 0 32 32">
+                                <title>close</title>
+                                <path
+                                  d="M31.7 25.7L22 16l9.7-9.7a1 1 0 0 0 0-1.4L27.1.3a1 1 0 0 0-1.4 0L16 10 6.3.3a1 1 0 0 0-1.4 0L.3 4.9a1 1 0 0 0 0 1.4L10 16 .3 25.7a1 1 0 0 0 0 1.4l4.6 4.6a1 1 0 0 0 1.4 0L16 22l9.7 9.7a1 1 0 0 0 1.4 0l4.6-4.6a1 1 0 0 0 0-1.4z"
+                                />
+                              </symbol>
+                            </defs>
+                          </svg>
+                          <div class="card-slider">
+                            <div class="card-wrapper">
+                              <article class="card">
+                                <picture class="card__background">
+                                  <img
+                                    src="./image/main_section3/new-product/watch_2.jpg"
+                                    alt="TIARA 가죽 시계 (JWT1LE2BF209WHBK0)"
+                                  />
+                                </picture>
+                                <div class="card__text">
+                                  <h3 class="card__title">
+                                    TIARA 가죽 시계 (JWT1LE2BF209WHBK0)
+                                  </h3>
+                                  <div class="card__duration">280,000원</div>
+                                </div>
+                              </article>
+                            </div>
+                            <div class="card-wrapper">
+                              <article class="card">
+                                <picture class="card__background">
+                                  <img
+                                    src="./image/main_section3/new-product/watch_3.jpg"
+                                    alt="TIARA 가죽 시계 (JWT1LE2BF209RGBE0)"
+                                  />
+                                </picture>
+                                <div class="card__text">
+                                  <h3 class="card__title">
+                                    TIARA 가죽 시계 (JWT1LE2BF209RGBE0)
+                                  </h3>
+                                  <div class="card__duration">280,000원</div>
+                                </div>
+                              </article>
+                            </div>
+                            <div class="card-wrapper">
+                              <article class="card">
+                                <picture class="card__background">
+                                  <img
+                                    src="./image/main_section3/new-product/watch_5.jpg"
+                                    alt="[로만손] 남성 파일럿 메탈 시계 (RWAMMM2B2027BKWH0)"
+                                  />
+                                </picture>
+                                <div class="card__text">
+                                  <h3 class="card__title">
+                                    [로만손] 남성 파일럿 메탈 시계
+                                    (RWAMMM2B2027BKWH0)
+                                  </h3>
+                                  <div class="card__duration">260,100원</div>
+                                </div>
+                              </article>
+                            </div>
+                            <div class="card-wrapper">
+                              <article class="card">
+                                <picture class="card__background">
+                                  <img
+                                    src="./image/main_section3/new-product/watch_1-1.jpg"
+                                    alt="[로만손] 클래식 슬림 남성 가죽시계 (RWTLMM2B2003RGBR0)"
+                                  />
+                                </picture>
+                                <div class="card__text">
+                                  <h3 class="card__title">
+                                    [로만손] 클래식 슬림 남성 가죽시계
+                                  </h3>
+                                  <div class="card__duration">179,100원</div>
+                                </div>
+                              </article>
+                            </div>
+                            <div class="card-wrapper">
+                              <article class="card">
+                                <picture class="card__background">
+                                  <img
+                                    src="./image/main_section3/new-product/watch_4.jpg"
+                                    alt="[로만손] 클래식 슬림 남성 가죽시계 (RWTLMM2B2003WHBK0)"
+                                  />
+                                </picture>
+                                <div class="card__text">
+                                  <h3 class="card__title">
+                                    [로만손] 클래식 슬림 남성 가죽시계
+                                    (RWTLMM2B2003WHBK0)
+                                  </h3>
+                                  <div class="card__duration">179,100원</div>
+                                </div>
+                              </article>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- //탭1_4 -->
+                      <!-- 탭1_5 -->
+                      <div class="tab-cont">
+                        <div class="tab-cont-wrap">
+                          <!-- 탭1 내부 슬라이드 -->
+                          <svg
+                            aria-hidden="true"
+                            style="
+                              position: absolute;
+                              width: 0;
+                              height: 0;
+                              overflow: hidden;
+                            "
+                            version="1.1"
+                            xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                          >
+                            <defs>
+                              <symbol id="icon-cross" viewBox="0 0 32 32">
+                                <title>close</title>
+                                <path
+                                  d="M31.7 25.7L22 16l9.7-9.7a1 1 0 0 0 0-1.4L27.1.3a1 1 0 0 0-1.4 0L16 10 6.3.3a1 1 0 0 0-1.4 0L.3 4.9a1 1 0 0 0 0 1.4L10 16 .3 25.7a1 1 0 0 0 0 1.4l4.6 4.6a1 1 0 0 0 1.4 0L16 22l9.7 9.7a1 1 0 0 0 1.4 0l4.6-4.6a1 1 0 0 0 0-1.4z"
+                                />
+                              </symbol>
+                            </defs>
+                          </svg>
+                          <div class="card-slider">
+                            <div class="card-wrapper">
+                              <article class="card">
+                                <picture class="card__background">
+                                  <img
+                                    src="./image/main_section3/new-product/hair_1-1.jpg"
+                                    alt="[아이유 PICK] LALA J 헤어 스크런치 - 뮤티드 핑크(JALJHS2BF832FA000)"
+                                  />
+                                </picture>
+                                <div class="card__text">
+                                  <h3 class="card__title">
+                                    [아이유 PICK] LALA J 헤어 스크런치 - 뮤티드
+                                    핑크(JALJHS2BF832FA000)
+                                  </h3>
+                                  <div class="card__duration">31,200원</div>
+                                </div>
+                              </article>
+                            </div>
+                            <div class="card-wrapper">
+                              <article class="card">
+                                <picture class="card__background">
+                                  <img
+                                    src="./image/main_section3/new-product/hair_2.jpg"
+                                    alt="LALA J 리본 헤어핀 L (JALJHP2BF828FA000)"
+                                  />
+                                </picture>
+                                <div class="card__text">
+                                  <h3 class="card__title">
+                                    LALA J 리본 헤어핀 L (JALJHP2BF828FA000)
+                                  </h3>
+                                  <div class="card__duration">43,200원</div>
+                                </div>
+                              </article>
+                            </div>
+                            <div class="card-wrapper">
+                              <article class="card">
+                                <picture class="card__background">
+                                  <img
+                                    src="./image/main_section3/new-product/hair_3.png"
+                                    alt="LALA J 헤어밴드 - 샌드 베이지 (JALJHB2BF833FA000)"
+                                  />
+                                </picture>
+                                <div class="card__text">
+                                  <h3 class="card__title">
+                                    LALA J 헤어밴드 - 샌드 베이지
+                                    (JALJHB2BF833FA000)
+                                  </h3>
+                                  <div class="card__duration">39,200원</div>
+                                </div>
+                              </article>
+                            </div>
+                            <div class="card-wrapper">
+                              <article class="card">
+                                <picture class="card__background">
+                                  <img
+                                    src="./image/main_section3/new-product/hair_4.png"
+                                    alt="LALA J 헤어 스크런치 - 딥 블랙 (JALJHS2BF831FA000)"
+                                  />
+                                </picture>
+                                <div class="card__text">
+                                  <h3 class="card__title">
+                                    LALA J 헤어 스크런치 - 딥 블랙
+                                    (JALJHS2BF831FA000)
+                                  </h3>
+                                  <div class="card__duration">31,200원</div>
+                                </div>
+                              </article>
+                            </div>
+                            <div class="card-wrapper">
+                              <article class="card">
+                                <picture class="card__background">
+                                  <img
+                                    src="./image/main_section3/new-product/hair_5.png"
+                                    alt="THE J 헤어핀 (JASJHP2BF824BR000)"
+                                  />
+                                </picture>
+                                <div class="card__text">
+                                  <h3 class="card__title">
+                                    THE J 헤어핀 (JASJHP2BF824BR000)
+                                  </h3>
+                                  <div class="card__duration">130,000원</div>
+                                </div>
+                              </article>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- //탭1_5 -->
+                      <!-- 탭1_6 -->
+                      <div class="tab-cont">
+                        <div class="tab-cont-wrap">
+                          <!-- 탭1 내부 슬라이드 -->
+                          <svg
+                            aria-hidden="true"
+                            style="
+                              position: absolute;
+                              width: 0;
+                              height: 0;
+                              overflow: hidden;
+                            "
+                            version="1.1"
+                            xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                          >
+                            <defs>
+                              <symbol id="icon-cross" viewBox="0 0 32 32">
+                                <title>close</title>
+                                <path
+                                  d="M31.7 25.7L22 16l9.7-9.7a1 1 0 0 0 0-1.4L27.1.3a1 1 0 0 0-1.4 0L16 10 6.3.3a1 1 0 0 0-1.4 0L.3 4.9a1 1 0 0 0 0 1.4L10 16 .3 25.7a1 1 0 0 0 0 1.4l4.6 4.6a1 1 0 0 0 1.4 0L16 22l9.7 9.7a1 1 0 0 0 1.4 0l4.6-4.6a1 1 0 0 0 0-1.4z"
+                                />
+                              </symbol>
+                            </defs>
+                          </svg>
+                          <div class="card-slider">
+                            <div class="card-wrapper">
+                              <article class="card">
+                                <picture class="card__background">
+                                  <img
+                                    src="../image/main_section3/new-product/hair_1-1.jpg"
+                                    alt="[아이유 PICK] LALA J 헤어 스크런치 - 뮤티드 핑크(JALJHS2BF832FA000)"
+                                  />
+                                </picture>
+                                <div class="card__text">
+                                  <h3 class="card__title">
+                                    [아이유 PICK] LALA J 헤어 스크런치 - 뮤티드
+                                    핑크(JALJHS2BF832FA000)
+                                  </h3>
+                                  <div class="card__duration">31,200원</div>
+                                </div>
+                              </article>
+                            </div>
+                            <div class="card-wrapper">
+                              <article class="card">
+                                <picture class="card__background">
+                                  <img
+                                    src="../image/main_section3/new-product/JEWELRY_1.png"
+                                    alt="BASIC PERLINA 목걸이 (JJP1NI2BF212SW420)"
+                                  />
+                                </picture>
+                                <div class="card__text">
+                                  <h3 class="card__title">
+                                    BASIC PERLINA 목걸이 (JJP1NI2BF212SW420)
+                                  </h3>
+                                  <div class="card__duration">100,000원</div>
+                                </div>
+                              </article>
+                            </div>
+                            <div class="card-wrapper">
+                              <article class="card">
+                                <picture class="card__background">
+                                  <img
+                                    src="../image/main_section3/new-product/bag_1.png"
+                                    alt="PIPE MD 호보 IV (JHNLHA2BF530IV010)"
+                                  />
+                                </picture>
+                                <div class="card__text">
+                                  <h3 class="card__title">
+                                    PIPE MD 호보 IV (JHNLHA2BF530IV010)
+                                  </h3>
+                                  <div class="card__duration">250,200원</div>
+                                </div>
+                              </article>
+                            </div>
+                            <div class="card-wrapper">
+                              <article class="card">
+                                <picture class="card__background">
+                                  <img
+                                    src="../image/main_section3/new-product/watch_1-1.jpg"
+                                    alt="[로만손] 클래식 슬림 남성 가죽시계 (RWTLMM2B2003RGBR0)"
+                                  />
+                                </picture>
+                                <div class="card__text">
+                                  <h3 class="card__title">
+                                    [로만손] 클래식 슬림 남성 가죽시계
+                                  </h3>
+                                  <div class="card__duration">179,100원</div>
+                                </div>
+                              </article>
+                            </div>
+                            <div class="card-wrapper">
+                              <article class="card">
+                                <picture class="card__background">
+                                  <img
+                                    src="../image/main_section3/new-product/JEWELRY_2.png"
+                                    alt="THE J 14K 팔찌 (JJSJBQ2BF419R47S0)"
+                                  />
+                                </picture>
+                                <div class="card__text">
+                                  <h3 class="card__title">
+                                    THE J 14K 팔찌 (JJSJBQ2BF419R47S0)
+                                  </h3>
+                                  <div class="card__duration">730,000원</div>
+                                </div>
+                              </article>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- //탭1_6 -->
+                    </div>
+                  </div>
+                </div>
+                <!-- //탭1 끝-->
+                <!-- 탭2 -->
+                <div class="tab-cont">
+                  <div class="tabonoff sub-tabs">
+                    <!-- 서브_탭메뉴 -->
+                    <ul class="jq_tab jq_stabMenu stab-menu">
+                      <li class="active">
+                        <a href="javascript:void(0);" class="tit">ALL</a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0);" class="tit">JEWELRY</a>
+                      </li>
+                      <li><a href="javascript:void(0);" class="tit">BAG</a></li>
+                      <li>
+                        <a href="javascript:void(0);" class="tit">WATCH</a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0);" class="tit">HAIR ACC</a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0);" class="tit">EXCLUSIVE</a>
+                      </li>
+                    </ul>
+                    <!-- //서브_탭메뉴 -->
+                    <div class="cont-wrap cont-box">
+                      <!-- 탭2_1-->
+                      <div class="tab-cont">
+                        <div class="tab-cont-wrap">
+                          <!-- 탭1 내부 슬라이드 -->
+                          <svg
+                            aria-hidden="true"
+                            style="
+                              position: absolute;
+                              width: 0;
+                              height: 0;
+                              overflow: hidden;
+                            "
+                            version="1.1"
+                            xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                          >
+                            <defs>
+                              <symbol id="icon-cross" viewBox="0 0 32 32">
+                                <title>close</title>
+                                <path
+                                  d="M31.7 25.7L22 16l9.7-9.7a1 1 0 0 0 0-1.4L27.1.3a1 1 0 0 0-1.4 0L16 10 6.3.3a1 1 0 0 0-1.4 0L.3 4.9a1 1 0 0 0 0 1.4L10 16 .3 25.7a1 1 0 0 0 0 1.4l4.6 4.6a1 1 0 0 0 1.4 0L16 22l9.7 9.7a1 1 0 0 0 1.4 0l4.6-4.6a1 1 0 0 0 0-1.4z"
+                                />
+                              </symbol>
+                            </defs>
+                          </svg>
+                          <div class="card-slider">
+                            <div class="card-wrapper">
+                              <article class="card">
+                                <picture class="card__background">
+                                  <img
+                                    src="../image/main_section3/new-product/hair_1-1.jpg"
+                                    alt="[아이유 PICK] LALA J 헤어 스크런치 - 뮤티드 핑크(JALJHS2BF832FA000)"
+                                  />
+                                </picture>
+                                <div class="card__text">
+                                  <h3 class="card__title">
+                                    [아이유 PICK] LALA J 헤어 스크런치 - 뮤티드
+                                    핑크(JALJHS2BF832FA000)
+                                  </h3>
+                                  <div class="card__duration">31,200원</div>
+                                </div>
+                              </article>
+                            </div>
+                            <div class="card-wrapper">
+                              <article class="card">
+                                <picture class="card__background">
+                                  <img
+                                    src="../image/main_section3/new-product/JEWELRY_1.png"
+                                    alt="BASIC PERLINA 목걸이 (JJP1NI2BF212SW420)"
+                                  />
+                                </picture>
+                                <div class="card__text">
+                                  <h3 class="card__title">
+                                    BASIC PERLINA 목걸이 (JJP1NI2BF212SW420)
+                                  </h3>
+                                  <div class="card__duration">100,000원</div>
+                                </div>
+                              </article>
+                            </div>
+                            <div class="card-wrapper">
+                              <article class="card">
+                                <picture class="card__background">
+                                  <img
+                                    src="../image/main_section3/new-product/bag_1.png"
+                                    alt="PIPE MD 호보 IV (JHNLHA2BF530IV010)"
+                                  />
+                                </picture>
+                                <div class="card__text">
+                                  <h3 class="card__title">
+                                    PIPE MD 호보 IV (JHNLHA2BF530IV010)
+                                  </h3>
+                                  <div class="card__duration">250,200원</div>
+                                </div>
+                              </article>
+                            </div>
+                            <div class="card-wrapper">
+                              <article class="card">
+                                <picture class="card__background">
+                                  <img
+                                    src="../image/main_section3/new-product/watch_1-1.jpg"
+                                    alt="[로만손] 클래식 슬림 남성 가죽시계 (RWTLMM2B2003RGBR0)"
+                                  />
+                                </picture>
+                                <div class="card__text">
+                                  <h3 class="card__title">
+                                    [로만손] 클래식 슬림 남성 가죽시계
+                                  </h3>
+                                  <div class="card__duration">179,100원</div>
+                                </div>
+                              </article>
+                            </div>
+                            <div class="card-wrapper">
+                              <article class="card">
+                                <picture class="card__background">
+                                  <img
+                                    src="../image/main_section3/new-product/JEWELRY_2.png"
+                                    alt="THE J 14K 팔찌 (JJSJBQ2BF419R47S0)"
+                                  />
+                                </picture>
+                                <div class="card__text">
+                                  <h3 class="card__title">
+                                    THE J 14K 팔찌 (JJSJBQ2BF419R47S0)
+                                  </h3>
+                                  <div class="card__duration">730,000원</div>
+                                </div>
+                              </article>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- //탭2_1 -->
+                      <!-- 탭2_2 -->
+                      <div class="tab-cont">
+                        <div class="tab-cont-wrap">
+                          <!-- 탭1 내부 슬라이드 -->
+                          <svg
+                            aria-hidden="true"
+                            style="
+                              position: absolute;
+                              width: 0;
+                              height: 0;
+                              overflow: hidden;
+                            "
+                            version="1.1"
+                            xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                          >
+                            <defs>
+                              <symbol id="icon-cross" viewBox="0 0 32 32">
+                                <title>close</title>
+                                <path
+                                  d="M31.7 25.7L22 16l9.7-9.7a1 1 0 0 0 0-1.4L27.1.3a1 1 0 0 0-1.4 0L16 10 6.3.3a1 1 0 0 0-1.4 0L.3 4.9a1 1 0 0 0 0 1.4L10 16 .3 25.7a1 1 0 0 0 0 1.4l4.6 4.6a1 1 0 0 0 1.4 0L16 22l9.7 9.7a1 1 0 0 0 1.4 0l4.6-4.6a1 1 0 0 0 0-1.4z"
+                                />
+                              </symbol>
+                            </defs>
+                          </svg>
+                          <div class="card-slider">
+                            <div class="card-wrapper">
+                              <article class="card">
+                                <picture class="card__background">
+                                  <img
+                                    src="../image/main_section3/new-product/hair_1-1.jpg"
+                                    alt="[아이유 PICK] LALA J 헤어 스크런치 - 뮤티드 핑크(JALJHS2BF832FA000)"
+                                  />
+                                </picture>
+                                <div class="card__text">
+                                  <h3 class="card__title">
+                                    [아이유 PICK] LALA J 헤어 스크런치 - 뮤티드
+                                    핑크(JALJHS2BF832FA000)
+                                  </h3>
+                                  <div class="card__duration">31,200원</div>
+                                </div>
+                              </article>
+                            </div>
+                            <div class="card-wrapper">
+                              <article class="card">
+                                <picture class="card__background">
+                                  <img
+                                    src="../image/main_section3/new-product/JEWELRY_1.png"
+                                    alt="BASIC PERLINA 목걸이 (JJP1NI2BF212SW420)"
+                                  />
+                                </picture>
+                                <div class="card__text">
+                                  <h3 class="card__title">
+                                    BASIC PERLINA 목걸이 (JJP1NI2BF212SW420)
+                                  </h3>
+                                  <div class="card__duration">100,000원</div>
+                                </div>
+                              </article>
+                            </div>
+                            <div class="card-wrapper">
+                              <article class="card">
+                                <picture class="card__background">
+                                  <img
+                                    src="../image/main_section3/new-product/bag_1.png"
+                                    alt="PIPE MD 호보 IV (JHNLHA2BF530IV010)"
+                                  />
+                                </picture>
+                                <div class="card__text">
+                                  <h3 class="card__title">
+                                    PIPE MD 호보 IV (JHNLHA2BF530IV010)
+                                  </h3>
+                                  <div class="card__duration">250,200원</div>
+                                </div>
+                              </article>
+                            </div>
+                            <div class="card-wrapper">
+                              <article class="card">
+                                <picture class="card__background">
+                                  <img
+                                    src="../image/main_section3/new-product/watch_1-1.jpg"
+                                    alt="[로만손] 클래식 슬림 남성 가죽시계 (RWTLMM2B2003RGBR0)"
+                                  />
+                                </picture>
+                                <div class="card__text">
+                                  <h3 class="card__title">
+                                    [로만손] 클래식 슬림 남성 가죽시계
+                                  </h3>
+                                  <div class="card__duration">179,100원</div>
+                                </div>
+                              </article>
+                            </div>
+                            <div class="card-wrapper">
+                              <article class="card">
+                                <picture class="card__background">
+                                  <img
+                                    src="../image/main_section3/new-product/JEWELRY_2.png"
+                                    alt="THE J 14K 팔찌 (JJSJBQ2BF419R47S0)"
+                                  />
+                                </picture>
+                                <div class="card__text">
+                                  <h3 class="card__title">
+                                    THE J 14K 팔찌 (JJSJBQ2BF419R47S0)
+                                  </h3>
+                                  <div class="card__duration">730,000원</div>
+                                </div>
+                              </article>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- //탭2_2 -->
+
+                      <!-- 탭2_3 -->
+                      <div class="tab-cont">
+                        <div class="tab-cont-wrap">
+                          <!-- 탭1 내부 슬라이드 -->
+                          <svg
+                            aria-hidden="true"
+                            style="
+                              position: absolute;
+                              width: 0;
+                              height: 0;
+                              overflow: hidden;
+                            "
+                            version="1.1"
+                            xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                          >
+                            <defs>
+                              <symbol id="icon-cross" viewBox="0 0 32 32">
+                                <title>close</title>
+                                <path
+                                  d="M31.7 25.7L22 16l9.7-9.7a1 1 0 0 0 0-1.4L27.1.3a1 1 0 0 0-1.4 0L16 10 6.3.3a1 1 0 0 0-1.4 0L.3 4.9a1 1 0 0 0 0 1.4L10 16 .3 25.7a1 1 0 0 0 0 1.4l4.6 4.6a1 1 0 0 0 1.4 0L16 22l9.7 9.7a1 1 0 0 0 1.4 0l4.6-4.6a1 1 0 0 0 0-1.4z"
+                                />
+                              </symbol>
+                            </defs>
+                          </svg>
+                          <div class="card-slider">
+                            <div class="card-wrapper">
+                              <article class="card">
+                                <picture class="card__background">
+                                  <img
+                                    src="../image/main_section3/new-product/hair_1-1.jpg"
+                                    alt="[아이유 PICK] LALA J 헤어 스크런치 - 뮤티드 핑크(JALJHS2BF832FA000)"
+                                  />
+                                </picture>
+                                <div class="card__text">
+                                  <h3 class="card__title">
+                                    [아이유 PICK] LALA J 헤어 스크런치 - 뮤티드
+                                    핑크(JALJHS2BF832FA000)
+                                  </h3>
+                                  <div class="card__duration">31,200원</div>
+                                </div>
+                              </article>
+                            </div>
+                            <div class="card-wrapper">
+                              <article class="card">
+                                <picture class="card__background">
+                                  <img
+                                    src="../image/main_section3/new-product/JEWELRY_1.png"
+                                    alt="BASIC PERLINA 목걸이 (JJP1NI2BF212SW420)"
+                                  />
+                                </picture>
+                                <div class="card__text">
+                                  <h3 class="card__title">
+                                    BASIC PERLINA 목걸이 (JJP1NI2BF212SW420)
+                                  </h3>
+                                  <div class="card__duration">100,000원</div>
+                                </div>
+                              </article>
+                            </div>
+                            <div class="card-wrapper">
+                              <article class="card">
+                                <picture class="card__background">
+                                  <img
+                                    src="../image/main_section3/new-product/bag_1.png"
+                                    alt="PIPE MD 호보 IV (JHNLHA2BF530IV010)"
+                                  />
+                                </picture>
+                                <div class="card__text">
+                                  <h3 class="card__title">
+                                    PIPE MD 호보 IV (JHNLHA2BF530IV010)
+                                  </h3>
+                                  <div class="card__duration">250,200원</div>
+                                </div>
+                              </article>
+                            </div>
+                            <div class="card-wrapper">
+                              <article class="card">
+                                <picture class="card__background">
+                                  <img
+                                    src="../image/main_section3/new-product/watch_1-1.jpg"
+                                    alt="[로만손] 클래식 슬림 남성 가죽시계 (RWTLMM2B2003RGBR0)"
+                                  />
+                                </picture>
+                                <div class="card__text">
+                                  <h3 class="card__title">
+                                    [로만손] 클래식 슬림 남성 가죽시계
+                                  </h3>
+                                  <div class="card__duration">179,100원</div>
+                                </div>
+                              </article>
+                            </div>
+                            <div class="card-wrapper">
+                              <article class="card">
+                                <picture class="card__background">
+                                  <img
+                                    src="../image/main_section3/new-product/JEWELRY_2.png"
+                                    alt="THE J 14K 팔찌 (JJSJBQ2BF419R47S0)"
+                                  />
+                                </picture>
+                                <div class="card__text">
+                                  <h3 class="card__title">
+                                    THE J 14K 팔찌 (JJSJBQ2BF419R47S0)
+                                  </h3>
+                                  <div class="card__duration">730,000원</div>
+                                </div>
+                              </article>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- //탭2_3 -->
+
+                      <!-- 탭2_4 -->
+                      <div class="tab-cont">
+                        <div class="tab-cont-wrap">
+                          <!-- 탭1 내부 슬라이드 -->
+                          <svg
+                            aria-hidden="true"
+                            style="
+                              position: absolute;
+                              width: 0;
+                              height: 0;
+                              overflow: hidden;
+                            "
+                            version="1.1"
+                            xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                          >
+                            <defs>
+                              <symbol id="icon-cross" viewBox="0 0 32 32">
+                                <title>close</title>
+                                <path
+                                  d="M31.7 25.7L22 16l9.7-9.7a1 1 0 0 0 0-1.4L27.1.3a1 1 0 0 0-1.4 0L16 10 6.3.3a1 1 0 0 0-1.4 0L.3 4.9a1 1 0 0 0 0 1.4L10 16 .3 25.7a1 1 0 0 0 0 1.4l4.6 4.6a1 1 0 0 0 1.4 0L16 22l9.7 9.7a1 1 0 0 0 1.4 0l4.6-4.6a1 1 0 0 0 0-1.4z"
+                                />
+                              </symbol>
+                            </defs>
+                          </svg>
+                          <div class="card-slider">
+                            <div class="card-wrapper">
+                              <article class="card">
+                                <picture class="card__background">
+                                  <img
+                                    src="../image/main_section3/new-product/hair_1-1.jpg"
+                                    alt="[아이유 PICK] LALA J 헤어 스크런치 - 뮤티드 핑크(JALJHS2BF832FA000)"
+                                  />
+                                </picture>
+                                <div class="card__text">
+                                  <h3 class="card__title">
+                                    [아이유 PICK] LALA J 헤어 스크런치 - 뮤티드
+                                    핑크(JALJHS2BF832FA000)
+                                  </h3>
+                                  <div class="card__duration">31,200원</div>
+                                </div>
+                              </article>
+                            </div>
+                            <div class="card-wrapper">
+                              <article class="card">
+                                <picture class="card__background">
+                                  <img
+                                    src="../image/main_section3/new-product/JEWELRY_1.png"
+                                    alt="BASIC PERLINA 목걸이 (JJP1NI2BF212SW420)"
+                                  />
+                                </picture>
+                                <div class="card__text">
+                                  <h3 class="card__title">
+                                    BASIC PERLINA 목걸이 (JJP1NI2BF212SW420)
+                                  </h3>
+                                  <div class="card__duration">100,000원</div>
+                                </div>
+                              </article>
+                            </div>
+                            <div class="card-wrapper">
+                              <article class="card">
+                                <picture class="card__background">
+                                  <img
+                                    src="../image/main_section3/new-product/bag_1.png"
+                                    alt="PIPE MD 호보 IV (JHNLHA2BF530IV010)"
+                                  />
+                                </picture>
+                                <div class="card__text">
+                                  <h3 class="card__title">
+                                    PIPE MD 호보 IV (JHNLHA2BF530IV010)
+                                  </h3>
+                                  <div class="card__duration">250,200원</div>
+                                </div>
+                              </article>
+                            </div>
+                            <div class="card-wrapper">
+                              <article class="card">
+                                <picture class="card__background">
+                                  <img
+                                    src="../image/main_section3/new-product/watch_1-1.jpg"
+                                    alt="[로만손] 클래식 슬림 남성 가죽시계 (RWTLMM2B2003RGBR0)"
+                                  />
+                                </picture>
+                                <div class="card__text">
+                                  <h3 class="card__title">
+                                    [로만손] 클래식 슬림 남성 가죽시계
+                                  </h3>
+                                  <div class="card__duration">179,100원</div>
+                                </div>
+                              </article>
+                            </div>
+                            <div class="card-wrapper">
+                              <article class="card">
+                                <picture class="card__background">
+                                  <img
+                                    src="../image/main_section3/new-product/JEWELRY_2.png"
+                                    alt="THE J 14K 팔찌 (JJSJBQ2BF419R47S0)"
+                                  />
+                                </picture>
+                                <div class="card__text">
+                                  <h3 class="card__title">
+                                    THE J 14K 팔찌 (JJSJBQ2BF419R47S0)
+                                  </h3>
+                                  <div class="card__duration">730,000원</div>
+                                </div>
+                              </article>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- //탭2_4 -->
+
+                      <!-- 탭2_5 -->
+                      <div class="tab-cont">
+                        <div class="tab-cont-wrap">
+                          <!-- 탭1 내부 슬라이드 -->
+                          <svg
+                            aria-hidden="true"
+                            style="
+                              position: absolute;
+                              width: 0;
+                              height: 0;
+                              overflow: hidden;
+                            "
+                            version="1.1"
+                            xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                          >
+                            <defs>
+                              <symbol id="icon-cross" viewBox="0 0 32 32">
+                                <title>close</title>
+                                <path
+                                  d="M31.7 25.7L22 16l9.7-9.7a1 1 0 0 0 0-1.4L27.1.3a1 1 0 0 0-1.4 0L16 10 6.3.3a1 1 0 0 0-1.4 0L.3 4.9a1 1 0 0 0 0 1.4L10 16 .3 25.7a1 1 0 0 0 0 1.4l4.6 4.6a1 1 0 0 0 1.4 0L16 22l9.7 9.7a1 1 0 0 0 1.4 0l4.6-4.6a1 1 0 0 0 0-1.4z"
+                                />
+                              </symbol>
+                            </defs>
+                          </svg>
+                          <div class="card-slider">
+                            <div class="card-wrapper">
+                              <article class="card">
+                                <picture class="card__background">
+                                  <img
+                                    src="../image/main_section3/new-product/hair_1-1.jpg"
+                                    alt="[아이유 PICK] LALA J 헤어 스크런치 - 뮤티드 핑크(JALJHS2BF832FA000)"
+                                  />
+                                </picture>
+                                <div class="card__text">
+                                  <h3 class="card__title">
+                                    [아이유 PICK] LALA J 헤어 스크런치 - 뮤티드
+                                    핑크(JALJHS2BF832FA000)
+                                  </h3>
+                                  <div class="card__duration">31,200원</div>
+                                </div>
+                              </article>
+                            </div>
+                            <div class="card-wrapper">
+                              <article class="card">
+                                <picture class="card__background">
+                                  <img
+                                    src="../image/main_section3/new-product/JEWELRY_1.png"
+                                    alt="BASIC PERLINA 목걸이 (JJP1NI2BF212SW420)"
+                                  />
+                                </picture>
+                                <div class="card__text">
+                                  <h3 class="card__title">
+                                    BASIC PERLINA 목걸이 (JJP1NI2BF212SW420)
+                                  </h3>
+                                  <div class="card__duration">100,000원</div>
+                                </div>
+                              </article>
+                            </div>
+                            <div class="card-wrapper">
+                              <article class="card">
+                                <picture class="card__background">
+                                  <img
+                                    src="../image/main_section3/new-product/bag_1.png"
+                                    alt="PIPE MD 호보 IV (JHNLHA2BF530IV010)"
+                                  />
+                                </picture>
+                                <div class="card__text">
+                                  <h3 class="card__title">
+                                    PIPE MD 호보 IV (JHNLHA2BF530IV010)
+                                  </h3>
+                                  <div class="card__duration">250,200원</div>
+                                </div>
+                              </article>
+                            </div>
+                            <div class="card-wrapper">
+                              <article class="card">
+                                <picture class="card__background">
+                                  <img
+                                    src="../image/main_section3/new-product/watch_1-1.jpg"
+                                    alt="[로만손] 클래식 슬림 남성 가죽시계 (RWTLMM2B2003RGBR0)"
+                                  />
+                                </picture>
+                                <div class="card__text">
+                                  <h3 class="card__title">
+                                    [로만손] 클래식 슬림 남성 가죽시계
+                                  </h3>
+                                  <div class="card__duration">179,100원</div>
+                                </div>
+                              </article>
+                            </div>
+                            <div class="card-wrapper">
+                              <article class="card">
+                                <picture class="card__background">
+                                  <img
+                                    src="../image/main_section3/new-product/JEWELRY_2.png"
+                                    alt="THE J 14K 팔찌 (JJSJBQ2BF419R47S0)"
+                                  />
+                                </picture>
+                                <div class="card__text">
+                                  <h3 class="card__title">
+                                    THE J 14K 팔찌 (JJSJBQ2BF419R47S0)
+                                  </h3>
+                                  <div class="card__duration">730,000원</div>
+                                </div>
+                              </article>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- //탭2_5 -->
+
+                      <!-- 탭2_6 -->
+                      <div class="tab-cont">
+                        <div class="tab-cont-wrap">
+                          <!-- 탭1 내부 슬라이드 -->
+                          <svg
+                            aria-hidden="true"
+                            style="
+                              position: absolute;
+                              width: 0;
+                              height: 0;
+                              overflow: hidden;
+                            "
+                            version="1.1"
+                            xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                          >
+                            <defs>
+                              <symbol id="icon-cross" viewBox="0 0 32 32">
+                                <title>close</title>
+                                <path
+                                  d="M31.7 25.7L22 16l9.7-9.7a1 1 0 0 0 0-1.4L27.1.3a1 1 0 0 0-1.4 0L16 10 6.3.3a1 1 0 0 0-1.4 0L.3 4.9a1 1 0 0 0 0 1.4L10 16 .3 25.7a1 1 0 0 0 0 1.4l4.6 4.6a1 1 0 0 0 1.4 0L16 22l9.7 9.7a1 1 0 0 0 1.4 0l4.6-4.6a1 1 0 0 0 0-1.4z"
+                                />
+                              </symbol>
+                            </defs>
+                          </svg>
+                          <div class="card-slider">
+                            <div class="card-wrapper">
+                              <article class="card">
+                                <picture class="card__background">
+                                  <img
+                                    src="../image/main_section3/new-product/hair_1-1.jpg"
+                                    alt="[아이유 PICK] LALA J 헤어 스크런치 - 뮤티드 핑크(JALJHS2BF832FA000)"
+                                  />
+                                </picture>
+                                <div class="card__text">
+                                  <h3 class="card__title">
+                                    [아이유 PICK] LALA J 헤어 스크런치 - 뮤티드
+                                    핑크(JALJHS2BF832FA000)
+                                  </h3>
+                                  <div class="card__duration">31,200원</div>
+                                </div>
+                              </article>
+                            </div>
+                            <div class="card-wrapper">
+                              <article class="card">
+                                <picture class="card__background">
+                                  <img
+                                    src="../image/main_section3/new-product/JEWELRY_1.png"
+                                    alt="BASIC PERLINA 목걸이 (JJP1NI2BF212SW420)"
+                                  />
+                                </picture>
+                                <div class="card__text">
+                                  <h3 class="card__title">
+                                    BASIC PERLINA 목걸이 (JJP1NI2BF212SW420)
+                                  </h3>
+                                  <div class="card__duration">100,000원</div>
+                                </div>
+                              </article>
+                            </div>
+                            <div class="card-wrapper">
+                              <article class="card">
+                                <picture class="card__background">
+                                  <img
+                                    src="../image/main_section3/new-product/bag_1.png"
+                                    alt="PIPE MD 호보 IV (JHNLHA2BF530IV010)"
+                                  />
+                                </picture>
+                                <div class="card__text">
+                                  <h3 class="card__title">
+                                    PIPE MD 호보 IV (JHNLHA2BF530IV010)
+                                  </h3>
+                                  <div class="card__duration">250,200원</div>
+                                </div>
+                              </article>
+                            </div>
+                            <div class="card-wrapper">
+                              <article class="card">
+                                <picture class="card__background">
+                                  <img
+                                    src="../image/main_section3/new-product/watch_1-1.jpg"
+                                    alt="[로만손] 클래식 슬림 남성 가죽시계 (RWTLMM2B2003RGBR0)"
+                                  />
+                                </picture>
+                                <div class="card__text">
+                                  <h3 class="card__title">
+                                    [로만손] 클래식 슬림 남성 가죽시계
+                                  </h3>
+                                  <div class="card__duration">179,100원</div>
+                                </div>
+                              </article>
+                            </div>
+                            <div class="card-wrapper">
+                              <article class="card">
+                                <picture class="card__background">
+                                  <img
+                                    src="../image/main_section3/new-product/JEWELRY_2.png"
+                                    alt="THE J 14K 팔찌 (JJSJBQ2BF419R47S0)"
+                                  />
+                                </picture>
+                                <div class="card__text">
+                                  <h3 class="card__title">
+                                    THE J 14K 팔찌 (JJSJBQ2BF419R47S0)
+                                  </h3>
+                                  <div class="card__duration">730,000원</div>
+                                </div>
+                              </article>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- //탭2_6 -->
+                    </div>
+                  </div>
+                </div>
+                <!-- //탭2 끝 -->
+                <!-- 탭3 -->
+                <div class="tab-cont">
+                  <div class="tabonoff sub-tabs">
+                    <!-- dots_indicator -->
+                    <div class="dots">
+                      <a
+                        data-dot="dot1"
+                        href="javascript:void(0);"
+                        class="on"
+                      ></a>
+                      <a data-dot="dot2" href="javascript:void(0);"></a>
+                      <a data-dot="dot3" href="javascript:void(0);"></a>
+                    </div>
+                    <!-- //dots_indicator -->
+                    <!-- 서브_탭메뉴 -->
+                    <ul class="jq_tab jq_stabMenu stab-menu">
+                      <li class="active">
+                        <a href="javascript:void(0);" class="tit">ALL</a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0);" class="tit">JEWELRY</a>
+                      </li>
+                      <li><a href="javascript:void(0);" class="tit">BAG</a></li>
+                      <li>
+                        <a href="javascript:void(0);" class="tit">WATCH</a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0);" class="tit">HAIR ACC</a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0);" class="tit">EXCLUSIVE</a>
+                      </li>
+                    </ul>
+                    <!-- //서브_탭메뉴 -->
+                    <div class="cont-wrap cont-box">
+                      <!-- 탭3_1-->
+                      <div class="tab-cont">
+                        <div class="tab-cont-wrap">
+                          <!-- 탭1 내부 슬라이드 -->
+                          <svg
+                            aria-hidden="true"
+                            style="
+                              position: absolute;
+                              width: 0;
+                              height: 0;
+                              overflow: hidden;
+                            "
+                            version="1.1"
+                            xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                          >
+                            <defs>
+                              <symbol id="icon-cross" viewBox="0 0 32 32">
+                                <title>close</title>
+                                <path
+                                  d="M31.7 25.7L22 16l9.7-9.7a1 1 0 0 0 0-1.4L27.1.3a1 1 0 0 0-1.4 0L16 10 6.3.3a1 1 0 0 0-1.4 0L.3 4.9a1 1 0 0 0 0 1.4L10 16 .3 25.7a1 1 0 0 0 0 1.4l4.6 4.6a1 1 0 0 0 1.4 0L16 22l9.7 9.7a1 1 0 0 0 1.4 0l4.6-4.6a1 1 0 0 0 0-1.4z"
+                                />
+                              </symbol>
+                            </defs>
+                          </svg>
+                          <div class="card-slider">
+                            <div class="card-wrapper">
+                              <article class="card">
+                                <picture class="card__background">
+                                  <img
+                                    src="../image/main_section3/new-product/hair_1-1.jpg"
+                                    alt="[아이유 PICK] LALA J 헤어 스크런치 - 뮤티드 핑크(JALJHS2BF832FA000)"
+                                  />
+                                </picture>
+                                <div class="card__text">
+                                  <h3 class="card__title">
+                                    [아이유 PICK] LALA J 헤어 스크런치 - 뮤티드
+                                    핑크(JALJHS2BF832FA000)
+                                  </h3>
+                                  <div class="card__duration">31,200원</div>
+                                </div>
+                              </article>
+                            </div>
+                            <div class="card-wrapper">
+                              <article class="card">
+                                <picture class="card__background">
+                                  <img
+                                    src="../image/main_section3/new-product/JEWELRY_1.png"
+                                    alt="BASIC PERLINA 목걸이 (JJP1NI2BF212SW420)"
+                                  />
+                                </picture>
+                                <div class="card__text">
+                                  <h3 class="card__title">
+                                    BASIC PERLINA 목걸이 (JJP1NI2BF212SW420)
+                                  </h3>
+                                  <div class="card__duration">100,000원</div>
+                                </div>
+                              </article>
+                            </div>
+                            <div class="card-wrapper">
+                              <article class="card">
+                                <picture class="card__background">
+                                  <img
+                                    src="../image/main_section3/new-product/bag_1.png"
+                                    alt="PIPE MD 호보 IV (JHNLHA2BF530IV010)"
+                                  />
+                                </picture>
+                                <div class="card__text">
+                                  <h3 class="card__title">
+                                    PIPE MD 호보 IV (JHNLHA2BF530IV010)
+                                  </h3>
+                                  <div class="card__duration">250,200원</div>
+                                </div>
+                              </article>
+                            </div>
+                            <div class="card-wrapper">
+                              <article class="card">
+                                <picture class="card__background">
+                                  <img
+                                    src="../image/main_section3/new-product/watch_1-1.jpg"
+                                    alt="[로만손] 클래식 슬림 남성 가죽시계 (RWTLMM2B2003RGBR0)"
+                                  />
+                                </picture>
+                                <div class="card__text">
+                                  <h3 class="card__title">
+                                    [로만손] 클래식 슬림 남성 가죽시계
+                                  </h3>
+                                  <div class="card__duration">179,100원</div>
+                                </div>
+                              </article>
+                            </div>
+                            <div class="card-wrapper">
+                              <article class="card">
+                                <picture class="card__background">
+                                  <img
+                                    src="../image/main_section3/new-product/JEWELRY_2.png"
+                                    alt="THE J 14K 팔찌 (JJSJBQ2BF419R47S0)"
+                                  />
+                                </picture>
+                                <div class="card__text">
+                                  <h3 class="card__title">
+                                    THE J 14K 팔찌 (JJSJBQ2BF419R47S0)
+                                  </h3>
+                                  <div class="card__duration">730,000원</div>
+                                </div>
+                              </article>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- //탭3_1 -->
+                      <!-- 탭3_2 -->
+                      <div class="tab-cont">
+                        <div class="tab-cont-wrap">
+                          <!-- 탭1 내부 슬라이드 -->
+                          <svg
+                            aria-hidden="true"
+                            style="
+                              position: absolute;
+                              width: 0;
+                              height: 0;
+                              overflow: hidden;
+                            "
+                            version="1.1"
+                            xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                          >
+                            <defs>
+                              <symbol id="icon-cross" viewBox="0 0 32 32">
+                                <title>close</title>
+                                <path
+                                  d="M31.7 25.7L22 16l9.7-9.7a1 1 0 0 0 0-1.4L27.1.3a1 1 0 0 0-1.4 0L16 10 6.3.3a1 1 0 0 0-1.4 0L.3 4.9a1 1 0 0 0 0 1.4L10 16 .3 25.7a1 1 0 0 0 0 1.4l4.6 4.6a1 1 0 0 0 1.4 0L16 22l9.7 9.7a1 1 0 0 0 1.4 0l4.6-4.6a1 1 0 0 0 0-1.4z"
+                                />
+                              </symbol>
+                            </defs>
+                          </svg>
+                          <div class="card-slider">
+                            <div class="card-wrapper">
+                              <article class="card">
+                                <picture class="card__background">
+                                  <img
+                                    src="../image/main_section3/new-product/hair_1-1.jpg"
+                                    alt="[아이유 PICK] LALA J 헤어 스크런치 - 뮤티드 핑크(JALJHS2BF832FA000)"
+                                  />
+                                </picture>
+                                <div class="card__text">
+                                  <h3 class="card__title">
+                                    [아이유 PICK] LALA J 헤어 스크런치 - 뮤티드
+                                    핑크(JALJHS2BF832FA000)
+                                  </h3>
+                                  <div class="card__duration">31,200원</div>
+                                </div>
+                              </article>
+                            </div>
+                            <div class="card-wrapper">
+                              <article class="card">
+                                <picture class="card__background">
+                                  <img
+                                    src="../image/main_section3/new-product/JEWELRY_1.png"
+                                    alt="BASIC PERLINA 목걸이 (JJP1NI2BF212SW420)"
+                                  />
+                                </picture>
+                                <div class="card__text">
+                                  <h3 class="card__title">
+                                    BASIC PERLINA 목걸이 (JJP1NI2BF212SW420)
+                                  </h3>
+                                  <div class="card__duration">100,000원</div>
+                                </div>
+                              </article>
+                            </div>
+                            <div class="card-wrapper">
+                              <article class="card">
+                                <picture class="card__background">
+                                  <img
+                                    src="../image/main_section3/new-product/bag_1.png"
+                                    alt="PIPE MD 호보 IV (JHNLHA2BF530IV010)"
+                                  />
+                                </picture>
+                                <div class="card__text">
+                                  <h3 class="card__title">
+                                    PIPE MD 호보 IV (JHNLHA2BF530IV010)
+                                  </h3>
+                                  <div class="card__duration">250,200원</div>
+                                </div>
+                              </article>
+                            </div>
+                            <div class="card-wrapper">
+                              <article class="card">
+                                <picture class="card__background">
+                                  <img
+                                    src="../image/main_section3/new-product/watch_1-1.jpg"
+                                    alt="[로만손] 클래식 슬림 남성 가죽시계 (RWTLMM2B2003RGBR0)"
+                                  />
+                                </picture>
+                                <div class="card__text">
+                                  <h3 class="card__title">
+                                    [로만손] 클래식 슬림 남성 가죽시계
+                                  </h3>
+                                  <div class="card__duration">179,100원</div>
+                                </div>
+                              </article>
+                            </div>
+                            <div class="card-wrapper">
+                              <article class="card">
+                                <picture class="card__background">
+                                  <img
+                                    src="../image/main_section3/new-product/JEWELRY_2.png"
+                                    alt="THE J 14K 팔찌 (JJSJBQ2BF419R47S0)"
+                                  />
+                                </picture>
+                                <div class="card__text">
+                                  <h3 class="card__title">
+                                    THE J 14K 팔찌 (JJSJBQ2BF419R47S0)
+                                  </h3>
+                                  <div class="card__duration">730,000원</div>
+                                </div>
+                              </article>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- //탭3_2 -->
+
+                      <!-- 탭3_3 -->
+                      <div class="tab-cont">
+                        <div class="tab-cont-wrap">
+                          <!-- 탭1 내부 슬라이드 -->
+                          <svg
+                            aria-hidden="true"
+                            style="
+                              position: absolute;
+                              width: 0;
+                              height: 0;
+                              overflow: hidden;
+                            "
+                            version="1.1"
+                            xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                          >
+                            <defs>
+                              <symbol id="icon-cross" viewBox="0 0 32 32">
+                                <title>close</title>
+                                <path
+                                  d="M31.7 25.7L22 16l9.7-9.7a1 1 0 0 0 0-1.4L27.1.3a1 1 0 0 0-1.4 0L16 10 6.3.3a1 1 0 0 0-1.4 0L.3 4.9a1 1 0 0 0 0 1.4L10 16 .3 25.7a1 1 0 0 0 0 1.4l4.6 4.6a1 1 0 0 0 1.4 0L16 22l9.7 9.7a1 1 0 0 0 1.4 0l4.6-4.6a1 1 0 0 0 0-1.4z"
+                                />
+                              </symbol>
+                            </defs>
+                          </svg>
+                          <div class="card-slider">
+                            <div class="card-wrapper">
+                              <article class="card">
+                                <picture class="card__background">
+                                  <img
+                                    src="../image/main_section3/new-product/hair_1-1.jpg"
+                                    alt="[아이유 PICK] LALA J 헤어 스크런치 - 뮤티드 핑크(JALJHS2BF832FA000)"
+                                  />
+                                </picture>
+                                <div class="card__text">
+                                  <h3 class="card__title">
+                                    [아이유 PICK] LALA J 헤어 스크런치 - 뮤티드
+                                    핑크(JALJHS2BF832FA000)
+                                  </h3>
+                                  <div class="card__duration">31,200원</div>
+                                </div>
+                              </article>
+                            </div>
+                            <div class="card-wrapper">
+                              <article class="card">
+                                <picture class="card__background">
+                                  <img
+                                    src="../image/main_section3/new-product/JEWELRY_1.png"
+                                    alt="BASIC PERLINA 목걸이 (JJP1NI2BF212SW420)"
+                                  />
+                                </picture>
+                                <div class="card__text">
+                                  <h3 class="card__title">
+                                    BASIC PERLINA 목걸이 (JJP1NI2BF212SW420)
+                                  </h3>
+                                  <div class="card__duration">100,000원</div>
+                                </div>
+                              </article>
+                            </div>
+                            <div class="card-wrapper">
+                              <article class="card">
+                                <picture class="card__background">
+                                  <img
+                                    src="../image/main_section3/new-product/bag_1.png"
+                                    alt="PIPE MD 호보 IV (JHNLHA2BF530IV010)"
+                                  />
+                                </picture>
+                                <div class="card__text">
+                                  <h3 class="card__title">
+                                    PIPE MD 호보 IV (JHNLHA2BF530IV010)
+                                  </h3>
+                                  <div class="card__duration">250,200원</div>
+                                </div>
+                              </article>
+                            </div>
+                            <div class="card-wrapper">
+                              <article class="card">
+                                <picture class="card__background">
+                                  <img
+                                    src="../image/main_section3/new-product/watch_1-1.jpg"
+                                    alt="[로만손] 클래식 슬림 남성 가죽시계 (RWTLMM2B2003RGBR0)"
+                                  />
+                                </picture>
+                                <div class="card__text">
+                                  <h3 class="card__title">
+                                    [로만손] 클래식 슬림 남성 가죽시계
+                                  </h3>
+                                  <div class="card__duration">179,100원</div>
+                                </div>
+                              </article>
+                            </div>
+                            <div class="card-wrapper">
+                              <article class="card">
+                                <picture class="card__background">
+                                  <img
+                                    src="../image/main_section3/new-product/JEWELRY_2.png"
+                                    alt="THE J 14K 팔찌 (JJSJBQ2BF419R47S0)"
+                                  />
+                                </picture>
+                                <div class="card__text">
+                                  <h3 class="card__title">
+                                    THE J 14K 팔찌 (JJSJBQ2BF419R47S0)
+                                  </h3>
+                                  <div class="card__duration">730,000원</div>
+                                </div>
+                              </article>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- //탭3_3 -->
+
+                      <!-- 탭3_4 -->
+                      <div class="tab-cont">
+                        <div class="tab-cont-wrap">
+                          <!-- 탭1 내부 슬라이드 -->
+                          <svg
+                            aria-hidden="true"
+                            style="
+                              position: absolute;
+                              width: 0;
+                              height: 0;
+                              overflow: hidden;
+                            "
+                            version="1.1"
+                            xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                          >
+                            <defs>
+                              <symbol id="icon-cross" viewBox="0 0 32 32">
+                                <title>close</title>
+                                <path
+                                  d="M31.7 25.7L22 16l9.7-9.7a1 1 0 0 0 0-1.4L27.1.3a1 1 0 0 0-1.4 0L16 10 6.3.3a1 1 0 0 0-1.4 0L.3 4.9a1 1 0 0 0 0 1.4L10 16 .3 25.7a1 1 0 0 0 0 1.4l4.6 4.6a1 1 0 0 0 1.4 0L16 22l9.7 9.7a1 1 0 0 0 1.4 0l4.6-4.6a1 1 0 0 0 0-1.4z"
+                                />
+                              </symbol>
+                            </defs>
+                          </svg>
+                          <div class="card-slider">
+                            <div class="card-wrapper">
+                              <article class="card">
+                                <picture class="card__background">
+                                  <img
+                                    src="../image/main_section3/new-product/hair_1-1.jpg"
+                                    alt="[아이유 PICK] LALA J 헤어 스크런치 - 뮤티드 핑크(JALJHS2BF832FA000)"
+                                  />
+                                </picture>
+                                <div class="card__text">
+                                  <h3 class="card__title">
+                                    [아이유 PICK] LALA J 헤어 스크런치 - 뮤티드
+                                    핑크(JALJHS2BF832FA000)
+                                  </h3>
+                                  <div class="card__duration">31,200원</div>
+                                </div>
+                              </article>
+                            </div>
+                            <div class="card-wrapper">
+                              <article class="card">
+                                <picture class="card__background">
+                                  <img
+                                    src="../image/main_section3/new-product/JEWELRY_1.png"
+                                    alt="BASIC PERLINA 목걸이 (JJP1NI2BF212SW420)"
+                                  />
+                                </picture>
+                                <div class="card__text">
+                                  <h3 class="card__title">
+                                    BASIC PERLINA 목걸이 (JJP1NI2BF212SW420)
+                                  </h3>
+                                  <div class="card__duration">100,000원</div>
+                                </div>
+                              </article>
+                            </div>
+                            <div class="card-wrapper">
+                              <article class="card">
+                                <picture class="card__background">
+                                  <img
+                                    src="../image/main_section3/new-product/bag_1.png"
+                                    alt="PIPE MD 호보 IV (JHNLHA2BF530IV010)"
+                                  />
+                                </picture>
+                                <div class="card__text">
+                                  <h3 class="card__title">
+                                    PIPE MD 호보 IV (JHNLHA2BF530IV010)
+                                  </h3>
+                                  <div class="card__duration">250,200원</div>
+                                </div>
+                              </article>
+                            </div>
+                            <div class="card-wrapper">
+                              <article class="card">
+                                <picture class="card__background">
+                                  <img
+                                    src="../image/main_section3/new-product/watch_1-1.jpg"
+                                    alt="[로만손] 클래식 슬림 남성 가죽시계 (RWTLMM2B2003RGBR0)"
+                                  />
+                                </picture>
+                                <div class="card__text">
+                                  <h3 class="card__title">
+                                    [로만손] 클래식 슬림 남성 가죽시계
+                                  </h3>
+                                  <div class="card__duration">179,100원</div>
+                                </div>
+                              </article>
+                            </div>
+                            <div class="card-wrapper">
+                              <article class="card">
+                                <picture class="card__background">
+                                  <img
+                                    src="../image/main_section3/new-product/JEWELRY_2.png"
+                                    alt="THE J 14K 팔찌 (JJSJBQ2BF419R47S0)"
+                                  />
+                                </picture>
+                                <div class="card__text">
+                                  <h3 class="card__title">
+                                    THE J 14K 팔찌 (JJSJBQ2BF419R47S0)
+                                  </h3>
+                                  <div class="card__duration">730,000원</div>
+                                </div>
+                              </article>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- //탭3_4 -->
+
+                      <!-- 탭3_5 -->
+                      <div class="tab-cont">
+                        <div class="tab-cont-wrap">
+                          <!-- 탭1 내부 슬라이드 -->
+                          <svg
+                            aria-hidden="true"
+                            style="
+                              position: absolute;
+                              width: 0;
+                              height: 0;
+                              overflow: hidden;
+                            "
+                            version="1.1"
+                            xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                          >
+                            <defs>
+                              <symbol id="icon-cross" viewBox="0 0 32 32">
+                                <title>close</title>
+                                <path
+                                  d="M31.7 25.7L22 16l9.7-9.7a1 1 0 0 0 0-1.4L27.1.3a1 1 0 0 0-1.4 0L16 10 6.3.3a1 1 0 0 0-1.4 0L.3 4.9a1 1 0 0 0 0 1.4L10 16 .3 25.7a1 1 0 0 0 0 1.4l4.6 4.6a1 1 0 0 0 1.4 0L16 22l9.7 9.7a1 1 0 0 0 1.4 0l4.6-4.6a1 1 0 0 0 0-1.4z"
+                                />
+                              </symbol>
+                            </defs>
+                          </svg>
+                          <div class="card-slider">
+                            <div class="card-wrapper">
+                              <article class="card">
+                                <picture class="card__background">
+                                  <img
+                                    src="../image/main_section3/new-product/hair_1-1.jpg"
+                                    alt="[아이유 PICK] LALA J 헤어 스크런치 - 뮤티드 핑크(JALJHS2BF832FA000)"
+                                  />
+                                </picture>
+                                <div class="card__text">
+                                  <h3 class="card__title">
+                                    [아이유 PICK] LALA J 헤어 스크런치 - 뮤티드
+                                    핑크(JALJHS2BF832FA000)
+                                  </h3>
+                                  <div class="card__duration">31,200원</div>
+                                </div>
+                              </article>
+                            </div>
+                            <div class="card-wrapper">
+                              <article class="card">
+                                <picture class="card__background">
+                                  <img
+                                    src="../image/main_section3/new-product/JEWELRY_1.png"
+                                    alt="BASIC PERLINA 목걸이 (JJP1NI2BF212SW420)"
+                                  />
+                                </picture>
+                                <div class="card__text">
+                                  <h3 class="card__title">
+                                    BASIC PERLINA 목걸이 (JJP1NI2BF212SW420)
+                                  </h3>
+                                  <div class="card__duration">100,000원</div>
+                                </div>
+                              </article>
+                            </div>
+                            <div class="card-wrapper">
+                              <article class="card">
+                                <picture class="card__background">
+                                  <img
+                                    src="../image/main_section3/new-product/bag_1.png"
+                                    alt="PIPE MD 호보 IV (JHNLHA2BF530IV010)"
+                                  />
+                                </picture>
+                                <div class="card__text">
+                                  <h3 class="card__title">
+                                    PIPE MD 호보 IV (JHNLHA2BF530IV010)
+                                  </h3>
+                                  <div class="card__duration">250,200원</div>
+                                </div>
+                              </article>
+                            </div>
+                            <div class="card-wrapper">
+                              <article class="card">
+                                <picture class="card__background">
+                                  <img
+                                    src="../image/main_section3/new-product/watch_1-1.jpg"
+                                    alt="[로만손] 클래식 슬림 남성 가죽시계 (RWTLMM2B2003RGBR0)"
+                                  />
+                                </picture>
+                                <div class="card__text">
+                                  <h3 class="card__title">
+                                    [로만손] 클래식 슬림 남성 가죽시계
+                                  </h3>
+                                  <div class="card__duration">179,100원</div>
+                                </div>
+                              </article>
+                            </div>
+                            <div class="card-wrapper">
+                              <article class="card">
+                                <picture class="card__background">
+                                  <img
+                                    src="../image/main_section3/new-product/JEWELRY_2.png"
+                                    alt="THE J 14K 팔찌 (JJSJBQ2BF419R47S0)"
+                                  />
+                                </picture>
+                                <div class="card__text">
+                                  <h3 class="card__title">
+                                    THE J 14K 팔찌 (JJSJBQ2BF419R47S0)
+                                  </h3>
+                                  <div class="card__duration">730,000원</div>
+                                </div>
+                              </article>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- //탭3_5 -->
+
+                      <!-- 탭3_6 -->
+                      <div class="tab-cont">
+                        <div class="tab-cont-wrap">
+                          <!-- 탭1 내부 슬라이드 -->
+                          <svg
+                            aria-hidden="true"
+                            style="
+                              position: absolute;
+                              width: 0;
+                              height: 0;
+                              overflow: hidden;
+                            "
+                            version="1.1"
+                            xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                          >
+                            <defs>
+                              <symbol id="icon-cross" viewBox="0 0 32 32">
+                                <title>close</title>
+                                <path
+                                  d="M31.7 25.7L22 16l9.7-9.7a1 1 0 0 0 0-1.4L27.1.3a1 1 0 0 0-1.4 0L16 10 6.3.3a1 1 0 0 0-1.4 0L.3 4.9a1 1 0 0 0 0 1.4L10 16 .3 25.7a1 1 0 0 0 0 1.4l4.6 4.6a1 1 0 0 0 1.4 0L16 22l9.7 9.7a1 1 0 0 0 1.4 0l4.6-4.6a1 1 0 0 0 0-1.4z"
+                                />
+                              </symbol>
+                            </defs>
+                          </svg>
+                          <div class="card-slider">
+                            <div class="card-wrapper">
+                              <article class="card">
+                                <picture class="card__background">
+                                  <img
+                                    src="../image/main_section3/new-product/hair_1-1.jpg"
+                                    alt="[아이유 PICK] LALA J 헤어 스크런치 - 뮤티드 핑크(JALJHS2BF832FA000)"
+                                  />
+                                </picture>
+                                <div class="card__text">
+                                  <h3 class="card__title">
+                                    [아이유 PICK] LALA J 헤어 스크런치 - 뮤티드
+                                    핑크(JALJHS2BF832FA000)
+                                  </h3>
+                                  <div class="card__duration">31,200원</div>
+                                </div>
+                              </article>
+                            </div>
+                            <div class="card-wrapper">
+                              <article class="card">
+                                <picture class="card__background">
+                                  <img
+                                    src="../image/main_section3/new-product/JEWELRY_1.png"
+                                    alt="BASIC PERLINA 목걸이 (JJP1NI2BF212SW420)"
+                                  />
+                                </picture>
+                                <div class="card__text">
+                                  <h3 class="card__title">
+                                    BASIC PERLINA 목걸이 (JJP1NI2BF212SW420)
+                                  </h3>
+                                  <div class="card__duration">100,000원</div>
+                                </div>
+                              </article>
+                            </div>
+                            <div class="card-wrapper">
+                              <article class="card">
+                                <picture class="card__background">
+                                  <img
+                                    src="../image/main_section3/new-product/bag_1.png"
+                                    alt="PIPE MD 호보 IV (JHNLHA2BF530IV010)"
+                                  />
+                                </picture>
+                                <div class="card__text">
+                                  <h3 class="card__title">
+                                    PIPE MD 호보 IV (JHNLHA2BF530IV010)
+                                  </h3>
+                                  <div class="card__duration">250,200원</div>
+                                </div>
+                              </article>
+                            </div>
+                            <div class="card-wrapper">
+                              <article class="card">
+                                <picture class="card__background">
+                                  <img
+                                    src="../image/main_section3/new-product/watch_1-1.jpg"
+                                    alt="[로만손] 클래식 슬림 남성 가죽시계 (RWTLMM2B2003RGBR0)"
+                                  />
+                                </picture>
+                                <div class="card__text">
+                                  <h3 class="card__title">
+                                    [로만손] 클래식 슬림 남성 가죽시계
+                                  </h3>
+                                  <div class="card__duration">179,100원</div>
+                                </div>
+                              </article>
+                            </div>
+                            <div class="card-wrapper">
+                              <article class="card">
+                                <picture class="card__background">
+                                  <img
+                                    src="../image/main_section3/new-product/JEWELRY_2.png"
+                                    alt="THE J 14K 팔찌 (JJSJBQ2BF419R47S0)"
+                                  />
+                                </picture>
+                                <div class="card__text">
+                                  <h3 class="card__title">
+                                    THE J 14K 팔찌 (JJSJBQ2BF419R47S0)
+                                  </h3>
+                                  <div class="card__duration">730,000원</div>
+                                </div>
+                              </article>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- //탭3_6 -->
+                    </div>
+                  </div>
+                </div>
+                <!-- 탭3 끝 -->
+              </div>
+            </div>
+          </div>
+          <!-- //contents -->
+        </div>
+      </section>
+      <section id="section4">
+        <div class="section4-wrap">
+          <div class="main__title">
+            <p class="main__title-text">기획전</p>
+          </div>
+          <div class="section4_slide-wrap">
+            <div class="slider-wrap">
+              <div class="cont">
+                <li>
+                  <a href="#" class="main-exhibition__exhibition-info-wrapper">
+                    <div class="main-exhibition__img-wrapper">
+                      <img
+                        src="https://webimg.jestina.co.kr/UpData2/featured/687/featured/20221011164838_thumb_mobile.jpg"
+                        alt="exhibition_banner"
+                        class="main-exhibition__img"
+                      />
+                    </div>
+                    <div class="main-exhibition__exhibition-info">
+                      <div class="main-exhibition__exhibition-title">
+                        22 Winter with MINYOUNG
+                      </div>
+                      <div class="main-exhibition__exhibition-text">
+                        뮤즈 박민영의 캐주얼 스타일 제안
+                      </div>
+                    </div>
+                  </a>
+                  <div class="main-exhibition__goods-wrapper">
+                    <div class="main-exhibition__goods">
+                      <a
+                        href="/products/view/G2000025652"
+                        class="main-exhibition__goods-link"
+                      >
+                        <div
+                          class="main-exhibition__goods-img-wrapper product-hover"
+                        >
+                          <img
+                            src="https://webimg.jestina.co.kr/UpData2/item/G2000025652/20221012091321M.jpg"
+                            alt="[박민영PICK] EMMA SM 크로스 CB (JHNCHE2BF865CB010)"
+                            class="main-exhibition__goods-img product-hover__img--default"
+                          />
+                          <img
+                            src="https://webimg.jestina.co.kr/UpData2/item/G2000025652/20220930140934M.jpg"
+                            alt="[박민영PICK] EMMA SM 크로스 CB (JHNCHE2BF865CB010)"
+                            class="main-exhibition__goods-img product-search__recommend-img product-hover__img--active"
+                          />
+                        </div>
+                        <div class="main-exhibition__goods-info">
+                          <div class="main-exhibition__goods-name">
+                            [박민영PICK] EMMA SM 크로스 CB (JHNCHE2BF865CB010)
+                          </div>
+                          <div class="main-exhibition__goods-price-wrapper">
+                            <div
+                              class="main-exhibition__goods-price main-exhibition__goods-price--origin"
+                            >
+                              258,000원
+                            </div>
+                            <div class="main-exhibition__goods-price">
+                              232,200원
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                      <button
+                        type="button"
+                        onclick="Shop.addToCart('25652', '-1', '1', 'false', 'http://www.jestina.co.kr:443/','1')"
+                        class="main-exhibition__cart-btn"
+                      >
+                        장바구니
+                      </button>
+                    </div>
+                    <div class="main-exhibition__goods">
+                      <a
+                        href="/products/view/G2000025442"
+                        class="main-exhibition__goods-link"
+                      >
+                        <div
+                          class="main-exhibition__goods-img-wrapper product-hover"
+                        >
+                          <img
+                            src="https://webimg.jestina.co.kr/UpData2/item/G2000025442/20221012091245M.jpg"
+                            alt="[박민영PICK] MERRY MD 호보 BD (JHNCHA2BF809BD010)"
+                            class="main-exhibition__goods-img product-hover__img--default"
+                          />
+                          <img
+                            src="https://webimg.jestina.co.kr/UpData2/item/G2000025442/20220727103330M.png"
+                            alt="[박민영PICK] MERRY MD 호보 BD (JHNCHA2BF809BD010)"
+                            class="main-exhibition__goods-img product-search__recommend-img product-hover__img--active"
+                          />
+                        </div>
+                        <div class="main-exhibition__goods-info">
+                          <div class="main-exhibition__goods-name">
+                            [박민영PICK] MERRY MD 호보 BD (JHNCHA2BF809BD010)
+                          </div>
+                          <div class="main-exhibition__goods-price-wrapper">
+                            <div
+                              class="main-exhibition__goods-price main-exhibition__goods-price--origin"
+                            >
+                              278,000원
+                            </div>
+                            <div class="main-exhibition__goods-price">
+                              250,200원
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                      <button
+                        type="button"
+                        onclick="Shop.addToCart('25442', '-1', '1', 'false', 'http://www.jestina.co.kr:443/','1')"
+                        class="main-exhibition__cart-btn"
+                      >
+                        장바구니
+                      </button>
+                    </div>
+                  </div>
+                </li>
+              </div>
+              <div class="cont">
+                2
+                <li></li>
+              </div>
+              <div class="cont">
+                3
+                <li></li>
+              </div>
+              <div class="cont">
+                4
+                <li></li>
+              </div>
+              <div class="cont">
+                5
+                <li></li>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="section5">
+        <div class="section5-wrap">
+          <div class="banner"></div>
+        </div>
+      </section>
     </div>
-    <script src="main.js"></script>
-    <script src="header.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/header.js"></script>
+    <script src="./js/tabmenu.js"></script>
+    <script src="./js/tabSlider.js"></script>
+    <script src="./js/section4.js"></script>
   </body>
 </html>

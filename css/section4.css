@@ -1,0 +1,160 @@
+/* 공통 */
+
+*
+{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+html
+{
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+body
+{
+    font-size: calc(0.35em + 0.7vw);
+    font-family: 'Noto Sans KR', sans-serif;
+    height: 100vh;
+}
+
+/* section 4 */
+#section4
+{
+    font-size: 1rem;
+}
+
+.section4-wrap
+{
+    width: 90%;
+    margin: 0 auto;
+}
+
+img.main-exhibition__img 
+{
+    max-width: 50%;
+}
+
+
+.main-exhibition__exhibition-info
+{
+    width: 100%;
+    margin: 30px 10px 10px 10px;
+}
+
+.main-exhibition__exhibition-title
+{
+    font-size: 0.9rem;
+    color: rgb(129, 129, 129);
+}
+
+.main-exhibition__exhibition-text
+{
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: black;
+}
+
+
+.main-exhibition__goods-img 
+{
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+/*상품 이미지 호버 이벤트*/
+.product-hover {
+    position: relative;
+    z-index: 10;
+}
+
+.main-exhibition__goods-img-wrapper {
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    overflow: hidden;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;/**********/
+    display: -webkit-box;
+    display: -ms-flexbox;
+    /* display: flex; */
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    /* align-items: center; */
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    position: relative;
+}
+
+.main-exhibition__goods-img-wrapper::before 
+{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.03);
+}
+
+img.main-exhibition__goods-img.product-hover__img--default 
+{
+    /* width: 100%;
+    height: 100%; */
+    opacity: 0;
+}
+
+.main-exhibition__goods-img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
+.product-hover__img--active
+{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    opacity: 0;
+}
+
+.product-hover:hover .product-hover__img--active 
+{
+    opacity: 1;
+}
+
+.main-exhibition__goods-img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
+.product-hover__img--active {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    opacity: 0;
+}
+
+.product-hover__img--default, .product-hover__img--active {
+    display: inline-block;
+    -webkit-transition: opacity 1.3s;
+    transition: opacity 1.3s;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+
