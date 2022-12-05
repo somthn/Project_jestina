@@ -15,7 +15,7 @@ $ja(document).ready(function(){
         $ja(this).addClass("on");
        // console.log($ja(this).parent().children());
         $ja(this).parent().next(".cont-wrap").children().hide().eq(index).show();
-        $ja('.card-slider').slick('setPosition'); 
+        $ja('.card_slider').slick('setPosition'); 
     });
     
 

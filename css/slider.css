@@ -84,7 +84,7 @@ button.slick-prev.slick-arrow, button.slick-next.slick-arrow
   padding: 2em 0.5em;
 }
 
-.card-slider {
+.card_slider {
   margin: auto;
   width: 100%;
   /* display: flex !important; */
@@ -107,6 +107,56 @@ button.slick-prev.slick-arrow, button.slick-next.slick-arrow
   width: 100%;
   box-shadow: 0 30px 50px -25px rgba(0, 0, 0, 0.25);
 }
+
+@media (max-width: 1080px) 
+  {
+    .card 
+    {
+      background: rgb(255,255,255);
+      background: radial-gradient(circle, rgba(255,255,255,1) 85%, rgba(233,160,190,0.2) 100%);
+      display: flex;
+      padding: 2em;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-end;
+      border-radius: 20px;
+      border: none;
+      overflow: hidden;
+      position: relative;
+      z-index: 1;
+      height: 400px;
+      width: 100%;
+      box-shadow: 0 30px 50px -25px rgba(0, 0, 0, 0.25);
+    }
+
+    .card__title, .card__duration
+    {
+      font-size: 1rem;
+    }
+  }
+
+  @media (max-width: 826px) 
+  {
+    .card 
+    {
+        height: 400px;
+    }
+
+    .card__title, .card__duration
+    {
+      font-size: 0.9rem;
+    }
+  }
+
+  @media (max-width: 599px)
+  {
+    .card 
+    {
+        height: 500px;
+    }
+  }
+
+
 .card > * {
   transition: opacity 350ms;
 }
@@ -150,10 +200,10 @@ button.slick-prev.slick-arrow, button.slick-next.slick-arrow
 }
 
 .card__title {
-  font-size: 1.1rem;
+  font-size: 1rem;
   text-transform: uppercase;
   margin: 0.5em 0;
-  color: #2e5f80;
+  color: #666;
   overflow: hidden;
   display: -webkit-box;
   -webkit-box-orient: vertical;
@@ -162,6 +212,7 @@ button.slick-prev.slick-arrow, button.slick-next.slick-arrow
 
 .card__duration {
   color: #6f7070;
+  /* font-size: 1rem; */
 }
 
 .modal-wrapper, .overlay {
