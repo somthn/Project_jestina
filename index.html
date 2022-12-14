@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -19,11 +19,11 @@
     />
     <!-- Slick css -->
     <link rel="stylesheet" type="text/css" href="./css/slick.css" />
+    <!-- css -->
     <link rel="stylesheet" href="./css/tabmenu.css" />
     <link rel="stylesheet" href="./css/slider.css" />
     <link rel="stylesheet" href="./css/carousel.css" />
     <link rel="stylesheet" href="./css/style.css" />
-    <!-- <link rel="stylesheet" href="./css/section4_slide.css"> -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <script
@@ -38,9 +38,8 @@
   <body>
     <div class="container">
       <header id="header_wrap">
-        <!-- <div class="header__top">
-        </div> -->
         <div class="header__bottom">
+          <div class="all_menu"><i class="fa-solid fa-bars"></i></div>
           <div class="logo"><img src="image/logo.png" alt="LOGO" /></div>
           <div class="header__bottom-inner">
             <ul class="header__category">
@@ -212,23 +211,6 @@
                           </li>
                         </ul>
                       </li>
-                      <!-- <li class="header-gnb__item">
-                        <a class="header-gnb__item-title">소재</a>
-                        <ul class="header-gnb__sub" >
-                          <li class="header-gnb__sub-item">
-                            <a class="header-gnb__sub-title">천연가죽</a>
-                          </li>
-                          <li class="header-gnb__sub-item">
-                            <a class="header-gnb__sub-title">합성가죽</a>
-                          </li>
-                          <li class="header-gnb__sub-item">
-                            <a class="header-gnb__sub-title">패브릭</a>
-                          </li>
-                          <li class="header-gnb__sub-item">
-                            <a class="header-gnb__sub-title">기타</a>
-                          </li>
-                        </ul>
-                      </li> -->
                     </ul>
                     <div class="header-gnb__recommend-product">
                       <div class="header-gnb__recommend-product-item">
@@ -573,24 +555,27 @@
                   </div>
                 </div>
               </li>
+              <ul class="header__gnb">
+                <li class="header__gnb-item">
+                  <a class="header__gnb-title iu_link">아이유</a>
+                </li>
+                <li class="header__gnb-item">
+                  <a class="header__gnb-title">신상품</a>
+                </li>
+                <li class="header__gnb-item">
+                  <a class="header__gnb-title">베스트</a>
+                </li>
+                <li class="header__gnb-item">
+                  <a class="header__gnb-title">기획전</a>
+                </li>
+                <li class="header__gnb-item">
+                  <a class="header__gnb-title">이벤트</a>
+                </li>
+              </ul>
             </ul>
-            <ul class="header__gnb">
-              <li class="header__gnb-item">
-                <a class="header__gnb-title iu_link">아이유</a>
-              </li>
-              <li class="header__gnb-item">
-                <a class="header__gnb-title">신상품</a>
-              </li>
-              <li class="header__gnb-item">
-                <a class="header__gnb-title">베스트</a>
-              </li>
-              <li class="header__gnb-item">
-                <a class="header__gnb-title">기획전</a>
-              </li>
-              <li class="header__gnb-item">
-                <a class="header__gnb-title">이벤트</a>
-              </li>
-            </ul>
+          </div>
+          <div class="header_right">
+            <i class="fa-solid fa-chevron-down"></i>
           </div>
           <div class="header__right">
             <div class="header__search">
@@ -621,28 +606,64 @@
                 type="button"
                 class="header__search-btn"
                 id="search_button"
-              >
-                <img
-                  src="image/magnifying-glass-solid.svg"
-                  alt="search_button"
-                  class="header__search-btn-img"
-                />
-              </button>
+              ></button>
+              <div class="header_recommend">
+                <div class="header_recommend_md">
+                  <div class="recommend_img">
+                    <a href="#">
+                      <img
+                        src="./image/header/20221202151809.jpg"
+                        alt="헤더추천아이템"
+                      />
+                    </a>
+                  </div>
+                  <div class="recommend_text">
+                    <a href="#">
+                      <p>MABELLE SM 호보 RE (JHNCHA1BF824RE010)</p>
+                      <p>238,000</p>
+                      <p>133,600원</p>
+                    </a>
+                  </div>
+                </div>
+                <div class="header_recommend_md">
+                  <div class="recommend_img">
+                    <a href="#">
+                      <img
+                        src="./image/header/20221202151809.jpg"
+                        alt="헤더추천아이템"
+                      />
+                    </a>
+                  </div>
+                  <div class="recommend_text">
+                    <a href="#">
+                      <p>MABELLE SM 호보 RE (JHNCHA1BF824RE010)</p>
+                      <p>238,000</p>
+                      <p>133,600원</p>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="search_close">
+                <i class="fa-solid fa-xmark"></i>
+              </div>
             </div>
-            <div class="header__btn-wrap">
-              <a class="header__btn header__btn--login"
-                ><i class="fa-solid fa-right-to-bracket"></i>
-              </a>
-              <a class="header__btn header__btn--mypage"
-                ><i class="fa-solid fa-user"></i
-              ></a>
-              <a class="header__btn header__btn--zzim"
-                ><i class="fa-solid fa-heart"></i
-              ></a>
-              <a class="header__btn header__btn--cart"
-                ><span id="header_cart_quantity"></span
-                ><i class="fa-solid fa-bag-shopping"></i
-              ></a>
+            <div class="header-btn_wrapper">
+              <div class="header__btn-wrap">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <a class="header__btn header__btn--login"
+                  ><i class="fa-solid fa-right-to-bracket"></i>
+                </a>
+                <a class="header__btn header__btn--mypage"
+                  ><i class="fa-solid fa-user"></i
+                ></a>
+                <a class="header__btn header__btn--zzim"
+                  ><i class="fa-solid fa-heart"></i
+                ></a>
+                <a class="header__btn header__btn--cart"
+                  ><span id="header_cart_quantity"></span
+                  ><i class="fa-solid fa-bag-shopping"></i
+                ></a>
+              </div>
             </div>
           </div>
         </div>
@@ -654,8 +675,20 @@
               <li style="opacity: 1">
                 <a href="#" class="main-slide__item-link">
                   <img
-                    src="image/TIARA_FUNK.png"
-                    alt=""
+                    src="image/main_section2/Up_maketing_1_20221111092947.jpg"
+                    alt="main_slide_iu"
+                    class="main-slide__item-img"
+                  />
+                  <picture>
+                    <source media="(max-width: 1062px)" srcset="image/main_section2/holiday_iu_main.png">
+                  </picture>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="main-slide__item-link">
+                  <img
+                    src="image/main_section2/Up_jestina_1_20220222151453.png"
+                    alt="main_slide_romanson"
                     class="main-slide__item-img"
                   />
                 </a>
@@ -663,17 +696,8 @@
               <li>
                 <a href="#" class="main-slide__item-link">
                   <img
-                    src="image/Component 3.png"
-                    alt=""
-                    class="main-slide__item-img"
-                  />
-                </a>
-              </li>
-              <li>
-                <a href="#" class="main-slide__item-link">
-                  <img
-                    src="image/Slice 4.png"
-                    alt=""
+                    src="image/main_section2/Up_hskim2_1_20220831094441.jpg"
+                    alt="main_slide_bag"
                     class="main-slide__item-img"
                   />
                 </a>
@@ -736,11 +760,6 @@
                               alt="[아이유 PICK] THE J 14K 목걸이 (JJSJNQ2BS401R4420)"
                               class="main-md-pick__goods-img product-hover__img--default"
                             />
-                            <!-- <img
-                            src="https://webimg.jestina.co.kr/UpData2/item/G2000025162/20220401150808S.png"
-                            alt="pc_img_recommned_item"
-                            class="product-search__recommend-img product-hover__img--active"
-                            /> -->
                           </a>
                         </div>
                         <div class="img-box_right-text">
@@ -773,11 +792,6 @@
                               alt="[아이유 PICK] THE J 14K 귀걸이 (JJSJEQ2BS401R4000)"
                               class="main-md-pick__goods-img product-hover__img--default"
                             />
-                            <!-- <img
-                          src="https://webimg.jestina.co.kr/UpData2/item/G2000025162/20220401150808S.png"
-                          alt="pc_img_recommned_item"
-                          class="product-search__recommend-img product-hover__img--active"
-                          /> -->
                           </a>
                         </div>
                         <div class="img-box_right-text">
@@ -837,11 +851,6 @@
                               alt="[아이유 PICK] THE J 14K 목걸이 (JJSJNQ2BS401R4420)"
                               class="main-md-pick__goods-img product-hover__img--default"
                             />
-                            <!-- <img
-                            src="https://webimg.jestina.co.kr/UpData2/item/G2000025162/20220401150808S.png"
-                            alt="pc_img_recommned_item"
-                            class="product-search__recommend-img product-hover__img--active"
-                            /> -->
                           </a>
                         </div>
                         <div class="img-box_right-text">
@@ -874,11 +883,6 @@
                               alt="[아이유 PICK] THE J 14K 귀걸이 (JJSJEQ2BS401R4000)"
                               class="main-md-pick__goods-img product-hover__img--default"
                             />
-                            <!-- <img
-                          src="https://webimg.jestina.co.kr/UpData2/item/G2000025162/20220401150808S.png"
-                          alt="pc_img_recommned_item"
-                          class="product-search__recommend-img product-hover__img--active"
-                          /> -->
                           </a>
                         </div>
                         <div class="img-box_right-text">
@@ -938,11 +942,6 @@
                               alt="[아이유 PICK] THE J 14K 목걸이 (JJSJNQ2BS401R4420)"
                               class="main-md-pick__goods-img product-hover__img--default"
                             />
-                            <!-- <img
-                            src="https://webimg.jestina.co.kr/UpData2/item/G2000025162/20220401150808S.png"
-                            alt="pc_img_recommned_item"
-                            class="product-search__recommend-img product-hover__img--active"
-                            /> -->
                           </a>
                         </div>
                         <div class="img-box_right-text">
@@ -975,11 +974,6 @@
                               alt="[아이유 PICK] THE J 14K 귀걸이 (JJSJEQ2BS401R4000)"
                               class="main-md-pick__goods-img product-hover__img--default"
                             />
-                            <!-- <img
-                          src="https://webimg.jestina.co.kr/UpData2/item/G2000025162/20220401150808S.png"
-                          alt="pc_img_recommned_item"
-                          class="product-search__recommend-img product-hover__img--active"
-                          /> -->
                           </a>
                         </div>
                         <div class="img-box_right-text">
@@ -1227,7 +1221,7 @@
                                 <picture class="card__background">
                                   <img
                                     src="./image/main_section3/new-product/JEWELRY_3.png"
-                                    alt=""
+                                    alt="WHITEMOND 목걸이+귀걸이 세트 (SET-J0-1027)"
                                   />
                                 </picture>
                                 <div class="card__text">
@@ -1243,7 +1237,8 @@
                                 <picture class="card__background">
                                   <img
                                     src="../image/main_section3/new-product/JEWELRY_4.png"
-                                    alt=""
+                                    alt="MARIEBEL 14K 목걸이+귀걸이 세트
+                                    (SET-J0-1032)"
                                   />
                                 </picture>
                                 <div class="card__text">
@@ -1260,7 +1255,7 @@
                                 <picture class="card__background">
                                   <img
                                     src="../image/main_section3/new-product/JEWELRY_5.png"
-                                    alt=""
+                                    alt="WHITEMOND 귀걸이 (JJMBEQ2BF550SW000)"
                                   />
                                 </picture>
                                 <div class="card__text">
@@ -1276,7 +1271,7 @@
                                 <picture class="card__background">
                                   <img
                                     src="../image/main_section3/new-product/JEWELRY_6.png"
-                                    alt=""
+                                    alt="WHITEMOND 목걸이 (JJMBNQ2BF549SW420)"
                                   />
                                 </picture>
                                 <div class="card__text">
@@ -3562,12 +3557,6 @@
           <a href="#"><img src="./image/banner/banner1.jpg" alt="gift" /></a>
           <a href="#"><img src="./image/banner/banner2.jpg" alt="event" /></a>
         </div>
-        <div class="section5-wrap">
-          <!-- <div class="event">
-            <a href="#"><img src="./image/banner/1.jpg" alt="holiday"></a>
-            <a href="#"><img src="./image/banner/2.jpg" alt="holiday"></a>
-          </div> -->
-        </div>
       </section>
       <section id="section6">
         <div class="main__title">
@@ -3583,11 +3572,16 @@
           ></iframe>
         </div>
       </section>
+      <div class="moveTopBtn">
+        <i class="fa-solid fa-arrow-up"></i>
+      </div>
       <footer>
         <div class="footer_wrap">
           <div class="footer_left">
             <div class="footer_logo">
-              <a href="#"><img src="./image/logo_bottom.png" alt="footer_logo" /></a>
+              <a href="#"
+                ><img src="./image/logo_bottom.png" alt="footer_logo"
+              /></a>
             </div>
             <div class="footer_menu">
               <ul class="footer_navi">
