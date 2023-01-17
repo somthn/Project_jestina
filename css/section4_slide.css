@@ -1,0 +1,237 @@
+/* 공통 */
+
+*
+{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+html
+{
+    font-family: 'NanumBarunGothicYetHangul';
+}
+
+a
+{
+    /* display: block; */
+    text-decoration: none;
+    color: black;
+}
+
+body
+{
+    font-size: calc(0.35em + 0.7vw);
+    height: 100vh;
+}
+
+/* @media only screen and (max-width:1200px)
+{
+    body
+    {
+        font-size: 0.8rem;
+    }
+} */
+
+.container
+{
+    margin: 0 auto !important;
+    padding-right: 0!important;
+    padding-left: 0!important;
+    max-width: 200vh;
+    min-height: 100vh;
+}
+
+img, button 
+{
+    vertical-align: middle;
+    border: none;
+}
+
+ul
+{
+    margin-bottom: 0;
+}
+
+
+
+
+#section4
+{
+    max-width: 1900px;
+    font-size: 1rem;
+    background-color: #f3f1ed;
+}
+
+.exhibition
+{
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+/* exhibition */
+
+.exhibition_slide_wrap
+{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+.exhibition_slide 
+{
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+
+.exhibition_slide_wrap > a 
+{
+    width: 80%;
+    height: 80%;
+}
+
+.exhibition_slide_wrap a img
+{
+    width: 80%;
+    height: 80%;
+    margin: 0 10%;
+}
+
+.exhibition_slide_contents
+{
+    float: left;
+    margin: 0 auto;
+}
+
+.exhibition_slide_bottom
+{
+    margin-top: 20px;
+}
+
+.exhibition_slide_text
+{
+    width: 80%;
+    height: 85px;
+    padding: 0 0 20px 10px;
+    line-height: 30px;
+    border-bottom: 1px #999 solid;
+    margin: 0 auto;
+}
+
+.exhibition_slide_text > p:first-child
+{
+    font-size: 1rem;
+}
+
+.exhibition_slide_text > p:last-child
+{
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+@media (max-width: 1000px) 
+  {
+    .exhibition_slide_text > p:first-child
+    {
+        font-size: 0.9rem;
+    }
+
+.exhibition_slide_text > p:last-child
+    {
+        font-size: 0.9rem;
+        font-weight: 600;
+    }
+  }
+
+  @media (max-width: 800px) 
+  {
+    .exhibition_slide_text > p:first-child
+    {
+        font-size: 0.8rem;
+    }
+
+.exhibition_slide_text > p:last-child
+    {
+        font-size: 0.8rem;
+        font-weight: 600;
+    }
+  }
+
+.exhibition_products
+{
+    margin-top: 20px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.exhibition_products > a 
+{
+    width: 100%;
+    display: block;
+}
+
+.exhibition_products_top
+{
+    display: flex;
+    /* width: 80%; */
+    margin: 20px auto 0 auto;
+}
+
+
+.exhibition_products span, .exhibition_products p
+{
+    word-break: break-word;
+    font-size: 0.9rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 1.3rem;
+}
+
+@media (max-width: 800px) 
+  {
+    .exhibition_products span, .exhibition_products p
+    {
+        word-break: break-word;
+        font-size: 0.8rem;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        line-height: 1rem;
+    }
+  }
+
+.exhibition_products_text span
+{
+    color: #999;
+}
+
+.exhibition_products_text
+{
+    margin: 0 0 0 7%;
+}
+
+.exhibition_products_text span:last-child
+{
+    color: rgb(230, 154, 92);
+    font-weight: 600;
+}
+
+.exhibition_products a img
+{
+    width: 120px;
+    height: 120px;
+    
+}
+
+.exhibition_products_text
+{
+    width: 70%;
+    height: 100%;
+    margin-top: 20px;
+}
+
+.slick-next
+{
+    display: none;
+}
