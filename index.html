@@ -20,6 +20,7 @@
     <!-- Slick css -->
     <link rel="stylesheet" type="text/css" href="./css/slick.css" />
     <!-- css -->
+    <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="./css/tabmenu.css" />
     <link rel="stylesheet" href="./css/slider.css" />
     <link rel="stylesheet" href="./css/carousel.css" />
@@ -37,542 +38,259 @@
   </head>
   <body>
     <div class="container">
-      <header id="header_wrap">
-        <div class="header__bottom">
-          <div class="all_menu"><i class="fa-solid fa-bars"></i></div>
-          <div class="logo"><img src="image/logo.png" alt="LOGO" /></div>
-          <div class="header__bottom-inner">
-            <ul class="header__category">
-              <li class="header__category-item">
-                <a class="header__category-title" id="JEWELRY">JEWELRY</a>
-                <div class="header-gnb" style="display: none">
-                  <div class="header-gnb__inner">
-                    <ul class="header-gnb__list">
-                      <li class="header-gnb__item">
-                        <a class="header-gnb__item-title">아이템</a>
-                        <ul class="header-gnb__sub">
-                          <li class="header-gnb__sub-item">
-                            <a class="header-gnb__sub-title">귀걸이</a>
-                          </li>
-                          <li class="header-gnb__sub-item">
-                            <a class="header-gnb__sub-title">목걸이</a>
-                          </li>
-                          <li class="header-gnb__sub-item">
-                            <a class="header-gnb__sub-title">팔찌</a>
-                          </li>
-                          <li class="header-gnb__sub-item">
-                            <a class="header-gnb__sub-title">반지</a>
-                          </li>
-                          <li class="header-gnb__sub-item">
-                            <a class="header-gnb__sub-title">참</a>
-                          </li>
-                          <li class="header-gnb__sub-item">
-                            <a class="header-gnb__sub-title">커플링</a>
-                          </li>
-                          <li class="header-gnb__sub-item">
-                            <a class="header-gnb__sub-title">발찌</a>
-                          </li>
-                          <li class="header-gnb__sub-item">
-                            <a class="header-gnb__sub-title">펜던트</a>
-                          </li>
-                          <li class="header-gnb__sub-item">
-                            <a class="header-gnb__sub-title">피어싱</a>
-                          </li>
-                          <li class="header-gnb__sub-item">
-                            <a class="header-gnb__sub-title">기타</a>
-                          </li>
-                        </ul>
-                      </li>
-                      <li class="header-gnb__item">
-                        <a class="header-gnb__item-title">컬렉션</a>
-                        <ul class="header-gnb__sub">
-                          <li class="header-gnb__sub-item">
-                            <a class="header-gnb__sub-title">J è te</a>
-                          </li>
-                          <li class="header-gnb__sub-item">
-                            <a class="header-gnb__sub-title">J.RIBBON</a>
-                          </li>
-                          <li class="header-gnb__sub-item">
-                            <a class="header-gnb__sub-title">LA POEME</a>
-                          </li>
-                          <li class="header-gnb__sub-item">
-                            <a class="header-gnb__sub-title">MARIEBEL</a>
-                          </li>
-                          <li class="header-gnb__sub-item">
-                            <a class="header-gnb__sub-title">Mioello</a>
-                          </li>
-                          <li class="header-gnb__sub-item">
-                            <a class="header-gnb__sub-title">PERLINA</a>
-                          </li>
-                          <li class="header-gnb__sub-item">
-                            <a class="header-gnb__sub-title">TIARA</a>
-                          </li>
-                          <li class="header-gnb__sub-item">
-                            <a class="header-gnb__sub-title">SIGNATURE J</a>
-                          </li>
-                          <li class="header-gnb__sub-item">
-                            <a class="header-gnb__sub-title">ETC</a>
-                          </li>
-                        </ul>
-                      </li>
-                      <li class="header-gnb__item">
-                        <a class="header-gnb__item-title">키즈</a>
-                        <ul class="header-gnb__sub">
-                          <li class="header-gnb__sub-item">
-                            <a class="header-gnb__sub-title">목걸이</a>
-                          </li>
-                          <li class="header-gnb__sub-item">
-                            <a class="header-gnb__sub-title">팔찌</a>
-                          </li>
-                        </ul>
-                      </li>
-                      <li class="header-gnb__item">
-                        <a class="header-gnb__item-title">SET</a>
-                        <ul class="header-gnb__sub"></ul>
-                      </li>
-                    </ul>
-                    <div class="header-gnb__recommend-product">
-                      <div class="header-gnb__recommend-product-item">
-                        <a class="header-gnb__recommend-product-link">
-                          <div class="header-gnb__recommend-product-img-wrap">
-                            <!-- <img /> -->
-                          </div>
-                        </a>
-                      </div>
-                      <div class="header-gnb__recommend-product-item">
-                        <a class="header-gnb__recommend-product-link">
-                          <div class="header-gnb__recommend-product-img-wrap">
-                            <!-- <img /> -->
-                          </div>
-                        </a>
-                      </div>
-                      <div class="header-gnb__recommend-product-item">
-                        <a class="header-gnb__recommend-product-link">
-                          <div class="header-gnb__recommend-product-img-wrap">
-                            <!-- <img /> -->
-                          </div>
-                        </a>
-                      </div>
+      <header id="header">
+        <section class="navigation">
+          <div class="nav-container">
+            <div class="brand">
+              <div class="logo"><img src="./image/logo.png" alt="LOGO" /></div>
+              <div class="logo2"><img src="./image/제이에스티나_-_뉴_심볼.png" alt="LOGO" /></div>
+            </div>
+            <nav>
+              <div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
+              <ul class="nav-list">
+                <li>
+                  <a href="#!">JEWELRY</a>
+                  <ul class="nav-dropdown">
+                    <li>
+                      <a href="#!">아이템</a>
+                      <ul class="submenu">
+                        <li><a href="#">귀걸이</a></li>
+                        <li><a href="#">목걸이</a></li>
+                        <li><a href="#">반지</a></li>
+                        <li><a href="#">팔찌</a></li>
+                        <li><a href="#">참</a></li>
+                        <li><a href="#">커플링</a></li>
+                        <li><a href="#">발찌</a></li>
+                        <li><a href="#">펜던트</a></li>
+                        <li><a href="#">피어싱</a></li>
+                        <li><a href="#">기타</a></li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="#!">컬렉션</a>
+                      <ul class="submenu">
+                        <li><a href="#">J è te</a></li>
+                        <li><a href="#">J.RIBBON</a></li>
+                        <li><a href="#">LA POEME</a></li>
+                        <li><a href="#">MARIEBEL</a></li>
+                        <li><a href="#">Mioello</a></li>
+                        <li><a href="#">PERLINA</a></li>
+                        <li><a href="#">TIARA</a></li>
+                        <li><a href="#">SIGNATURE J</a></li>
+                        <li><a href="#">ETC</a></li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="#!">키즈</a>
+                      <ul class="submenu">
+                        <li><a href="#">목걸이</a></li>
+                        <li><a href="#">팔찌</a></li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="#!">SET</a>
+                    </li>
+                    <div class="submenu-others">
+                      <li><a href="#">아이유</a></li>
+                      <li><a href="#">신상품</a></li>
+                      <li><a href="#">베스트</a></li>
+                      <li><a href="#">기획전</a></li>
+                      <li><a href="#">이벤트</a></li>
                     </div>
-                  </div>
-                </div>
-              </li>
-              <li class="header__category-item">
-                <a class="header__category-title" id="BAG">BAG</a>
-                <div class="header-gnb" style="display: none">
-                  <div class="header-gnb__inner">
-                    <ul class="header-gnb__list">
-                      <li class="header-gnb__item">
-                        <a class="header-gnb__item-title">아이템</a>
-                        <ul class="header-gnb__sub">
-                          <li class="header-gnb__sub-item">
-                            <a class="header-gnb__sub-title">토트백</a>
-                          </li>
-                          <li class="header-gnb__sub-item">
-                            <a class="header-gnb__sub-title">백팩</a>
-                          </li>
-                          <li class="header-gnb__sub-item">
-                            <a class="header-gnb__sub-title">숄더백</a>
-                          </li>
-                          <li class="header-gnb__sub-item">
-                            <a class="header-gnb__sub-title">크로스백</a>
-                          </li>
-                          <li class="header-gnb__sub-item">
-                            <a class="header-gnb__sub-title">클러치백</a>
-                          </li>
-                          <li class="header-gnb__sub-item">
-                            <a class="header-gnb__sub-title">쇼퍼백</a>
-                          </li>
-                          <li class="header-gnb__sub-item">
-                            <a class="header-gnb__sub-title">지갑</a>
-                          </li>
-                          <li class="header-gnb__sub-item">
-                            <a class="header-gnb__sub-title">ACC</a>
-                          </li>
-                          <li class="header-gnb__sub-item">
-                            <a class="header-gnb__sub-title">기타</a>
-                          </li>
-                        </ul>
-                      </li>
-                      <li class="header-gnb__item">
-                        <a class="header-gnb__item-title">컬렉션</a>
-                        <ul class="header-gnb__sub">
-                          <li class="header-gnb__sub-item">
-                            <a class="header-gnb__sub-title">JOELLE</a>
-                          </li>
-                          <li class="header-gnb__sub-item">
-                            <a class="header-gnb__sub-title">J LETTER</a>
-                          </li>
-                          <li class="header-gnb__sub-item">
-                            <a class="header-gnb__sub-title">TIARA</a>
-                          </li>
-                          <li class="header-gnb__sub-item">
-                            <a class="header-gnb__sub-title">MAVE</a>
-                          </li>
-                        </ul>
-                      </li>
-                    </ul>
-                    <div class="header-gnb__recommend-product">
-                      <div class="header-gnb__recommend-product-item">
-                        <a class="header-gnb__recommend-product-link">
-                          <div class="header-gnb__recommend-product-img-wrap">
-                            <!-- <img /> -->
-                          </div>
-                        </a>
-                      </div>
-                      <div class="header-gnb__recommend-product-item">
-                        <a class="header-gnb__recommend-product-link">
-                          <div class="header-gnb__recommend-product-img-wrap">
-                            <!-- <img /> -->
-                          </div>
-                        </a>
-                      </div>
-                      <div class="header-gnb__recommend-product-item">
-                        <a class="header-gnb__recommend-product-link">
-                          <div class="header-gnb__recommend-product-img-wrap">
-                            <!-- <img /> -->
-                          </div>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </li>
-              <li class="header__category-item">
-                <a class="header__category-title" id="WATCH">WATCH</a>
-                <div class="header-gnb" style="display: none">
-                  <div class="header-gnb__inner">
-                    <ul class="header-gnb__list">
-                      <li class="header-gnb__item">
-                        <a class="header-gnb__item-title">제이에스티나</a>
-                        <ul class="header-gnb__sub">
-                          <li class="header-gnb__sub-item">
-                            <a class="header-gnb__sub-title">가죽</a>
-                          </li>
-                          <li class="header-gnb__sub-item">
-                            <a class="header-gnb__sub-title">메탈</a>
-                          </li>
-                          <li class="header-gnb__sub-item">
-                            <a class="header-gnb__sub-title">워치스트랩</a>
-                          </li>
-                        </ul>
-                      </li>
-                      <li class="header-gnb__item">
-                        <a class="header-gnb__item-title">제이컬렉션</a>
-                        <ul class="header-gnb__sub">
-                          <li class="header-gnb__sub-item">
-                            <a class="header-gnb__sub-title">NUOVO TEMPO</a>
-                          </li>
-                          <li class="header-gnb__sub-item">
-                            <a class="header-gnb__sub-title">TIARA</a>
-                          </li>
-                          <li class="header-gnb__sub-item">
-                            <a class="header-gnb__sub-title">AMICO</a>
-                          </li>
-                          <li class="header-gnb__sub-item">
-                            <a class="header-gnb__sub-title">JE</a>
-                          </li>
-                        </ul>
-                      </li>
-                      <li class="header-gnb__item">
-                        <a class="header-gnb__item-title">로만손</a>
-                        <ul class="header-gnb__sub">
-                          <li class="header-gnb__sub-item">
-                            <a class="header-gnb__sub-title">가죽</a>
-                          </li>
-                          <li class="header-gnb__sub-item">
-                            <a class="header-gnb__sub-title">메탈</a>
-                          </li>
-                        </ul>
-                      </li>
-                      <li class="header-gnb__item">
-                        <a class="header-gnb__item-title">로만손컬렉션</a>
-                        <ul class="header-gnb__sub">
-                          <li class="header-gnb__sub-item">
-                            <a class="header-gnb__sub-title">ACTIVE</a>
-                          </li>
-                          <li class="header-gnb__sub-item">
-                            <a class="header-gnb__sub-title">BASIC</a>
-                          </li>
-                          <li class="header-gnb__sub-item">
-                            <a class="header-gnb__sub-title">CLASSIC</a>
-                          </li>
-                          <li class="header-gnb__sub-item">
-                            <a class="header-gnb__sub-title">R</a>
-                          </li>
-                        </ul>
-                      </li>
-                    </ul>
-                    <div class="header-gnb__recommend-product">
-                      <div class="header-gnb__recommend-product-item">
-                        <a class="header-gnb__recommend-product-link">
-                          <div class="header-gnb__recommend-product-img-wrap">
-                            <!-- <img /> -->
-                          </div>
-                        </a>
-                      </div>
-                      <div class="header-gnb__recommend-product-item">
-                        <a class="header-gnb__recommend-product-link">
-                          <div class="header-gnb__recommend-product-img-wrap">
-                            <!-- <img /> -->
-                          </div>
-                        </a>
-                      </div>
-                      <div class="header-gnb__recommend-product-item">
-                        <a class="header-gnb__recommend-product-link">
-                          <div class="header-gnb__recommend-product-img-wrap">
-                            <!-- <img /> -->
-                          </div>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </li>
-              <li class="header__category-item">
-                <a class="header__category-title" id="HAIR ACC">HAIR ACC</a>
-                <div class="header-gnb" style="display: none">
-                  <div class="header-gnb__inner">
-                    <ul class="header-gnb__list">
-                      <li class="header-gnb__item">
-                        <a class="header-gnb__item-title">아이템</a>
-                        <ul class="header-gnb__sub">
-                          <li class="header-gnb__sub-item">
-                            <a class="header-gnb__sub-title">헤어슈슈</a>
-                          </li>
-                          <li class="header-gnb__sub-item">
-                            <a class="header-gnb__sub-title">헤어핀</a>
-                          </li>
-                          <li class="header-gnb__sub-item">
-                            <a class="header-gnb__sub-title">헤어집게</a>
-                          </li>
-                          <li class="header-gnb__sub-item">
-                            <a class="header-gnb__sub-title">헤어밴드</a>
-                          </li>
-                        </ul>
-                      </li>
-                      <li class="header-gnb__item">
-                        <a class="header-gnb__item-title">컬렉션</a>
-                        <ul class="header-gnb__sub">
-                          <li class="header-gnb__sub-item">
-                            <a class="header-gnb__sub-title">TIARA</a>
-                          </li>
-                          <li class="header-gnb__sub-item">
-                            <a class="header-gnb__sub-title">LA POEME</a>
-                          </li>
-                          <li class="header-gnb__sub-item">
-                            <a class="header-gnb__sub-title">PERLINA</a>
-                          </li>
-                          <li class="header-gnb__sub-item">
-                            <a class="header-gnb__sub-title">ETC</a>
-                          </li>
-                        </ul>
-                      </li>
-                    </ul>
-                    <div class="header-gnb__recommend-product">
-                      <div class="header-gnb__recommend-product-item">
-                        <a class="header-gnb__recommend-product-link">
-                          <div class="header-gnb__recommend-product-img-wrap">
-                            <!-- <img /> -->
-                          </div>
-                        </a>
-                      </div>
-                      <div class="header-gnb__recommend-product-item">
-                        <a class="header-gnb__recommend-product-link">
-                          <div class="header-gnb__recommend-product-img-wrap">
-                            <!-- <img /> -->
-                          </div>
-                        </a>
-                      </div>
-                      <div class="header-gnb__recommend-product-item">
-                        <a class="header-gnb__recommend-product-link">
-                          <div class="header-gnb__recommend-product-img-wrap">
-                            <!-- <img /> -->
-                          </div>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </li>
-              <li class="header__category-item">
-                <a class="header__category-title" id="EXCLUSIVE">EXCLUSIVE</a>
-                <div class="header-gnb" style="display: none">
-                  <div class="header-gnb__inner">
-                    <ul class="header-gnb__list">
-                      <li class="header-gnb__item">
-                        <a class="header-gnb__item-title">아이템</a>
-                        <ul class="header-gnb__sub">
-                          <li class="header-gnb__sub-item">
-                            <a class="header-gnb__sub-title">목걸이</a>
-                          </li>
-                          <li class="header-gnb__sub-item">
-                            <a class="header-gnb__sub-title">귀걸이</a>
-                          </li>
-                          <li class="header-gnb__sub-item">
-                            <a class="header-gnb__sub-title">팔찌</a>
-                          </li>
-                          <li class="header-gnb__sub-item">
-                            <a class="header-gnb__sub-title">발찌</a>
-                          </li>
-                          <li class="header-gnb__sub-item">
-                            <a class="header-gnb__sub-title">헤어</a>
-                          </li>
-                          <li class="header-gnb__sub-item">
-                            <a class="header-gnb__sub-title">기타</a>
-                          </li>
-                        </ul>
-                      </li>
-                      <li class="header-gnb__item">
-                        <a class="header-gnb__item-title">SET</a>
-                        <ul class="header-gnb__sub"></ul>
-                      </li>
-                    </ul>
-                    <div class="header-gnb__recommend-product">
-                      <div class="header-gnb__recommend-product-item">
-                        <a class="header-gnb__recommend-product-link">
-                          <div class="header-gnb__recommend-product-img-wrap">
-                            <!-- <img /> -->
-                          </div>
-                        </a>
-                      </div>
-                      <div class="header-gnb__recommend-product-item">
-                        <a class="header-gnb__recommend-product-link">
-                          <div class="header-gnb__recommend-product-img-wrap">
-                            <!-- <img /> -->
-                          </div>
-                        </a>
-                      </div>
-                      <div class="header-gnb__recommend-product-item">
-                        <a class="header-gnb__recommend-product-link">
-                          <div class="header-gnb__recommend-product-img-wrap">
-                            <!-- <img /> -->
-                          </div>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </li>
-              <li class="header__category-item">
-                <a class="header__category-title" id="OUTLET">OUTLET</a>
-                <div class="header-gnb" style="display: none">
-                  <div class="header-gnb__inner">
-                    <ul class="header-gnb__list">
-                      <li class="header-gnb__item">
-                        <a class="header-gnb__item-title">JEWELRY</a>
-                        <ul class="header-gnb__sub">
-                          <li class="header-gnb__sub-item">
-                            <a class="header-gnb__sub-title">귀걸이</a>
-                          </li>
-                          <li class="header-gnb__sub-item">
-                            <a class="header-gnb__sub-title">목걸이</a>
-                          </li>
-                          <li class="header-gnb__sub-item">
-                            <a class="header-gnb__sub-title">발찌</a>
-                          </li>
-                          <li class="header-gnb__sub-item">
-                            <a class="header-gnb__sub-title">팔찌</a>
-                          </li>
-                          <li class="header-gnb__sub-item">
-                            <a class="header-gnb__sub-title">펜던트</a>
-                          </li>
-                          <li class="header-gnb__sub-item">
-                            <a class="header-gnb__sub-title">반지</a>
-                          </li>
-                          <li class="header-gnb__sub-item">
-                            <a class="header-gnb__sub-title">헤어</a>
-                          </li>
-                        </ul>
-                      </li>
-                      <li class="header-gnb__item">
-                        <a class="header-gnb__item-title">BAG</a>
-                        <ul class="header-gnb__sub">
-                          <li class="header-gnb__sub-item">
-                            <a class="header-gnb__sub-title">토트백</a>
-                          </li>
-                          <li class="header-gnb__sub-item">
-                            <a class="header-gnb__sub-title">숄더백</a>
-                          </li>
-                          <li class="header-gnb__sub-item">
-                            <a class="header-gnb__sub-title">크로스백</a>
-                          </li>
-                          <li class="header-gnb__sub-item">
-                            <a class="header-gnb__sub-title">클러치백</a>
-                          </li>
-                          <li class="header-gnb__sub-item">
-                            <a class="header-gnb__sub-title">쇼퍼백</a>
-                          </li>
-                          <li class="header-gnb__sub-item">
-                            <a class="header-gnb__sub-title">백팩</a>
-                          </li>
-                          <li class="header-gnb__sub-item">
-                            <a class="header-gnb__sub-title">지갑</a>
-                          </li>
-                          <li class="header-gnb__sub-item">
-                            <a class="header-gnb__sub-title">ACC</a>
-                          </li>
-                          <li class="header-gnb__sub-item">
-                            <a class="header-gnb__sub-title">기타</a>
-                          </li>
-                        </ul>
-                      </li>
-                      <li class="header-gnb__item">
-                        <a class="header-gnb__item-title">WATCH</a>
-                        <ul class="header-gnb__sub">
-                          <li class="header-gnb__sub-item">
-                            <a class="header-gnb__sub-title">제이에스티나</a>
-                          </li>
-                          <li class="header-gnb__sub-item">
-                            <a class="header-gnb__sub-title">로만손</a>
-                          </li>
-                        </ul>
-                      </li>
-                    </ul>
-                    <div class="header-gnb__recommend-product">
-                      <div class="header-gnb__recommend-product-item">
-                        <a class="header-gnb__recommend-product-link">
-                          <div class="header-gnb__recommend-product-img-wrap">
-                            <!-- <img /> -->
-                          </div>
-                        </a>
-                      </div>
-                      <div class="header-gnb__recommend-product-item">
-                        <a class="header-gnb__recommend-product-link">
-                          <div class="header-gnb__recommend-product-img-wrap">
-                            <!-- <img /> -->
-                          </div>
-                        </a>
-                      </div>
-                      <div class="header-gnb__recommend-product-item">
-                        <a class="header-gnb__recommend-product-link">
-                          <div class="header-gnb__recommend-product-img-wrap">
-                            <!-- <img /> -->
-                          </div>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </li>
-              <ul class="header__gnb">
-                <li class="header__gnb-item">
-                  <a class="header__gnb-title iu_link">아이유</a>
+                  </ul>
                 </li>
-                <li class="header__gnb-item">
-                  <a class="header__gnb-title">신상품</a>
+                <li>
+                  <a href="#!">BAG</a>
+                  <ul class="nav-dropdown">
+                    <li>
+                      <a href="#!">아이템</a>
+                      <ul class="submenu">
+                        <li><a href="#">토트백</a></li>
+                        <li><a href="#">백팩</a></li>
+                        <li><a href="#">숄더백</a></li>
+                        <li><a href="#">크로스백</a></li>
+                        <li><a href="#">클러치백</a></li>
+                        <li><a href="#">쇼퍼백</a></li>
+                        <li><a href="#">지갑</a></li>
+                        <li><a href="#">ACC</a></li>
+                        <li><a href="#">기타</a></li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="#!">컬렉션</a>
+                      <ul class="submenu">
+                        <li><a href="#">JOELLE</a></li>
+                        <li><a href="#">J LETTER</a></li>
+                        <li><a href="#">TIARA</a></li>
+                        <li><a href="#">MAVE</a></li>
+                      </ul>
+                    </li>
+                    <div class="submenu-others">
+                      <li><a href="#">아이유</a></li>
+                      <li><a href="#">신상품</a></li>
+                      <li><a href="#">베스트</a></li>
+                      <li><a href="#">기획전</a></li>
+                      <li><a href="#">이벤트</a></li>
+                    </div>
+                  </ul>
                 </li>
-                <li class="header__gnb-item">
-                  <a class="header__gnb-title">베스트</a>
+                <li>
+                  <a href="#!">WATCH</a>
+                  <ul class="nav-dropdown">
+                    <li>
+                      <a href="#!">제이에스티나</a>
+                      <ul class="submenu">
+                        <li><a href="#">가죽</a></li>
+                        <li><a href="#">메탈</a></li>
+                        <li><a href="#">워치스트랩</a></li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="#!">제이컬렉션</a>
+                      <ul class="submenu">
+                        <li><a href="#">NUOVO TEMPO</a></li>
+                        <li><a href="#">TIARA</a></li>
+                        <li><a href="#">AMICO</a></li>
+                        <li><a href="#">JE</a></li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="#!">로만손</a>
+                      <ul class="submenu">
+                        <li><a href="#">가죽</a></li>
+                        <li><a href="#">메탈</a></li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="#!">로만손컬렉션</a>
+                      <ul class="submenu">
+                        <li><a href="#">ACTIVE</a></li>
+                        <li><a href="#">BASIC</a></li>
+                        <li><a href="#">CLASSIC</a></li>
+                        <li><a href="#">R</a></li>
+                      </ul>
+                    </li>
+                    <div class="submenu-others">
+                      <li><a href="#">아이유</a></li>
+                      <li><a href="#">신상품</a></li>
+                      <li><a href="#">베스트</a></li>
+                      <li><a href="#">기획전</a></li>
+                      <li><a href="#">이벤트</a></li>
+                    </div>
+                  </ul>
                 </li>
-                <li class="header__gnb-item">
-                  <a class="header__gnb-title">기획전</a>
+                <li>
+                  <a href="#!">HAIR ACC</a>
+                  <ul class="nav-dropdown">
+                    <li>
+                      <a href="#!">아이템</a>
+                      <ul class="submenu">
+                        <li><a href="#">헤어슈슈</a></li>
+                        <li><a href="#">헤어핀</a></li>
+                        <li><a href="#">헤어집게</a></li>
+                        <li><a href="#">헤어밴드</a></li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="#!">컬렉션</a>
+                      <ul class="submenu">
+                        <li><a href="#">TIARA</a></li>
+                        <li><a href="#">LA POEME</a></li>
+                        <li><a href="#">PERLINA</a></li>
+                        <li><a href="#">ETC</a></li>
+                      </ul>
+                    </li>
+                    <div class="submenu-others">
+                      <li><a href="#">아이유</a></li>
+                      <li><a href="#">신상품</a></li>
+                      <li><a href="#">베스트</a></li>
+                      <li><a href="#">기획전</a></li>
+                      <li><a href="#">이벤트</a></li>
+                    </div>
+                  </ul>
                 </li>
-                <li class="header__gnb-item">
-                  <a class="header__gnb-title">이벤트</a>
+                <li>
+                  <a href="#!">EXCLUSIVE</a>
+                  <ul class="nav-dropdown">
+                    <li>
+                      <a href="#!">아이템</a>
+                      <ul class="submenu">
+                        <li><a href="#">목걸이</a></li>
+                        <li><a href="#">귀걸이</a></li>
+                        <li><a href="#">팔찌</a></li>
+                        <li><a href="#">발찌</a></li>
+                        <li><a href="#">헤어</a></li>
+                        <li><a href="#">기타</a></li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="#!">SET</a>
+                    </li>
+                    <div class="submenu-others">
+                      <li><a href="#">아이유</a></li>
+                      <li><a href="#">신상품</a></li>
+                      <li><a href="#">베스트</a></li>
+                      <li><a href="#">기획전</a></li>
+                      <li><a href="#">이벤트</a></li>
+                    </div>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#!">OUTLET</a>
+                  <ul class="nav-dropdown">
+                    <li>
+                      <a href="#!">JEWELRY</a>
+                      <ul class="submenu">
+                        <li><a href="#">귀걸이</a></li>
+                        <li><a href="#">목걸이</a></li>
+                        <li><a href="#">발찌</a></li>
+                        <li><a href="#">팔찌</a></li>
+                        <li><a href="#">펜던트</a></li>
+                        <li><a href="#">반지</a></li>
+                        <li><a href="#">헤어</a></li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="#!">BAG</a>
+                      <ul class="submenu">
+                        <li><a href="#">토트백</a></li>
+                        <li><a href="#">숄더백</a></li>
+                        <li><a href="#">크로스백</a></li>
+                        <li><a href="#">클러치백</a></li>
+                        <li><a href="#">쇼퍼백</a></li>
+                        <li><a href="#">백팩</a></li>
+                        <li><a href="#">지갑</a></li>
+                        <li><a href="#">ACC</a></li>
+                        <li><a href="#">기타</a></li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="#!">WATCH</a>
+                      <ul class="submenu">
+                        <li><a href="#">제이에스티나</a></li>
+                        <li><a href="#">로만손</a></li>
+                      </ul>
+                    </li>
+                    <div class="submenu-others">
+                      <li><a href="#">아이유</a></li>
+                      <li><a href="#">신상품</a></li>
+                      <li><a href="#">베스트</a></li>
+                      <li><a href="#">기획전</a></li>
+                      <li><a href="#">이벤트</a></li>
+                    </div>
+                  </ul>
+                </li>
+                <li class="submenu__others">
+                  <ul>
+                    <li><a href="#">아이유</a></li>
+                    <li><a href="#">신상품</a></li>
+                    <li><a href="#">베스트</a></li>
+                    <li><a href="#">기획전</a></li>
+                    <li><a href="#">이벤트</a></li>
+                  </ul>
                 </li>
               </ul>
-            </ul>
+            </nav>
           </div>
           <div class="header_right">
             <i class="fa-solid fa-chevron-down"></i>
@@ -620,7 +338,7 @@
                   <div class="recommend_text">
                     <a href="#">
                       <p>MABELLE SM 호보 RE (JHNCHA1BF824RE010)</p>
-                      <p>238,000</p>
+                      <p>238,000원</p>
                       <p>133,600원</p>
                     </a>
                   </div>
@@ -637,7 +355,7 @@
                   <div class="recommend_text">
                     <a href="#">
                       <p>MABELLE SM 호보 RE (JHNCHA1BF824RE010)</p>
-                      <p>238,000</p>
+                      <p>238,000원</p>
                       <p>133,600원</p>
                     </a>
                   </div>
@@ -666,7 +384,7 @@
               </div>
             </div>
           </div>
-        </div>
+        </section>
       </header>
       <section id="section1">
         <div class="main__slide_wrap">
@@ -680,7 +398,10 @@
                     class="main-slide__item-img"
                   />
                   <picture>
-                    <source media="(max-width: 1062px)" srcset="image/main_section2/holiday_iu_main.png">
+                    <source
+                      media="(max-width: 1062px)"
+                      srcset="image/main_section2/holiday_iu_main.png"
+                    />
                   </picture>
                 </a>
               </li>
@@ -837,10 +558,10 @@
                   />
                   <div class="img-box_right">
                     <div class="main-md-pick_textbox">
-                      <div class="main-md-pick__title">Eternal Time, Forever Love</div>
-                      <div class="main-md-pick__text">
-                        사랑을 전하는 마리벨
+                      <div class="main-md-pick__title">
+                        Eternal Time, Forever Love
                       </div>
+                      <div class="main-md-pick__text">사랑을 전하는 마리벨</div>
                     </div>
                     <div class="md-pick__goods-wrapper">
                       <div class="md-pick__goods-contents">
@@ -858,7 +579,8 @@
                             href="#"
                             rel="nofollow"
                             class="main-md-pick__goods-name"
-                            >[아이유 PICK] MARIEBEL 14K 1부 다이아 목걸이 (JJMBND2BF551R4420)</a
+                            >[아이유 PICK] MARIEBEL 14K 1부 다이아 목걸이
+                            (JJMBND2BF551R4420)</a
                           >
                           <div class="main-md-pick__goods-price-wrapper">
                             <div
@@ -889,7 +611,8 @@
                             href="#"
                             rel="nofollow"
                             class="main-md-pick__goods-name"
-                            >[아이유 PICK] MARIEBEL 14K 페어 1부 다이아 목걸이 (JJMBND0BF481R4420)</a
+                            >[아이유 PICK] MARIEBEL 14K 페어 1부 다이아 목걸이
+                            (JJMBND0BF481R4420)</a
                           >
                           <div class="main-md-pick__goods-price-wrapper">
                             <div
@@ -926,7 +649,9 @@
                   />
                   <div class="img-box_right">
                     <div class="main-md-pick_textbox">
-                      <div class="main-md-pick__title">Classic Bag IS Always Trendy</div>
+                      <div class="main-md-pick__title">
+                        Classic Bag IS Always Trendy
+                      </div>
                       <div class="main-md-pick__text">
                         무심한 듯 세련된 클래식 제이백
                       </div>
@@ -984,7 +709,7 @@
                             <div
                               class="main-md-pick__goods-price main-md-pick__goods-price--origin"
                             >
-                            258,000원
+                              258,000원
                             </div>
                             <div class="main-md-pick__goods-price-sale-wrapper">
                               <div class="main-md-pick__goods-price">
@@ -1809,7 +1534,8 @@
                                 </picture>
                                 <div class="card__text">
                                   <h3 class="card__title">
-                                    LALA J 헤어 스크런치 - 딥 블랙 (JALJHS2BF831FA000)
+                                    LALA J 헤어 스크런치 - 딥 블랙
+                                    (JALJHS2BF831FA000)
                                   </h3>
                                   <div class="card__duration">31,200원</div>
                                 </div>
@@ -1825,7 +1551,8 @@
                                 </picture>
                                 <div class="card__text">
                                   <h3 class="card__title">
-                                    [아이유 PICK] CLOVIA DUELLO 목걸이 (JJJTNQ2BF042SR420)
+                                    [아이유 PICK] CLOVIA DUELLO 목걸이
+                                    (JJJTNQ2BF042SR420)
                                   </h3>
                                   <div class="card__duration">117,300원</div>
                                 </div>
@@ -1841,7 +1568,8 @@
                                 </picture>
                                 <div class="card__text">
                                   <h3 class="card__title">
-                                    [박민영 PICK] JOELLE FALLIN SM 크로스 BK (JHNCHA0BF830BK010)
+                                    [박민영 PICK] JOELLE FALLIN SM 크로스 BK
+                                    (JHNCHA0BF830BK010)
                                   </h3>
                                   <div class="card__duration">190,400원</div>
                                 </div>
@@ -1857,7 +1585,8 @@
                                 </picture>
                                 <div class="card__text">
                                   <h3 class="card__title">
-                                    [아이유 PICK] AMICO 메탈 시계 (JWM1ME2BF203RGRG0)
+                                    [아이유 PICK] AMICO 메탈 시계
+                                    (JWM1ME2BF203RGRG0)
                                   </h3>
                                   <div class="card__duration">120,000원</div>
                                 </div>
@@ -1873,7 +1602,8 @@
                                 </picture>
                                 <div class="card__text">
                                   <h3 class="card__title">
-                                    [아이유 PICK] J CUBE 탄생석 목걸이 (JJLJNQ0BF515SR420)
+                                    [아이유 PICK] J CUBE 탄생석 목걸이
+                                    (JJLJNQ0BF515SR420)
                                   </h3>
                                   <div class="card__duration">60,000원</div>
                                 </div>
@@ -1919,7 +1649,8 @@
                                 </picture>
                                 <div class="card__text">
                                   <h3 class="card__title">
-                                    [아이유 PICK] CLOVIA DUELLO 목걸이 (JJJTNQ2BF042SR420)
+                                    [아이유 PICK] CLOVIA DUELLO 목걸이
+                                    (JJJTNQ2BF042SR420)
                                   </h3>
                                   <div class="card__duration">117,300원</div>
                                 </div>
@@ -1935,7 +1666,8 @@
                                 </picture>
                                 <div class="card__text">
                                   <h3 class="card__title">
-                                    [아이유 PICK] J CUBE 탄생석 목걸이 (JJLJNQ0BF515SR420)
+                                    [아이유 PICK] J CUBE 탄생석 목걸이
+                                    (JJLJNQ0BF515SR420)
                                   </h3>
                                   <div class="card__duration">60,000원</div>
                                 </div>
@@ -1983,7 +1715,8 @@
                                 </picture>
                                 <div class="card__text">
                                   <h3 class="card__title">
-                                    [아이유 PICK] J Basic 14K 귀걸이 (JJJBEQ9AS557R4000)
+                                    [아이유 PICK] J Basic 14K 귀걸이
+                                    (JJJBEQ9AS557R4000)
                                   </h3>
                                   <div class="card__duration">144,500원</div>
                                 </div>
@@ -2030,7 +1763,8 @@
                                 </picture>
                                 <div class="card__text">
                                   <h3 class="card__title">
-                                    [박민영 PICK] JOELLE FALLIN SM 크로스 BK (JHNCHA0BF830BK010)
+                                    [박민영 PICK] JOELLE FALLIN SM 크로스 BK
+                                    (JHNCHA0BF830BK010)
                                   </h3>
                                   <div class="card__duration">190,400원</div>
                                 </div>
@@ -2046,7 +1780,8 @@
                                 </picture>
                                 <div class="card__text">
                                   <h3 class="card__title">
-                                    [박민영 PICK] DELLA SM 숄더 BK (JHNCHA2BF875BK010)
+                                    [박민영 PICK] DELLA SM 숄더 BK
+                                    (JHNCHA2BF875BK010)
                                   </h3>
                                   <div class="card__duration">232,200원</div>
                                 </div>
@@ -2141,7 +1876,8 @@
                                 </picture>
                                 <div class="card__text">
                                   <h3 class="card__title">
-                                    [아이유 PICK] AMICO 메탈 시계 (JWM1ME2BF203RGRG0)
+                                    [아이유 PICK] AMICO 메탈 시계
+                                    (JWM1ME2BF203RGRG0)
                                   </h3>
                                   <div class="card__duration">120,000원</div>
                                 </div>
@@ -2252,7 +1988,8 @@
                                 </picture>
                                 <div class="card__text">
                                   <h3 class="card__title">
-                                    LALA J 헤어 스크런치 - 딥 블랙 (JALJHS2BF831FA000)
+                                    LALA J 헤어 스크런치 - 딥 블랙
+                                    (JALJHS2BF831FA000)
                                   </h3>
                                   <div class="card__duration">31,200원</div>
                                 </div>
@@ -2268,7 +2005,8 @@
                                 </picture>
                                 <div class="card__text">
                                   <h3 class="card__title">
-                                    [아이유 PICK] LALA J 헤어 스크런치 - 뮤티드 핑크(JALJHS2BF832FA000)
+                                    [아이유 PICK] LALA J 헤어 스크런치 - 뮤티드
+                                    핑크(JALJHS2BF832FA000)
                                   </h3>
                                   <div class="card__duration">100,000원</div>
                                 </div>
@@ -2300,7 +2038,8 @@
                                 </picture>
                                 <div class="card__text">
                                   <h3 class="card__title">
-                                    [아이유PICK] LALA J 헤어 스크런치 - 베이비 핑크
+                                    [아이유PICK] LALA J 헤어 스크런치 - 베이비
+                                    핑크
                                   </h3>
                                   <div class="card__duration">28,000원</div>
                                 </div>
@@ -2316,7 +2055,8 @@
                                 </picture>
                                 <div class="card__text">
                                   <h3 class="card__title">
-                                    LALA J 헤어밴드 - 딥 블랙 (JALJHB2BF834FA000)
+                                    LALA J 헤어밴드 - 딥 블랙
+                                    (JALJHB2BF834FA000)
                                   </h3>
                                   <div class="card__duration">39,200원</div>
                                 </div>
@@ -2363,7 +2103,8 @@
                                 </picture>
                                 <div class="card__text">
                                   <h3 class="card__title">
-                                    [아이유 PICK] J CUBE 탄생석 목걸이 (JJLJNQ0BF515SR420)
+                                    [아이유 PICK] J CUBE 탄생석 목걸이
+                                    (JJLJNQ0BF515SR420)
                                   </h3>
                                   <div class="card__duration">60,000원</div>
                                 </div>
@@ -2411,7 +2152,8 @@
                                 </picture>
                                 <div class="card__text">
                                   <h3 class="card__title">
-                                    [아이유 PICK] LALA J 2줄 팔찌 (JJLJBQ1BF327SR7S0)
+                                    [아이유 PICK] LALA J 2줄 팔찌
+                                    (JJLJBQ1BF327SR7S0)
                                   </h3>
                                   <div class="card__duration">55,200원</div>
                                 </div>
@@ -2427,7 +2169,8 @@
                                 </picture>
                                 <div class="card__text">
                                   <h3 class="card__title">
-                                    [아이유 PICK] WHITEMOND 목걸이 (JJLJNQ1BS302SW420)
+                                    [아이유 PICK] WHITEMOND 목걸이
+                                    (JJLJNQ1BS302SW420)
                                   </h3>
                                   <div class="card__duration">59,200원</div>
                                 </div>
@@ -2512,7 +2255,8 @@
                                 </picture>
                                 <div class="card__text">
                                   <h3 class="card__title">
-                                    [아이유 PICK] MIOELLO 14K 목걸이 (JJMENQ1BF616R4420)
+                                    [아이유 PICK] MIOELLO 14K 목걸이
+                                    (JJMENQ1BF616R4420)
                                   </h3>
                                   <div class="card__duration">365,500원</div>
                                 </div>
@@ -2749,7 +2493,8 @@
                                 </picture>
                                 <div class="card__text">
                                   <h3 class="card__title">
-                                    [박민영 PICK] FORTE SM 사첼 BK (JHNCHD2BS855BK010)
+                                    [박민영 PICK] FORTE SM 사첼 BK
+                                    (JHNCHD2BS855BK010)
                                   </h3>
                                   <div class="card__duration">190,400원</div>
                                 </div>
@@ -2797,7 +2542,8 @@
                                 </picture>
                                 <div class="card__text">
                                   <h3 class="card__title">
-                                    [박민영 PICK] JOELLE FALLIN SM 크로스 BK (JHNCHA0BF830BK010)
+                                    [박민영 PICK] JOELLE FALLIN SM 크로스 BK
+                                    (JHNCHA0BF830BK010)
                                   </h3>
                                   <div class="card__duration">190,400원</div>
                                 </div>
@@ -2844,7 +2590,8 @@
                                 </picture>
                                 <div class="card__text">
                                   <h3 class="card__title">
-                                    [로만손] R 레나타 베이직 여성 메탈시계 (RWRMLL1B1100RGSI0)
+                                    [로만손] R 레나타 베이직 여성 메탈시계
+                                    (RWRMLL1B1100RGSI0)
                                   </h3>
                                   <div class="card__duration">88,000원</div>
                                 </div>
@@ -2860,7 +2607,8 @@
                                 </picture>
                                 <div class="card__text">
                                   <h3 class="card__title">
-                                    [아이유 PICK] JE 칵테일 시계 (JWJ1JE2BF216WHWH0)
+                                    [아이유 PICK] JE 칵테일 시계
+                                    (JWJ1JE2BF216WHWH0)
                                   </h3>
                                   <div class="card__duration">578,000원</div>
                                 </div>
@@ -2908,7 +2656,8 @@
                                 </picture>
                                 <div class="card__text">
                                   <h3 class="card__title">
-                                    [아이유 PICK] AMICO 메탈 시계 (JWM1ME2BF203RGRG0)
+                                    [아이유 PICK] AMICO 메탈 시계
+                                    (JWM1ME2BF203RGRG0)
                                   </h3>
                                   <div class="card__duration">120,000원</div>
                                 </div>
@@ -2955,7 +2704,8 @@
                                 </picture>
                                 <div class="card__text">
                                   <h3 class="card__title">
-                                    LALA J 헤어밴드 - 딥 블랙 (JALJHB2BF834FA000)
+                                    LALA J 헤어밴드 - 딥 블랙
+                                    (JALJHB2BF834FA000)
                                   </h3>
                                   <div class="card__duration">39,200원</div>
                                 </div>
@@ -2971,7 +2721,8 @@
                                 </picture>
                                 <div class="card__text">
                                   <h3 class="card__title">
-                                    LALA J 헤어 스크런치 - 딥 블랙 (JALJHS2BF831FA000)
+                                    LALA J 헤어 스크런치 - 딥 블랙
+                                    (JALJHS2BF831FA000)
                                   </h3>
                                   <div class="card__duration">31,200원</div>
                                 </div>
@@ -3019,7 +2770,8 @@
                                 </picture>
                                 <div class="card__text">
                                   <h3 class="card__title">
-                                    [아이유PICK] LALA J 헤어 스크런치 - 베이비 핑크 (JALJHS2BF821FA000)
+                                    [아이유PICK] LALA J 헤어 스크런치 - 베이비
+                                    핑크 (JALJHS2BF821FA000)
                                   </h3>
                                   <div class="card__duration">28,000원</div>
                                 </div>
@@ -3098,7 +2850,8 @@
                                 </picture>
                                 <div class="card__text">
                                   <h3 class="card__title">
-                                    [공식몰 단독][아이유 PICK] Snow White 목걸이 (JJLJNQ2BF363SW420)
+                                    [공식몰 단독][아이유 PICK] Snow White 목걸이
+                                    (JJLJNQ2BF363SW420)
                                   </h3>
                                   <div class="card__duration">51,750원</div>
                                 </div>

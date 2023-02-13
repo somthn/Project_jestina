@@ -57,21 +57,22 @@ $jc(function(){
 /* moveTop Button */
 /* 클릭 시 최상단으로 이동 */
 const topBtn = $jc('.moveTopBtn');
-$jc('.moveTopBtn').click(function(){
+$jc(topBtn).click(function(){
   window.scrollTo({top:0, behavior:"smooth"});
-});
+}
+);
 
 $jc(document).ready(function(){
   //스크롤 전에는 hide
-  $jc('.moveTopBtn').hide();
+  $jc(topBtn).hide();
   //스크롤하면 fadeIn
   $jc(window).scroll(function(){
-    let thisHeight = $jc('#header_wrap').innerHeight();
+    let thisHeight = $jc('#header').innerHeight();
     console.log(thisHeight);
     if($jc(this).scrollTop() > thisHeight){
-      $jc('.moveTopBtn').fadeIn();
+      $jc(topBtn).fadeIn();
     } else {
-      $jc('.moveTopBtn').fadeOut();
+      $jc(topBtn).fadeOut();
     }
   })
 })
